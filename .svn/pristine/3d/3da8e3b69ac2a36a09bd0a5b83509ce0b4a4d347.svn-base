@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta charset="UTF-8">
+    <title>{$meta_title}</title>
+    <link rel="stylesheet" type="text/css" href="__COMMON__/css/common.css" media="all">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/toastr/toastr.css" media="all">
+    <block name="style"></block>
+    <!--[if lt IE 9]-->
+    <script type="text/javascript" src="__PUBLIC__/jquery-1.10.2.min.js"></script>
+    <!--[endif]-->
+    <script type="text/javascript" src="__PUBLIC__/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+    <!-- 内容区 -->
+    <block name="data"></block>
+    <!-- /内容区 -->
+    
+    <script type="text/javascript" src="__PUBLIC__/assets/js/common.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/toastr/toastr.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/assets/plugins/layer-v2.0/layer/layer.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/assets/plugins/laydate-v1.1/laydate/laydate.js"></script>
+    <block name="script"></block>
+</body>
+</html>

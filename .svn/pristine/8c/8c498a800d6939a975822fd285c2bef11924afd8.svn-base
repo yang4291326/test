@@ -1,0 +1,76 @@
+<extend name="Public/base" />
+
+<block name="body">
+    <div class="tw-layout">
+        <div class="tw-list-hd">收藏夹详细商品展示</div>
+            <div class="tw-list-top">
+                <div class="tw-tool-bar">
+
+                </div>
+                <form action="__ACTION__" method="get" id='frmSearch'>
+                    <div class="tw-search-bar">
+                        <div class="search-form fr cf">
+                            <div class="sleft">
+                                <input type='hidden' name="id" value="{$id}">
+                                <input type="text" name="keywords" class="search-input" value="{:I('keywords', '')}" placeholder="请输入商品名">
+                                <a type="submit" class="sch-btn" onclick="$('#frmSearch').submit();"><i class="btn-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tw-list-wrap">
+            <table class="tw-table tw-table-list tw-table-fixed">
+                <thead>
+                    <tr>
+                        <th width="10" class="row-selected"><input class="checkbox check-all" type="checkbox"></th>
+                        <th width="50">ID</th>
+                        <th width="10%">商品名</th>
+                        <th width="5%">风格</th>
+                        <th width="5%">尺寸</th>
+                        <th width="5%">材料</th>
+                        <th width="5%">颜色</th>
+                        <!--*杨yongjie  添加*-->
+                        <th width="5%">现价</th>
+                        <th width="5%">数量</th>
+                        <!--*杨yongjie  添加*-->
+                        <th class="show-time">添加时间</th>
+                        <th width="50">喜好等级</th>
+                        <th width="30%">商品确认单号</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <notempty name="data" >
+                        <volist name="data" id="vo" >
+                            <tr>
+                                <td><input class="ids row-selected" type="checkbox" name="chkbId" value="{$vo.id}"></td>
+                                <td>{$vo.id}</td>
+                                <td>{$vo.attr_value}</td>
+                                <td>{$vo.style} </td>
+                                <td>{$vo.size} </td>
+                                <td>{$vo.material} </td>
+                                <td>{$vo.colour} </td>
+                                <!--*杨yongjie  添加*-->
+                                <td>{$vo.price} </td>
+                                <td>{$vo.goods_count} </td>
+                                <!--*杨yongjie  添加*-->
+                                <td>{$vo.add_time|time_format} </td>
+                                <td>{$vo.like_level|show_favorite_like_level} </td>
+                                <td>{$vo.cart_sn} </td>
+                            </tr>
+                        </volist>
+                    <else/>
+                        <td colspan="12" class="text-center"> aOh! 暂时还没有内容! </td>
+                    </notempty>
+                </tbody>
+            </table>
+            <div class="page">{$page['page']}</div>
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+
+    </script>
+</block>

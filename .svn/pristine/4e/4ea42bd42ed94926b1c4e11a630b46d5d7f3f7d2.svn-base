@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta charset="UTF-8">
+    <title>{$meta_title}</title>
+    <link rel="stylesheet" type="text/css" href="__COMMON__/css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="__COMMON__/css/common.css" media="all">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/toastr/toastr.css" media="all">
+    <block name="style"></block>
+    <!--[if lt IE 9]-->
+    <script type="text/javascript" src="__PUBLIC__/jquery-1.10.2.min.js"></script>
+    <!--[endif]-->
+    <script type="text/javascript" src="__PUBLIC__/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+    <!-- 内容区 -->
+    <div class="main-container cf" style="margin-top: 10px;">
+        <block name="left">
+            <div id="sub-nav" class="fl">
+                <div class="sub-nav-top"></div>
+                {:W('Common/SubNav/getlist')}
+                <div class="sub-nav-bottom"></div>
+            </div>
+        </block>
+        <div class="fr">
+            <div id="data" class="cf">
+                <block name="data"></block>
+            </div>
+        </div>
+    </div>
+    <!-- /内容区 -->
+
+    <div class="main-footer" style="border:0px solid red">
+        <div>
+            {:C('WEB_SITE_ICP')}
+        </div>
+    </div>
+
+    <script type="text/javascript" src="__PUBLIC__/assets/js/common.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/toastr/toastr.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/assets/plugins/layer-v2.0/layer/layer.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/assets/plugins/laydate-v1.1/laydate/laydate.js"></script>
+    <script>
+        // 定义全局变量
+        RECYCLE_URL = "{:U('recycle')}"; // 默认逻辑删除操作执行的地址
+        RESTORE_URL = "{:U('restore')}"; // 默认逻辑删除恢复执行的地址
+        DELETE_URL = "{:U('del')}"; // 默认删除操作执行的地址
+        UPLOAD_IMG_URL = "{:U('uploadImg')}"; // 默认上传图片地址
+        DELETE_FILE_URL = "{:U('delFile')}"; // 默认删除图片执行的地址
+        CHANGE_STAUTS_URL = "{:U('changeDisabled')}"; // 修改数据的启用状态
+    </script>
+    <script type="text/javascript">
+        function ResizeWindow(){
+            documentHeight = $(document).height();
+            windowHeight = $(window).height();
+            if (documentHeight <= windowHeight) {
+                $(".main-footer").css({'position':'fixed', 'bottom':'0'});
+            } else {
+                $(".main-footer").css({'position':'static'});
+            }
+
+        }
+
+        $(function(){
+            //定位
+            ResizeWindow();
+            $(window).resize(function(){
+                ResizeWindow();
+            });
+        })
+    </script>
+    <block name="script"></block>
+    <!-- 隐藏域存储分页数据，模拟排名，在线考试团队，子页面跳转主页面使用 -->
+    <input type="hidden" id="p_div_ranking" value="1"/>
+    <input type="hidden" id="p_div_team" value="1"/>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<extend name="Public/base" />
+
+<block name="body">
+    <div class="tw-layout">
+        <div class="tw-list-hd"> 收藏夹列表 </div>
+        <notempty name="prompt_tips">
+            <div class="tw_list_tips">
+                <div class="tips-name">提示语：</div>
+                <div class="tips-content">{$prompt_tips}</div>
+            </div>
+        </notempty>
+            <div class="tw-list-top">
+                <div class="tw-tool-bar">      
+                    <a class="tw-tool-btn-del" onclick="javascript:recycle('chkbId', '确认删除?!')"> <i class="tw-icon-minus-circle"></i> 批量删除 </a>
+                </div>
+                <form action="__ACTION__" method="post" id='frmSearch'>
+                    <div class="tw-search-bar">
+                        <div class="search-form fr cf">
+                            <div class="sleft">
+                                <input type='hidden' name="type" value="{$type}">
+                                <input type="text" name="keywords" class="search-input" value="{:I('keywords', '')}" placeholder="请输入收藏夹名">
+                                <a type="submit" class="sch-btn" onclick="$('#frmSearch').submit();"><i class="btn-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tw-list-wrap">
+            <table class="tw-table tw-table-list tw-table-fixed">
+                <thead>
+                    <tr>
+                        <th width="10" class="row-selected"><input class="checkbox check-all" type="checkbox"></th>
+                        <th width="50">序号</th>
+                        <th width="15%">收藏夹名称</th>
+                        <th width="50%">内容概述</th>
+                        <th width="15%">操作时间</th>
+                        <th width="15%">所属用户</th>
+                        <th width="15%">客户名称</th>
+                        <th width="15%">客户电话</th>
+                        <th width="15%">客户地址</th>
+                        <th width="15%">客户押金</th>
+                        <th width="15%">客户订单随机编码</th>
+                        <th width="210">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <notempty name="data" >
+                        <volist name="data" id="vo" key="k">
+                            <tr>
+                                <td><input class="ids row-selected" type="checkbox" name="chkbId" value="{$vo.id}"></td>
+                                <td>{$k|page_code}</td>
+                                <td>{$vo.name} </td>
+                                <td>{$vo.remark} </td>
+                                <td>{$vo.add_time|time_format} </td>
+                                <td>{$vo.member_name}</td>
+                                <td>{$vo.customer_name}</td>
+                                <td>{$vo.customer_phone}</td>
+                                <td>{$vo.customer_address}</td>
+                                <td>{$vo.customer_deposit}</td>
+                                <td>{$vo.customer_code}</td>
+                                <td>
+                                    <a class="tw-tool-btn-view" href="{:U('Favorite/showFavoriteDetail?id='.$vo['id'])}"> <i class="tw-icon-desktop"></i> 查看 </a>
+                                    <a class="tw-tool-btn-view" href="{:U('Favorite/edit?id='.$vo['id'])}"> <i class="tw-icon-edit"></i> 修改 </a>
+                                    <a class="tw-tool-btn-del" onclick="javascript:recycle({$vo['id']}, '确认删除?!')"><i class="tw-icon-minus-circle"></i> 删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                    <else/>
+                        <td colspan="12" class="text-center"> aOh! 暂时还没有内容! </td>
+                    </notempty>
+                </tbody>
+            </table>
+            <div class="page">{$page['page']}</div>
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+
+    </script>
+</block>

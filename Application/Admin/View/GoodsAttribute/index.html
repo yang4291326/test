@@ -1,0 +1,72 @@
+<extend name="Public/base"/>
+
+<block name="body">
+<div class="tw-layout">
+		<div class="tw-list-hd">
+			{$list_title}
+		</div>
+		<notempty name="prompt_tips">
+			<div class="tw_list_tips">
+				<div class="tips-name">提示语：</div>
+				<div class="tips-content">{$prompt_tips}</div>
+			</div>
+		</notempty>
+		<div class="tw-list-top">
+		    <div class="tw-tool-bar">
+	    		<a class="tw-tool-btn-add" href="{:U('edit?cate_id='.$cate_id)}">
+	                <i class="tw-icon-plus-circle"></i> 添加属性
+	            </a>
+	         </div>
+	    </div>
+		<div class="tw-list-wrap">
+			<table class="tw-table tw-table-list tw-table-fixed">
+				<thead>
+					<tr>
+						<th width="50">序号</th>
+						<th width="20%">属性名称</th>
+						<th width="8%">属性类别</th>
+						<th width="30%">属性值</th>
+						<th width="10%">属性排序</th>
+						<th width="10%">属性状态</th>
+						<th width="15%">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<notempty name="list">
+					<volist name="list" id="v" key="k">
+						<tr>
+							<td>{$k|page_code}</td>
+							<td class="text-left">{$v.attr_name}</td>
+							<td>{$v.attr_type|show_goods_attr_status}</td>
+							<td class="text-left" style="word-wrap:break-word">{$v.attr_value}</td>
+							<td>{$v.attr_sort}</td>
+							<td>{$v.attr_status|show_status}</td>
+							<td>
+								<a class="tw-tool-btn-edit"  href="{:U('edit?id='.$v['id'].'&cate_id='.$cate_id)}">
+				                    <i class="tw-icon-pencil"></i> 修改
+				                </a>
+				                <if condition="$cate_id neq 0">
+					                <a class="tw-tool-btn-del" onclick="javascript:recycle({$v['id']}, '确认删除？删除后该自定义属性将不在显示', true)">
+		                                <i class="tw-icon-minus-circle"></i> 删除
+		                            </a>
+	                            </if>
+							</td>
+						</tr>
+					</volist>
+					<else/>
+					    <td colspan="7" class="text-center"> aOh! 暂时还没有内容! </td>
+					</notempty>
+				</tbody>
+			</table>
+			<!-- 分页 -->
+		    <div class="page">
+		        {$page}
+		    </div>
+		</div>
+</div>
+</block>
+
+<block name="script">
+<script type="text/javascript">
+</script>
+</block>

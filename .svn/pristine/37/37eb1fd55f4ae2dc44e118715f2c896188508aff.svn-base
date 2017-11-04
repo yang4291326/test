@@ -1,0 +1,73 @@
+<extend name="Public/base"/>
+<block name="body">
+    <div class="tw-layout">
+    	<div class="tw-list-hd">
+            {:isset($info['id'])?'修改':'新增'}联盟商家
+        </div>
+	    <div class="tw-list-wrap tw-edit-wrap">
+            <form action="__SELF__" method="post" class="form-horizontal ajaxForm">
+                <div class="form-item">
+                    <label class="item-label">上传商家图片<span class="check-tips">（用于上传商家图片 请上传大于400*400的正方形图片）</span></label>
+                    <div class="controls">
+                        <div>
+                            <img src="{$info.photo_path}" style="height:129px; width:129px;" id="img_"/>
+                        </div>
+                        <input type="hidden" value="{$info.photo_path}" name="photo_path" id="img" />
+                        <input class="btn btn-default btn-xs" type="button" value="上传" id="btnUpload"/>
+                        <input class="btn btn-danger btn-xs" type="button" value="删除" onclick="delFile($('#img').val(), '')" id="btn_delete_" />
+                        <if condition="$info.photo_path eq ''">
+                            <script>
+                                $("#img_, #btn_delete_").hide();
+                            </script>
+                        </if>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">商家名称<span class="check-tips"><b>*</b>（输入商家名称）</span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="name" value="{$info.name}">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">商家地址<span class="check-tips"><b>*</b>（输入商家地址）</span></label>
+                    <div class="controls">
+                        <textarea name="address" rows="3" cols="57">{$info.address}</textarea><br/>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">推荐理由<span class="check-tips">（输入推荐理由）</span></label>
+                    <div class="controls">
+                        <textarea name="recommend" id="" rows="5" cols="57">{$info.recommend}</textarea><br/>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">电话<span class="check-tips"><b>*</b>（输入商家电话）</span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="phone" value="{$info.phone}">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">其他<span class="check-tips">（输入商家其他信息）</span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="others" value="{$info.others}">
+                    </div>
+                </div>
+                <div class="tw-tool-bar-bot">
+                    <button type="submit" class="tw-act-btn-confirm">确定</button>
+                    <button type="button" onclick="goback()" class="tw-act-btn-cancel">取消</button>
+                </div>
+                    <input type="hidden" name="id" value="{$info.id|default=''}"/>
+            </form>
+	    </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ajaxupload.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__COMMON__/js/imgupload.js"></script>
+    <script>
+        $(function(){
+            ajaxUpload('#btnUpload', $("#img"), 'Temp', '', true, 'Upgrade');
+        });
+    </script>
+</block>

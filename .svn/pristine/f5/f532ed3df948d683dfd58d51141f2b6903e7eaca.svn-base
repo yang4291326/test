@@ -1,0 +1,117 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <!-- S=头部设置 -->
+    <div class="tw-layout">
+
+        <!-- S=文章管理 -->
+        <div class="tw-list-hd"> {$title}管理</div>	
+        <notempty name="promptTips">
+            <div class="tw_list_tips">
+                <div class="tips-name">提示语：</div>
+                <div class="tips-content">{$promptTips}</div>
+            </div>
+        </notempty>    
+        <!-- S=导航设置 -->
+        <div class="tw-list-top">
+            <!-- S=添加删除 -->
+            <div class="tw-tool-bar">
+
+                <if condition="($count lt $titleAccessInfo)">
+                    <a class="tw-tool-btn-add" id="add" href="{:U('edit',array('type'=>$type,'count'=>$count))}"> <i class="tw-icon-plus-circle"></i> 添加 </a>                    
+                <else />
+                
+                </if>                
+                <a class="tw-tool-btn-del" onclick="javascript:recycle('chkbId', '确认删除?!')"> <i class="tw-icon-minus-circle"></i> 批量删除 </a>
+                <switch name='type'>
+                    <case value='1'></case>
+                    <default />
+                    <a class="tw-tool-btn-setting" href="{:U('sort',array('type'=>$type))}" >
+                        <i class="tw-icon-cogs"></i> 排序
+                    </a>
+                </switch>
+                <switch name="type">
+                    <case value="0|2|5|4">
+                    <a class="tw-tool-btn-view" href="{:U('preview' ,array('id'=>$vo[id], 'type'=>$type))}"><i class="tw-icon-desktop"> </i> 预览 </a>
+                    </case>
+                </switch>
+            </div>
+            <!-- E=添加删除 -->                
+            <!-- S=高级搜索 -->                        
+            <form action="__ACTION__/type/{$type}" method="post" id='frmSearch'>
+                <div class="tw-search-bar">
+                    <div class="search-form fr cf">                        
+                        <div class="sleft">
+                            <input type="text" name="keywords" class="search-input" value="{:I('keywords', '')}" placeholder="请输入模版名称">
+                            <input type="hidden" name="type" value="{$type}">
+                            <a type="submit" class="sch-btn" onclick="$('#frmSearch').submit();"><i class="btn-search"></i></a>
+                        </div>
+                    </div>            
+                </div>
+	        </form>          
+            <!-- E=高级搜索 -->
+        </div>
+        <!-- E=导航设置 -->
+    </div>
+    <!-- E=头部设置 -->
+    <!-- S=详情显示 -->	
+    <div class="tw-list-wrap">
+        <!-- S=表单 -->
+        <form class="ids">
+            <table class="tw-table tw-table-list tw-table-fixed">
+                <thead>
+                    <tr>
+                        <th class="row-selected"><input class="checkbox check-all" type="checkbox"></th>
+                        <th width="30">序号</th>
+                        <if condition="$type eq 3">
+                        <th width="25%">商品名称</th>
+                        <else />
+                        <th width="25%">模版标题</th>
+                        </if>
+                        <th width="15%">添加人</th>
+                        <th class="150">添加时间</th>
+                        <th width="50">排序</th>
+                        <th width="200">操作</th>
+                    </tr>
+                </thead>
+                <!-- S=详细信息 -->	
+                <tbody>
+                    <notempty name="list">                      
+                        <volist name="list" id="vo" key="k">
+                            <tr>
+                                <td><input class="ids row-selected" type="checkbox" name="chkbId" value="{$vo.id}"></td>
+                                <td>{$k|page_code}</td>
+                                <td class="text-left">
+                                    <if condition="$type eq 3"> {$vo.goods_name}
+                                        <else /> {$vo.name}                                        
+                                    </if>
+                                </td>
+                                <td class="text-left">{$vo.user_name}</td>
+                                <td>{$vo.add_time|time_format}</td> 
+                                <td>{$vo.sort}</td>
+                                <td>
+                                    <a class="tw-tool-btn-edit" href="{:U('edit' ,array('id'=>$vo[id], 'type'=>$type, 'count'=>$count))}"><i class="tw-icon-pencil"></i> 修改 </a>
+                                    <a class="tw-tool-btn-del" onclick="javascript:recycle({$vo['id']}, '确认删除?!')"><i class="tw-icon-minus-circle"></i> 删除</a>
+
+                                </td>                                
+                            </tr>
+                        </volist>
+                        <else/>
+                            <td colspan="7" class="text-center"> aOh! 暂时还没有内容! </td>                            
+                    </notempty>
+                </tbody>
+                <!-- E=详细信息 -->
+            </table>
+        </form>
+        <!-- E=表单 -->
+        <div class="page">{$page['page']}</div>
+        </div>
+    </div>
+    <!-- E=详情显示 -->	
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        
+    </script>
+</block>

@@ -1,0 +1,141 @@
+<extend name="Public/base"/>
+<block name="style">
+    <style>
+        .ml10{
+            margin-left:10px;
+        }
+        .green-btn, .green-btn:hover{
+            background-color: #319936
+        }
+        .detail-up-btn{
+            margin:75px 0 0 15px;
+        }
+    </style>
+</block>
+<block name="body">
+	<div class="tw-layout">
+		<div class="tw-list-hd">
+			 {$goods_info.attr_value} - 商品详情管理
+		</div>
+    	<div class="tw-list-wrap tw-edit-wrap">
+    	    <form action="__SELF__" method="POST" class="form-horizontal ajaxForm">
+    	    	<table class="wf-form-table" id="goods-info-table">
+                    <colgroup>
+                        <col width="10%">
+                        <col width="90%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th colspan="2" class="information">
+                            	<div class="fl offset">商品详情</div>
+                            	<div class="fl ml10">
+                            		<a class="tw-tool-btn-add" onclick="addDetail()"><i class="tw-icon-plus-circle"></i> 添加详情 </a>
+                                    <a class="tw-tool-btn-setting" href="{:U('detailSort',array('id'=>I('get.id',0), 'name' => $goods_info[attr_value]),'')}" >
+                                        <i class="tw-icon-cogs"></i> 排序
+                                    </a>
+                            	</div>
+                            </th>
+                        </tr>
+                        <notempty name="detail_list">
+                        <volist name="detail_list" id="list" key="k">
+                            <tr>
+                                <th valign='top'><em>*</em> 图片名称:</th>
+                                <td>
+                                    <div class='fl'>
+                                        <div class='details-name'>
+                                            <input type='text' name='detail[name][{$k}]' class='text input-large color-text' placeholder='输入图片名称' value='{$list.name}'/>
+                                        </div>
+                                        <div style='margin-top:5px;'>
+                                            <div class='details-pic clearfix'>
+                                                <div class='fl'>
+                                                    <img src='{$list.photo_path}' style='height:175px; width:435px;' id='img_{$k}'/><input type='hidden' value='{$list.photo_path}' name='detail[path][{$k}]' id='img{$k}' />
+                                                </div>
+                                                <div class='fl'>
+                                                    <input class='btn green-btn detail-up-btn' type='button' value='上传图片' id='btnUpload{$k}'  style='display:none'/>
+                                                    <input class='btn green-btn detail-up-btn detail-del-btn' type='button' value='删除' id='btn_delete_{$k}' del-img-id='{$k}'/>
+                                                </div>
+                                            </div>
+                                            <div class='details-des clearfix' style='margin-top:5px;'>
+                                                <textarea type='text' rows='3' cols='80' id='remark' name='detail[remark][{$k}]' placeholder='请输入详情描述'>{$list.remark}</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div >
+                                        <a class="tw-act-btn-confirm" onclick="javascript:recycle({$list['id']}, '确认删除?! 删除后此详情将不在此地显示!',true)"><i class=""></i>删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </volist>
+                        </notempty>
+                    </tbody>
+                </table>
+    	        <div class="tw-tool-bar-bot">
+    	           <input type="hidden" name="id" value="{$id}" />
+    	           <button type="submit" class="tw-act-btn-confirm">保存</button>
+    	           <button type="button" onclick="goback()" class="tw-act-btn-cancel">返回</button>
+    	       </div>
+    	    </form>
+        </div>
+    </div>
+</block>
+<block name="script">
+	<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ajaxupload.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__JS__/goodsImgUpload.js"></script>
+	<script type="text/javascript" charset="utf-8">
+        var m = parseInt('{$detail_num}') + 1;
+        $(function(){
+            //商品详情图片上传控件
+            for (var p=1; p<m; p++) {
+                ajaxUpload('#btnUpload'+ p +'', $('#img'+ p +''), 'Temp', p, true, 'GoodsDetail');
+            }
+        });
+	    function addDetail(){
+            var newRow = "<tr>"
+                       + "<th valign='top'><em>*</em> 图片名称:</th>"
+                       + "<td>"
+                       + "<div class='fl'>"
+                       + "<div class='details-name'><input type='text' name='detail[name]["+ m +"]' class='text input-large color-text' placeholder='输入图片名称' value=''/><input class='btn btn-default btn-xs' type='button' value='删除详情' onclick='delDetailLine(this, "+ m +")'/></div>"
+                       + "<div style='margin-top:5px;'>"
+                       + "<div class='details-pic clearfix'>"
+                       + "<div class='fl'><img src='__PUBLIC__/image/default-goods-detail-pic.jpg' style='height:175px; width:435px;' id='img_"+ m +"'/><input type='hidden' value='' name='detail[path]["+ m +"]' id='img"+ m +"' /></div>"
+                       + "<div class='fl'><input class='btn green-btn detail-up-btn' type='button' value='上传图片' id='btnUpload"+ m +"'/><input class='btn green-btn detail-up-btn detail-del-btn' type='button' value='删除' id='btn_delete_"+ m +"' del-img-id='"+ m +"' style='display:none'/></div>"
+                       + "</div>"
+                       + "<div class='details-des clearfix' style='margin-top:5px;'><textarea type='text' rows='3' cols='80' id='remark' name='detail[remark]["+ m +"]' placeholder='请输入详情描述'>{$info.remark}</textarea></div>"
+                       + "</div></div></td></tr>";
+
+            $("#goods-info-table tr:last").after(newRow); 
+            ajaxUpload('#btnUpload'+ m +'', $('#img'+ m +''), 'GoodsDetail', m);
+            m++;
+        }
+
+        $(function(){
+            //图片删除
+            $('body').on('click', '.detail-del-btn', function(){
+                var imgId = $(this).attr('del-img-id');
+                delFile($('#img'+imgId).val(), imgId);
+            })
+        });
+        function callback(data){
+
+            //如果没有回调函数, 默认执行
+            if(data.status == 1){
+                _IS_SUBMIT_SUCCESS = true;
+
+                if (data.info != '' && typeof(data.info) != 'undefined')  toastr.success(data.info);;
+                //跳转页面
+                if ( typeof(_TARGET_URL) != 'undefined' && _TARGET_URL != '') {
+                    window.location.href = _TARGET_URL;
+                }
+                //刷新页面
+                if ( typeof(_NEED_REFRESH) != 'undefined' && _NEED_REFRESH == true) {
+                    location.reload();
+                }
+                window.location.href = "{:U('Admin/Goods/index')}";
+            } else {
+                if (data.info != '' && typeof(data.info) != 'undefined') toastr.error(data.info);
+                else  toastr.error('未定义错误!');
+            }
+        }
+
+	</script>
+</block>

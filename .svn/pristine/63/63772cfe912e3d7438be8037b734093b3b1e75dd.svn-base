@@ -1,0 +1,92 @@
+<extend name="Public/base"/>
+
+<block name="body">
+<div class="tw-layout">
+		<div class="tw-list-hd">
+			商品信息管理 
+		</div>
+		<notempty name="prompt_tips">
+			<div class="tw_list_tips">
+				<div class="tips-name">提示语：</div>
+				<div class="tips-content">{$prompt_tips}</div>
+			</div>
+		</notempty>
+		<div class="tw-list-top">
+		    <div class="tw-tool-bar">
+	    		<a class="tw-tool-btn-add" href="{:U('edit')}">
+	                <i class="tw-icon-plus-circle"></i> 添加商品信息 
+	            </a>
+	            <a class="tw-tool-btn-del" onclick="javascript:recycle('chkbId', '确认删除？删除后该数据将放入回收站!')">
+                    <i class="tw-icon-minus-circle"></i> 批量删除
+                </a>
+	         </div>
+	         <form action="__SELF__" method="get" id='frmSearch'>
+                <div class="tw-search-bar">
+			        <!-- 高级搜索 -->
+			        <div class="search-form fr cf">
+			            <div class="sleft">
+			                <input type="text" name="goods_name" class="search-input" value="{:I('goods_name')}" placeholder="请输入商品标题">
+			                <a type="submit" class="sch-btn" onclick="$('#frmSearch').submit();"><i class="btn-search"></i></a>
+			            </div>
+			        </div>
+		        </div>
+            </form>
+	    </div>
+		<div class="tw-list-wrap">
+			<table class="tw-table tw-table-list tw-table-fixed">
+				<thead>
+					<tr>
+						<th width="10" class="row-selected">
+	                        <input class="checkbox check-all" type="checkbox">
+	                    </th>
+						<th width="50">序号</th>
+						<th >商品名称</th>
+						<th width="10%">分类名称</th>
+						<th width="10%">操作时间</th>
+						<th width="10%">操作人</th>
+						<th width="10%">状态</th>
+						<th width="30%">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<notempty name="list">
+					<volist name="list" id="v" key="k">
+						<tr>
+							<td><input class="ids row-selected" type="checkbox" name="chkbId" value="{$v.id}"></td>
+							<td>{$k|page_code}</td>
+							<td class="text-left">{$v.attr_value}</td>
+							<td>{$v.name}</td>
+							<td>{$v.add_time|time_format}</td>
+							<td>{$v.user_name}</td>
+							<td>{$v.status|show_status}</td>
+							<td>
+								<a class="tw-tool-btn-copy"  href="{:U('details?id='.$v['id'])}">
+				                    <i class="tw-icon-cogs"></i> 详情管理
+				                </a>
+				                <a class="tw-tool-btn-add"  href="{:U('vrModel?id='.$v['id'])}">
+				                    <i class="tw-icon-camera"></i> VR模型
+				                </a>
+				                <a class="tw-tool-btn-edit"  href="{:U('edit?id='.$v['id'])}">
+				                    <i class="tw-icon-pencil"></i> 修改
+				                </a>
+				                <a class="tw-tool-btn-del" onclick="javascript:recycle({$v['id']}, '确认删除？删除后该数据将放入回收站!')">
+	                                <i class="tw-icon-minus-circle"></i> 删除
+	                            </a>
+							</td>
+						</tr>
+					</volist>
+					<else/>
+					    <td colspan="8" class="text-center"> aOh! 暂时还没有内容! </td>
+					</notempty>
+				</tbody>
+			</table>
+			<!-- 分页 -->
+		    <div class="page">{$page}</div>
+		</div>
+</div>
+</block>
+<block name="script">
+<script type="text/javascript">
+
+</script>
+</block>

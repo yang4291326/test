@@ -1,0 +1,215 @@
+<extend name="Public/base" />
+<block name="style">
+    <style type="text/css">
+        .detaillist_select{
+            height:98%;
+            width:200px;
+            border-width:1px;
+            border-style:solid;
+            position: fixed;
+            top:0;
+            right: 0;
+        }
+        .tw-layout{
+            margin-bottom: 50px;
+        }
+        .button-div{
+            position: fixed;
+            top:0;
+            right: 120px
+        }
+    </style>
+</block>
+<block name="body">
+    <div class="tw-layout" style="width:70%;float:left;">
+        <div class="tw-list-top">
+            <div class="tw-tool-bar">
+            </div>
+            <form action="__ACTION__" method="get" id='frmSearch' onsubmit="return false;">
+                <input type="hidden" id="exam_real_id" value="{$exam_real_id}"/>
+                <input type="hidden" id="ids" name="ids" value="{$ids}"/>
+                <input type="hidden" id="names" name="names" value="{$names}"/>
+                <div class="tw-search-bar">
+                    <div class="search-form fr cf">
+                        <div class="sleft">
+                            <input type="text" name="keywords" class="search-input" value="{:I('keywords', '')}" placeholder="请输入用户名">
+                            <a type="submit" class="sch-btn" onclick="ajaxMemberList()"><i class="btn-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="tw-list-wrap">
+            <table class="tw-table tw-table-list tw-table-fixed">
+                <thead>
+                <tr>
+                    <th width="10" class="row-selected"><input class="checkbox check-all" type="checkbox"></th>
+                    <th width="15%">店铺名称</th>
+                    <th width="15%">真实姓名</th>
+                    <th width="15%">手机号</th>
+                </tr>
+                </thead>
+                <tbody id="list">
+
+                </tbody>
+                <script id="list_script" type="text/x-jquery-tmpl">
+                    <tr>
+                        <td><input id="${id}" class="ids row-selected" type="checkbox" name="chkbId" value="${id}_${user_name}"></td>
+                        <td class="text-left">${shop_name}</td>
+                        <td>${user_name}</td>
+                        <td>${telphone}</td>
+                    </tr>
+                </script>
+            </table>
+            <div id="list_fy" class="page" ></div>
+            <script id="list_fy_script" type="text/x-jquery-tmpl">
+                {{if count_page>1}}
+                    {{if curr_page>1}}
+                        <a class="prev" href="javascript:void(0)" onclick="ajaxMemberList({{= curr_page-1}})">&lt;&lt;</a>
+                    {{/if}}
+                {{/if}}
+                {{each page}}
+                    {{if curr_page==$value.page}}
+                        <span class="current">{{= $value.page}}</span>
+                    {{/if}}
+                    {{if curr_page!=$value.page}}
+                        <a class="num" href="javascript:void(0)" onclick="ajaxMemberList({{= $value.page}})">{{= $value.page}}</a>
+                    {{/if}}
+                {{/each}}
+                {{if curr_page!=count_page}}
+                    <a class="next" href="javascript:void(0)" onclick="ajaxMemberList({{= curr_page+1}})">&gt;&gt;</a>
+                {{/if}}
+            </script>
+        </div>
+    </div>
+    <div style="width:30%;float:left;text-align: right;">
+        <div class="button-div">
+            <br><br>
+            <a class="tw-tool-btn-copy top" href="javascript:void(0)" onclick="addUser()"><i class="tw-icon-copy"></i>添加选中数据</a>
+            <br><br>
+            <a class="tw-tool-btn-copy top" href="javascript:void(0)" onclick="deleteUser()"><i class="tw-icon-copy"></i>删除选中数据</a>
+            <br><br>
+            <a class="tw-tool-btn-copy top" href="javascript:void(0)" onclick="deleteAllUser()"><i class="tw-icon-copy"></i>删除全部数据</a>
+        </div>
+
+        <select id="members1" name="members1"  multiple="multiple" class="detaillist_select" style="width:120px;height:520px;">
+            <notempty name="memberIds">
+                <volist name="memberIds" id="vo">
+                    <option value="{$vo.id}">{$vo.name}</option>
+                </volist>
+            </notempty>
+        </select>
+    </div>
+    <div class="tw-tool-bar-bot" style="text-align:right;">
+        <button type="button" class="tw-act-btn-confirm" onclick='selectUsers("{$type}")'>确定</button>
+        <button type="button" onclick="parent.layer.closeAll();" class="tw-act-btn-cancel">返回</button>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__PUBLIC__/tmpl/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/tmpl/jquery.tmplPlus.min.js"></script>
+    <script type="text/javascript">
+        
+        $(function(){
+            //获取用户列表
+            ajaxMemberList(1);
+            //回填已选择用户信息
+            //realMemberInfo();
+            // 解决回车不能用的bug
+            $(document).keydown(function(event){
+                if(event.keyCode==13){
+                     ajaxMemberList();
+                }
+            })
+        })
+
+        function deleteUser(){
+            var idSelect=$("#members1 option:selected");
+            if(idSelect.size()==0){
+                alert("请选择要移除的人员！");
+                return;
+            }
+            $("#members1 option:selected").each(function(){
+                $(this).remove();
+            });
+        }
+
+        function deleteAllUser(){
+            $("#members1 option").each(function(){
+                $(this).remove();
+            });
+        }
+        
+        //增加选中数据
+        function addUser(){
+            var ids = checkedIds('chkbId');
+            if (ids==null || ids=='') {
+                return;
+            }
+            var rows = ids.split(',');
+            for(var i = 0;i<rows.length;i++){
+                var fla = true;
+                var result = rows[i].split('_');
+                var memNum = $("#members1 option").size();
+                if(memNum>0){
+                    $("#members1 option").each(function(){
+                        if($(this).val()==result[0]){
+                            fla = false;
+                        }
+                    });
+                }
+                if(fla){
+                    $("#members1").append("<option value='"+result[0]+"'>"+result[1]+"</option>");
+                }
+            }
+        }
+        
+        //获取用户列表
+        function ajaxMemberList(page){
+            keywords = $('.search-input').val();
+            var ids = $('#ids').val();
+            $.ajax({
+                type : "post",
+                dataType : "json",
+                data:{keywords:keywords, page:page, ids:ids},
+                url : "/Admin/AjaxGetMember/ajaxMemberSelectData",
+                success : function(data) {
+                    if (data.list==null || data.list=="") {
+                        $('#list').empty();
+                        $('#list_fy').empty();
+                        return;
+                    }
+                    $('#list').empty();
+                    $('#list_fy').empty();
+                    $("#list_script").tmpl(data.list).appendTo('#list');
+                    $("#list_fy_script").tmpl(data.page).appendTo('#list_fy');
+                }
+            })
+        }
+        
+        // 点击确定后的方法
+        function selectUsers(type){
+            var show_member = new Array(); //定义数组
+            var show_id = new Array(); //定义数组
+            $("#members1 option").each(function(){ //遍历全部option
+                var txt = $(this).text(); //获取option的内容
+                var val = $(this).val();
+                show_member.push(txt); //添加到数组中
+                show_id.push(val); //添加到数组中
+            });
+            if (show_id) {
+                parent.addOperatePerson(show_member, show_id);
+            } else {
+                parent.addOperatePerson(show_member, '');
+            }
+        }
+        
+        // 关闭父窗口
+        $(".tw-act-btn-confirm").click(function(){
+            var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+            parent.layer.close(index);
+        })
+        
+    </script>
+</block>

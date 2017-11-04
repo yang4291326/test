@@ -1,0 +1,152 @@
+/*
+*@module: form
+*@Author: guoleiting 2016-08-10
+*@Update: 
+*/
+
+//变量
+//---------------------------------
+$formItemMargin:           10px !default; //上下元素的间距
+$formLabelWidth:           100px !default; //当label和元素同行时，label的宽度
+$formTextWidth:            200px !default; //输入框的宽度
+$formTextarea:             500px 80px !default; //文本域宽度和高度
+$formEleHeight:            28px !default; //输入框的高度，label的高度，选择框的高度...
+$formInlineMargin:         10px !default; //相邻同行元素的间距
+$formUploadBgColor:        $primary !default; //upload按钮默认背景颜色
+$formRadius:               3px !default; //圆角大小，默认0将不会产生圆角
+
+
+
+// mixin
+//---------------------------------
+// radio & checkbox 的重置
+@mixin reset-radio-checkbox{
+	margin:0 5px 0 0;
+	padding:0;
+	font-size:13px;	
+}
+// 默认的样式mixin定义
+// 定义了border，padding及圆角
+@mixin ele-border($borderColor:$gray, $radius:$formRadius){
+	border: 1px solid #d0d0d0;
+	padding:3px 4px;
+	border-radius: $formRadius;
+	vertical-align: middle;
+}
+
+
+
+
+// 基本元素
+//---------------------------------
+.#{$baseClass}form-label{
+	font-size:14px;
+	line-height:$formEleHeight;
+}
+.#{$baseClass}form-text{
+	vertical-align:middle;
+	width:$formTextWidth;
+	height:$formEleHeight - 10px;//padding:4px;border-width:1px;
+}
+.#{$baseClass}form-textarea{
+	resize:none;
+	vertical-align:top;
+	overflow:auto;
+	width:nth($formTextarea,1);
+	height:nth($formTextarea,2);
+}
+.#{$baseClass}form-text, 
+.#{$baseClass}form-textarea, 
+.#{$baseClass}form-select{
+	@include ele-border;
+}
+.#{$baseClass}form-text:focus, 
+.#{$baseClass}form-textarea:focus, 
+.#{$baseClass}form-select:focus{
+	outline: 0 none;
+}
+
+
+.#{$baseClass}form-select{
+    // via Foundation
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important; // since Firefox 31 ?
+    padding: 3px 4px 2px;
+    padding-right: 20px;
+    background: #fff url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+') no-repeat 100% center;
+    &[multiple="multiple"] {
+      	background-image: none;
+    }
+    max-width: 200px;
+}
+
+
+// checkbox & radio
+// rc中的r表示radio，c表示checkbox
+.#{$baseClass}form-radio, 
+.#{$baseClass}form-checkbox{
+	@include reset-radio-checkbox;	
+}
+// rc's wrap
+.#{$baseClass}form-field-rc{
+	@extend %clearfix;
+}
+// rc inline
+.#{$baseClass}form-label-rc{
+    display: inline;
+    float: left;
+    font-size: 12px;
+    margin-right:$formInlineMargin;
+	line-height:$formEleHeight - 10px;// input height
+
+	.#{$baseClass}form-radio,
+	.#{$baseClass}form-checkbox,
+	span{
+		@include float;
+		line-height:$formEleHeight - 10px;// input height
+	}
+	.#{$baseClass}form-radio,
+	.#{$baseClass}form-checkbox{
+		margin-top:($formEleHeight - 10px - 13px) / 2;
+	}
+}
+
+
+
+.#{$baseClass}flow-bar,
+.#{$baseClass}search-bar,
+.#{$baseClass}form-inline{
+	.#{$baseClass}form-label{
+		@extend %ib;
+		vertical-align: middle;
+	}
+	.#{$baseClass}form-label-rc{
+		float: none;
+		@extend %ib;
+		vertical-align: middle;
+	}
+	.#{$baseClass}form-text,
+	.#{$baseClass}form-select,
+	.#{$baseClass}form-label-rc{
+		margin-right: $formInlineMargin;
+	}
+} 
+
+.#{$baseClass}search-bar{
+	.#{$baseClass}form-text{
+		width: 150px;
+	}
+	.#{$baseClass}form-gap{
+		margin: 0 5px 0 -5px;
+	}
+}
+
+.#{$baseClass}flow-bar{
+	.#{$baseClass}form-text,
+	.#{$baseClass}form-label-rc{
+		margin-right: 0;
+	}
+}
+
+
+

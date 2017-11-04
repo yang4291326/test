@@ -1,0 +1,17 @@
+table{
+	margin-left: 20px;
+}
+
+
+td{
+	padding-top:15px;
+	text-align: right;
+}
+th{
+	padding-top:15px;
+
+}
+
+input{
+	padding-left: 3rem;
+}

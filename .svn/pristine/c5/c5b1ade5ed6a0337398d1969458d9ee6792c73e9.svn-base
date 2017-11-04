@@ -1,0 +1,130 @@
+<extend name="Public/base"/>
+
+<block name="body">
+
+<div class="tw-layout">
+		<div class="tw-list-hd">
+			菜单管理
+		</div>
+		<notempty name="prompt_tips">
+			<div class="tw_list_tips">
+				<div class="tips-name">提示语：</div>
+				<div class="tips-content">{$prompt_tips}</div>
+			</div>
+		</notempty>
+	   <div class="tw-list-top">
+				<div class="tw-tool-bar">
+	    		<a class="tw-tool-btn-add" href="{:U('add',array('pid'=>I('get.pid',0)))}">
+	                <i class="tw-icon-plus-circle"></i> 添加
+	            </a>
+	    		<a class="tw-tool-btn-del" onclick="javascript:recycle('chkbId', '确认删除?!此步骤无法恢复!',true)">
+	                <i class="tw-icon-minus-circle"></i> 批量删除
+	            </a>
+	            <a class="tw-tool-btn-setting" href="{:U('sort',array('pid'=>I('get.pid',0)),'')}" >
+	                <i class="tw-icon-cogs"></i> 排序
+	            </a>
+	          </div>
+	        <form action="__SELF__" method="post" id='frmSearch'>
+                <div class="tw-search-bar">
+			        <!-- 高级搜索 -->
+			        <div class="search-form fr cf">
+			            <div class="sleft">
+							<input type="hidden"  name='pid' value="{:I('pid')}">
+			                <input type="text" name="title" class="search-input" value="{:I('title')}" placeholder="请输入菜单名称">
+			                <a type="submit" class="sch-btn" onclick="$('#frmSearch').submit();"><i
+                                    class="btn-search"></i></a>
+			            </div>
+			        </div>
+		        </div>
+            </form>
+	    </div>
+		
+		<div class="tw-list-wrap">
+	            <table class="tw-table tw-table-list tw-table-fixed">
+	                <colgroup>
+	                    <col width="50">
+	                    <col width="50">
+	                    <col width="150">
+	                    <col width="100">
+	                    <col width="100">
+	                    <col width="150">
+	                    <col width="50">
+	                    <col width="50">
+	                    <col width="250">
+	                </colgroup>
+	                <thead>
+	                    <tr>
+	                        <th class="row-selected">
+	                            <input class="checkbox check-all" type="checkbox">
+	                        </th>
+	                        <th>序号</th>
+	                        <th>名称</th>
+	                        <th>上级菜单</th>
+	                        <th>分组</th>
+	                        <th>URL</th>
+	                        <th>排序</th>
+	                        <th>展示</th>
+	                        <th>操作</th>
+	                    </tr>
+	                </thead>
+	                <tbody>
+	                	<notempty name="list">
+			                <volist name="list" id="menu" key="k">
+			                    <tr>
+			                        <td><input class="ids row-selected" type="checkbox" name="chkbId" value="{$menu.id}"></td>
+			                        <td>{$k|page_code}</td>
+			                        <td class="text-left">{$menu.title}</td>
+			                        <td>{$menu.up_title|default='无'}</td>
+			                        <td>{$menu.group}</td>
+			                        <td class="text-left">{$menu.url}</td>
+			                        <td>{$menu.sort}</td>
+			                        <td>
+			                            {$menu.display_text}
+			                        </td>
+			                        <td>
+				                        <a class="tw-tool-btn-copy" href="{:U('index?pid='.$menu['id'])}">
+							                <i class="tw-icon-copy"></i> 子菜单
+							            </a>
+			                        
+				                        <a class="tw-tool-btn-edit" href="{:U('edit?id='.$menu['id'])}">
+							                <i class="tw-icon-pencil"></i> 修改
+							            </a>
+							            <a class="tw-tool-btn-del" onclick="javascript:recycle({$menu['id']}, '确认删除?!此步骤无法恢复!',true)">
+
+							                <i class="tw-icon-minus-circle"></i> 删除
+							            </a>
+			                        </td>
+			                    </tr>
+			                </volist>
+						<else/>
+							<td colspan="9" class="text-center"> aOh! 暂时还没有内容! </td>
+						</notempty>
+					</tbody>
+		</table>
+		</div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        $(function() {
+            //点击排序
+        	$('.list_sort').click(function(){
+        		var url = $(this).attr('url');
+        		var ids = $('.ids:checked');
+        		var param = '';
+        		if(ids.length > 0){
+        			var str = new Array();
+        			ids.each(function(){
+        				str.push($(this).val());
+        			});
+        			param = str.join(',');
+        		}
+
+        		if(url != undefined && url != ''){
+        			window.location.href = url + '/ids/' + param;
+        		}
+        	});
+        });
+    </script>
+</block>

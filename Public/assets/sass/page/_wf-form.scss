@@ -1,0 +1,225 @@
+// 工作流自定义表单专属样式
+
+
+.wf-form-text{
+
+}
+.wf-form-text{
+	vertical-align:middle;
+	width:$formTextWidth;
+	height:$formEleHeight - 10px;//padding:4px;border-width:1px;
+}
+.wf-form-textarea{
+	resize:none;
+	vertical-align:top;
+	overflow:auto;
+	width:nth($formTextarea,1);
+	height:nth($formTextarea,2);
+}
+.wf-form-text, 
+.wf-form-textarea, 
+.wf-form-select{
+	@include ele-border;
+}
+.wf-form-text:focus, 
+.wf-form-textarea:focus, 
+.wf-form-select:focus{
+	outline: 0 none;
+}
+
+
+// checkbox & radio
+// rc中的r表示radio，c表示checkbox
+.wf-form-radio, 
+.wf-form-checkbox{
+	@include reset-radio-checkbox;	
+}
+// rc's wrap
+.wf-form-field-rc{
+	@extend %clearfix;
+}
+// rc inline
+.wf-form-label-rc{
+    // display: inline;
+    // float: left;
+	@include ib;
+    font-size: 12px;
+    margin-right:$formInlineMargin;
+	line-height:$formEleHeight - 10px;// input height
+
+	.wf-form-radio,
+	.wf-form-checkbox,
+	span{
+		@include float;
+	}
+	.wf-form-radio,
+	.wf-form-checkbox{
+		margin-top:($formEleHeight - 10px - 13px) / 2;
+	}
+}
+
+
+
+
+.wf-form{}
+.tw-table-form-mod{
+	padding-left: 10px;
+}
+.wf-form-hd{
+	font-weight: bolder;
+	font-size: 20px;
+	text-align: center;
+	margin: 15px 0;
+	position: relative;
+	.number{
+		font-weight: normal;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-size: 14px;
+	input{
+		width: 150px;
+		border: none;
+		color: $red;
+		background: #fff;
+		}
+	}
+}
+.wf-form-subhd{
+	font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    display: inline-block;
+    padding: 5px 10px;
+    // background: #cbddf5;
+    i{
+    	color: $primary;
+    	margin-right: 5px;
+    }
+
+}
+
+fieldset {
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    legend{
+    	padding: 0 5px;
+    	font-size: 16px;
+    }
+}
+
+
+.wf-form-bd{
+	border: 1px solid #000;
+	margin-bottom: 20px;
+}
+.tw-tab-panel .tw-tab-panel .wf-form-bd{
+	border: none;
+}
+.wf-form-btn{
+	@extend %btn-basic;
+	@include btn-size(10px, 24px, 22px, 12px);
+	@include btn-color($primary, #fff);
+	margin-right: 5px;
+}
+
+.wf-form-table{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	// margin-bottom: 20px;
+	th,td{
+		padding: 8px;
+	}
+  	thead th{
+    	text-align: left;
+  	}
+    // margin-bottom: 20px;
+    @include table-border;
+    font-size: 12px;
+    thead th{
+        text-align: center;
+        font-size: 14px;
+        font-weight: bolder;
+        color: $primary;
+    }
+    tbody th{
+        font-weight: normal;
+        text-align: right;
+        background: #e8eff9;
+		font-size: 13px;
+	// color: $primary;
+        em{
+            color: red;
+            margin-right: 3px;
+        }
+    }
+    .wf-form-text,
+    .wf-form-textarea{
+        width: 85%;
+        color: #666;
+        &.wdate{
+			width: 160px;
+        }
+    }
+    .tw-upfile-list{
+    	// margin-left: -18px;
+    }
+    select{
+		max-width: 200px;
+	}
+	.docformTableNoBD{
+		table td{
+			border: 0;
+			padding: 8px 0;
+		}
+	}
+}
+
+
+
+.wf-form-readonly{
+	@include disabled;
+}
+
+.wf-form-date{
+
+}
+.tw-input-datepick{
+	position: relative;
+
+	@include ib;
+	.wf-form-readonly{
+		// background-color: #fff!important;
+	}
+	.tw-icon-calendar{
+		position: absolute;
+		right: 8px;
+		top: 8px;
+	}
+}
+.tw-search-bar{
+	.tw-input-datepick{
+		margin-right: 10px;
+	}
+}
+
+
+
+
+// 多图连胜checkbox切换
+.wf-form-check-list{
+	padding-top: 1px;
+	.wf-form-check-item{
+		margin-top: -1px;
+	}	
+	
+}
+
+.tw-attr-contact{
+	cursor: pointer;
+}
+
+
+
+

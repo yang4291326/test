@@ -1,0 +1,275 @@
+.check-wrap{
+	min-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	background: url(../img/bg-check.jpg) no-repeat top center;
+	h2{
+		color: #284f97;
+		font-size: 24px;
+		padding: 15px 0 20px;
+	}
+	ul{
+		li{
+			display: inline-block;
+			margin: 15px 20px 5px 20px;
+			width: 145px;
+			text-align: center;
+			font-size: 16px;
+		}
+	}
+}
+
+@for $i from 1 through 9 {
+	&.check-ico#{$i}{
+		display: inline-block;
+		width: 135px;
+		height: 135px;
+		background: url(../img/ico-check.png) no-repeat;
+	    background-position: (135px-135*$i) 0px;
+	    cursor: pointer;
+	}
+}
+
+.check-current{
+	@for $i from 1 through 7 {
+		.check-ico#{$i}{
+		    background-position: (135px-135*$i) -135px;
+		}
+	}
+}
+
+
+@for $i from 1 through 8 {
+	&.check-ico-sm#{$i}{
+		display: inline-block;
+		vertical-align: middle;
+		width: 45px;
+		height: 45px;
+		background: url(../img/ico-check.png) no-repeat;
+	    background-position: (45px-45*$i) -300px;
+	}
+}
+
+.check-flow-head{
+	width: 275px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.check-arrow-head{
+	display: inline-block;
+	vertical-align: middle;
+	width: 45px;
+	height: 45px;
+	background: url(../img/ico-check.png) no-repeat;
+    background-position: -428px -300px;
+}
+
+
+.check-arrow{
+	display: inline-block;
+	vertical-align: middle;
+	width: 80px;
+	height: 45px;
+	background: url(../img/ico-check.png) no-repeat;
+    background-position: -494px -300px;
+}
+.check-note{
+	display: inline-block;
+	vertical-align: middle;
+	width: 130px;
+	text-align: center;
+	border: 1px solid #998ee2;
+	.title{
+		display: block;
+		text-align: center;
+		height: 32px;
+		line-height: 32px;
+		background: #998ee2;
+		color: #fff;
+	}
+}
+
+.check-step{
+	display: inline-block;
+	vertical-align: middle;
+	width: 350px;
+	padding: 20px;
+	background: #fbfbfb;
+	border: 1px solid #e6e6e6;
+}
+.check-step-item{
+	margin-bottom: 10px;
+}
+.check-step-note{
+	display: inline-block;
+	vertical-align: middle;
+	width: 170px;
+	border: 1px solid #ffa45b;
+	.title{
+		display: block;
+		padding: 5px 10px 5px 5px;
+		// height: 30px;
+		color: #fff;
+		background: #ffa45b;
+		span{
+			width: 100px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	.date{
+		display: block;
+		text-align: center;
+		padding: 5px;
+	}
+}
+
+
+.check-step-status{
+	margin-left: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 150px;
+	.check-status-title{
+		display: block;
+		text-align: center;
+		margin-bottom: 5px;
+		border: 1px dashed #6ac968;
+		span{
+			color: #6ac968;
+		}
+	}
+	.check-status-progress{
+		background: #96df95;
+		height: 8px; 
+		border-radius: 3px;
+		span{
+			display: block;
+			height: 8px;
+			width: 100%;
+			border-radius: 3px;
+			background: #5ec15c;
+		}
+	}
+}
+.check-flow-tail{
+	width: 440px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.check-tail-note{
+	display: inline-block;
+	vertical-align: middle;
+	width: 130px;
+	background: #999;
+	color: #fff;
+	text-align: center;
+	height: 32px;
+	line-height: 32px;
+}
+
+	
+.img-va{
+	width: 100px;
+	height: 100px; 
+	display: none; 
+	position: absolute; 
+	right: 0; top:0;
+	z-index: 9999;
+}
+.img-true{
+	background: url(../img/img-true.png);
+}
+.img-false{
+	background: url(../img/img-false.png);
+}
+
+	
+
+
+.check-course{
+	width: 437px;
+	margin: 60px auto 40px;
+	text-align: center;
+	background: url(../img/bg-check-step.png) no-repeat;
+	.check-course-item{
+		position: relative;
+		display: block;
+		float: left;
+		width: 145px;
+		height: 121px;
+		.course-arrow{
+			position: absolute;
+			top: -26px;
+			left: 63px;
+			display: none;
+			width: 22px;
+			height: 26px;
+			background: url(../img/arrow-check-step.png) no-repeat;
+		}
+		.course-time{
+			position: absolute;
+			bottom: 0;
+			left: 17px;
+			width: 105px;
+			height: 26px;
+			line-height: 26px;
+			text-align: center;
+			border: 1px dotted #000;
+			border-radius: 5px;
+		}
+		&.item1{
+			.course-time{
+				border-color: #7cc67b;
+				color: #7cc67b;
+			}
+			&.current{
+				.course-time{
+					background: #7cc67b;
+					color: #fff;
+				}
+			}
+		}
+		&.item2{
+			.course-arrow{
+				background-position: -22px 0;
+			}
+			.course-time{
+				border-color: #b293d6;
+				color: #b293d6;
+			}
+			&.current{
+				.course-time{
+					background: #b293d6;
+					color: #fff;
+				}
+			}
+		}
+		&.item3{
+			.course-arrow{
+				background-position: -44px 0;
+			}
+			.course-time{
+				border-color: #7897d7;
+				color: #7897d7;
+			}
+			&.current{
+				.course-time{
+					background: #7897d7;
+					color: #fff;
+				}
+			}
+		}
+		&.current{
+			.course-arrow{
+				display: block;
+			}
+		}
+	}
+}
+
+
+
+
+
+

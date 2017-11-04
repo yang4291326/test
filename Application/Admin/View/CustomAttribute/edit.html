@@ -1,0 +1,155 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="tw-layout">
+    	<div class="tw-list-hd">{:isset($info['id'])?'编辑':'新增'}自定义属性</div>
+        <div class="tw-list-wrap tw-edit-wrap">
+            <form action="__SELF__" method="post" class="form-horizontal ajaxForm">
+                <div class="form-item">
+                    <label class="item-label">自定义属性名称<span class="check-tips"><b>*</b>（请输入自定义属性名称）</span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="attr_name" value="{$info.attr_name}">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">属性类型<span class="check-tips"><b>*</b>（请选择属性类型）</span></label>
+                    <div class="controls">
+                        <select name="attr_type" id="attr_type_id" onchange="show_value(this.value)">
+                            <option value="0">文本</option>
+                            <option value="1">数字</option>
+                            <option value="2">枚举</option>
+                        </select>
+                        <script>
+                            $('#attr_type_id').val("{$info.attr_type|default=0}");
+                        </script>
+                    </div>
+                </div>
+                
+                <div class="form-item" id="showValue" style="display:none;">
+                    <label class="item-label">属性值<span class="check-tips"><b>*</b>（属性值必须填写,【中间用,隔开】）</span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="attr_value" value="{$info.attr_value}" placeholder="自定义属性值1,自定义属性值2">
+                    </div>
+                </div>
+                
+                <div class="form-item trainTime">
+                    <label class="item-label">属性排序<span class="check-tips">（请输入属性排序）</span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="attr_sort" value="{$info.attr_sort}">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">属性是否必填<span class="check-tips"><b>*</b></span></label>
+                    <label class="wf-form-label-rc">
+                        <input type="radio" value="1" name="attr_require" id="isRequireTure" checked="checked"> 是
+                    </label>
+                    <label class="wf-form-label-rc">
+                        <input type="radio" value="0" name="attr_require" id="isRequireFalse"> 否
+                    </label>
+                    <if condition="$info['attr_require'] eq 0">
+                        <script>
+                            $('#isRequireFalse').attr('checked', 'checked');
+                        </script>
+                    </if>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">属性所属模式<span class="check-tips"><b>*</b></span></label>
+                    <label class="wf-form-label-rc">
+                        <input type="radio" value="2" name="attr_mode" id="modeAll" checked="checked"> 所有
+                    </label>
+                    <label class="wf-form-label-rc">
+                        <input type="radio" value="1" name="attr_mode" id="modeAdmin"> 管理员
+                    </label>
+                    <label class="wf-form-label-rc">
+                        <input type="radio" value="0" name="attr_mode" id="modeMeber"> 商户
+                    </label>
+                    <if condition="$info['attr_mode'] eq 1">
+                        <script>
+                            $('#modeAdmin').attr('checked', 'checked');
+                        </script>
+                    <elseif condition="$info['attr_mode'] eq 0"/>
+                        <script>
+                            $('#modeMeber').attr('checked', 'checked');
+                        </script>                    
+                    </if>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">属性控件格式<span class="check-tips"><b>*</b></span></label>
+                    <label class="wf-form-label-rc">
+                        <input type="radio" value="0" name="arrt_control" id="controlNull" checked="checked"> 无
+                    </label>
+                    <label class="wf-form-label-rc">
+                        <input type="radio" value="1" name="arrt_control" id="controlTime"> 时间
+                    </label>
+                    <label class="wf-form-label-rc">
+                        <input type="radio" value="2" name="arrt_control" id="controlEmaill"> 邮箱
+                    </label>
+                    <if condition="$info['arrt_control'] eq 1">
+                        <script>
+                            $('#controlTime').attr('checked', 'checked');
+                        </script>
+                    <elseif condition="$info['arrt_control'] eq 2"/>
+                        <script>
+                            $('#controlEmaill').attr('checked', 'checked');
+                        </script>                    
+                    </if>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">属性后台是否可操作<span class="check-tips"><b>*</b></span></label>
+                    <label class="wf-form-label-rc">
+                        <input type="radio" value="1" name="is_edit" id="isEditTure" checked="checked"> 是
+                    </label>
+                    <label class="wf-form-label-rc">
+                        <input type="radio" value="0" name="is_edit" id="isEditFalse"> 否
+                    </label>
+                    <if condition="$info['is_edit'] eq 0">
+                        <script>
+                            $('#isEditFalse').attr('checked', 'checked');
+                        </script>
+                    </if>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">属性状态<span class="check-tips"><b>*</b></span></label>
+                    <label class="wf-form-label-rc">
+                        <input type="radio" value="0" name="attr_status" id="isTypeTure" checked="checked"> 可用
+                    </label>
+                    <label class="wf-form-label-rc">
+                        <input type="radio" value="1" name="attr_status" id="isTypeFalse"> 禁用
+                    </label>
+                    <if condition="$info['attr_status'] eq 1">
+                        <script>
+                            $('#isTypeFalse').attr('checked', 'checked');
+                        </script>
+                    </if>
+                </div>
+                <div class="tw-tool-bar-bot">
+                    <button type="submit" class="tw-act-btn-confirm">提交</button>
+                    <button type="button" onclick="goback()" class="tw-act-btn-cancel">返回</button>
+                </div>
+                    <input type="hidden" name="id" value="{$info.id|default=''}"/>
+            </form>
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script>
+        
+        // 刚进入页面的时候判断属性值是否显示
+        $(function(){
+            if ("{$info['attr_type']}" === "2") {
+                $("#showValue").show();
+            }     
+        });  
+        
+        // js设置属性值是否显示
+        function show_value(type){
+            if (type == 2) {
+                $("#showValue").show();                
+            } else {
+                $("#showValue").hide(); 
+            }
+        }
+
+    </script>
+</block>

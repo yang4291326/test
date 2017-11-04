@@ -1,0 +1,1296 @@
+[ 2017-05-02T09:11:56+08:00 ] ::1 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-02T09:11:56+08:00 ] ::1 /index.php/Admin/Public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-02T09:11:57+08:00 ] ::1 /index.php/Admin/Public/verify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2017-05-02T09:12:09+08:00 ] ::1 /index.php/Upgrade/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Index
+
+[ 2017-05-02T09:12:16+08:00 ] ::1 /index.php/Upgrade/UpgradeTypeApi/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index
+
+[ 2017-05-02T09:12:26+08:00 ] ::1 /index.php/Upgrade/UpgradeTypeApi/getType
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `machine_code` = '54d71d6cd61438ce' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `ln_upgrade_detail` WHERE ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `file_path`,`version` FROM `ln_upgrade` WHERE ( `id` = '1' ) AND ( `type` = 2 )  [ RunTime:0.000000s ]
+
+[ 2017-05-02T09:13:48+08:00 ] ::1 /index.php/Upgrade/UpgradeTypeApi/getType
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `machine_code` = '' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ln_upgrade_detail` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.002000s ]
+SQL: SELECT `file_path`,`version` FROM `ln_upgrade` WHERE ( `id` = null ) AND ( `type` = 2 )  [ RunTime:0.001000s ]
+
+[ 2017-05-02T09:14:58+08:00 ] ::1 /index.php/Upgrade/UpgradeTypeApi/getType
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-02T09:15:17+08:00 ] ::1 /index.php/Upgrade/UpgradeTypeApi/getType
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-02T09:17:11+08:00 ] ::1 /index.php/Upgrade/UpgradeTypeApi/getType
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-02T09:17:12+08:00 ] ::1 /index.php/Upgrade/UpgradeTypeApi/getType
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-02T09:17:31+08:00 ] ::1 /index.php/Upgrade/UpgradeTypeApi/getType
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-02T09:20:57+08:00 ] ::1 /index.php/Upgrade/UpgradeTypeApi/getType
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-02T09:21:06+08:00 ] ::1 /index.php/Upgrade/UpgradeTypeApi/getType
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-02T09:21:23+08:00 ] ::1 /index.php/Upgrade/UpgradeTypeApi/getType
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-02T09:21:37+08:00 ] ::1 /index.php/Upgrade/UpgradeTypeApi/getType
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `machine_code` = '54d71d6cd61438ce' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ln_upgrade_detail` WHERE ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.002000s ]
+SQL: SELECT `file_path`,`version` FROM `ln_upgrade` WHERE ( `id` = '1' ) AND ( `type` = 2 )  [ RunTime:0.001000s ]
+
+[ 2017-05-02T09:28:13+08:00 ] ::1 /index.php/Upgrade/UpgradeTypeApi/getType
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `machine_code` = '54d71d6cd61438ce' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ln_upgrade_detail` WHERE ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `file_path`,`version` FROM `ln_upgrade` WHERE ( `id` = '1' ) AND ( `type` = 2 )  [ RunTime:0.000000s ]
+
+[ 2017-05-02T09:28:27+08:00 ] ::1 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-02T10:25:06+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: code D:\WWW\WWW\furnitureshop\Application\Common\Controller\CommonApiController.class.php 第 10 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\WWW\furnitureshop\Application\Common\Controller\CommonApiController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-05-02T10:27:07+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-05-02T10:28:14+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '691282114647190688' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=6) [ RunTime:0.015600s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=7) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=8) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=9) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=10) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=11) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=12) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=14) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=15) [ RunTime:0.000000s ]
+
+[ 2017-05-02T10:29:32+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '691282114647190688' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=6) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=7) [ RunTime:0.015600s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=8) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=9) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=10) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=11) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=12) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=14) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=15) [ RunTime:0.000000s ]
+
+[ 2017-05-02T10:46:10+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '691282114647190688' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-05-02T10:46:19+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '691282114647190688' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-05-02T10:46:47+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '517965905190066553' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=6) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=7) [ RunTime:0.015600s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=8) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=9) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=10) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=11) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=12) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=14) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=15) [ RunTime:0.000000s ]
+
+[ 2017-05-02T10:52:39+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '517965905190066553' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=6) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=7) [ RunTime:0.016600s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=8) [ RunTime:0.001000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=9) [ RunTime:0.001000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=10) [ RunTime:0.002000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=11) [ RunTime:0.001000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=12) [ RunTime:0.002000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=14) [ RunTime:0.002000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=15) [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.002000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=81 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=101 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=109 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.002000s ]
+
+[ 2017-05-02T10:53:37+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '517965905190066553' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.001000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=6) [ RunTime:0.002000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=7) [ RunTime:0.001000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=8) [ RunTime:0.002000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=9) [ RunTime:0.001000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=10) [ RunTime:0.001000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=11) [ RunTime:0.002000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=12) [ RunTime:0.001000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=14) [ RunTime:0.002000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=15) [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=81 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=101 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=109 ) LIMIT 1   [ RunTime:0.015600s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-05-02T10:54:21+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '517965905190066553' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=6) [ RunTime:0.015600s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=7) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=8) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=9) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=10) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=11) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=12) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=14) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=15) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.015600s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=81 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=101 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=109 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-05-02T11:06:46+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '517965905190066553' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-05-02T11:07:39+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '517965905190066553' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-05-02T11:08:57+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '517965905190066553' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-05-02T11:10:09+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '517965905190066553' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-05-02T11:10:10+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '517965905190066553' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-05-02T11:12:02+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '517965905190066553' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-05-02T11:27:52+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-05-02T11:28:24+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.002000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=6) [ RunTime:0.002000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=7) [ RunTime:0.001000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=8) [ RunTime:0.002000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=9) [ RunTime:0.001000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=10) [ RunTime:0.002000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=11) [ RunTime:0.002000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=12) [ RunTime:0.001000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=14) [ RunTime:0.002000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=15) [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.002000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=81 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=101 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=109 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-05-02T11:36:33+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=6) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=7) [ RunTime:0.015600s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=8) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=9) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=10) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=11) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=12) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=14) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=15) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=81 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=101 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=109 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-05-02T11:38:31+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=6) [ RunTime:0.015600s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=7) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=8) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=9) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=10) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=11) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=12) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=14) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=15) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.015600s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=81 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=101 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=109 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-05-02T11:43:05+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=6) [ RunTime:0.015600s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=7) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=8) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=9) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=10) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=11) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=12) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=14) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=15) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.015600s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=56 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=81 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=101 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=109 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_count` FROM `ln_favorite_detail` WHERE ( favorite_id=102 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-05-02T11:45:02+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=6) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=7) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=8) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=9) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=10) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=11) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=12) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=14) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=15) [ RunTime:0.000000s ]
+
+[ 2017-05-02T11:57:06+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=6) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=7) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=8) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=9) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=10) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=11) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=12) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=14) [ RunTime:0.015600s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=15) [ RunTime:0.000000s ]
+
+[ 2017-05-02T11:57:17+08:00 ] ::1 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-02T11:57:36+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=6) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=7) [ RunTime:0.015600s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=8) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=9) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=10) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=11) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=12) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=14) [ RunTime:0.000000s ]
+SQL: select id,customer_name,customer_phone,customer_address,customer_deposit,customer_code,price_total FROM ln_favorite where id=(select collection_id FROM ln_shopping_cart where id=15) [ RunTime:0.000000s ]
+
+[ 2017-05-02T14:30:23+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 8 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 8 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('347') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('10') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('10') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count FROM ln_favorite_detail where id in(select id FROM ln_favorite WHERE id=(select collection_id FROM ln_shopping_cart where id=8)) [ RunTime:0.015600s ]
+
+[ 2017-05-02T14:33:49+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 8 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 8 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('347') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('10') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('10') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.015600s ]
+SQL: select goods_count FROM ln_favorite_detail where id in(select id FROM ln_favorite WHERE id=(select collection_id FROM ln_shopping_cart where id=8)) [ RunTime:0.000000s ]
+
+[ 2017-05-02T14:34:10+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 9 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 9 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('347','311') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.001000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('10','2') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('10','2') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.001000s ]
+SQL: select goods_count FROM ln_favorite_detail where id in(select id FROM ln_favorite WHERE id=(select collection_id FROM ln_shopping_cart where id=9)) [ RunTime:0.001000s ]
+
+[ 2017-05-02T14:58:38+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 9 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 9 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('347','311') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('10','2') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('10','2') )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: goods_count D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 97 行.
+NOTIC: [8] Undefined variable: goods_count D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 97 行.
+
+[ 2017-05-02T15:52:55+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 2 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 2 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.002000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: goods_count D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 97 行.
+NOTIC: [8] Undefined variable: goods_count D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 97 行.
+
+[ 2017-05-02T15:52:59+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 3 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 3 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('355','327') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.002000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('3','6') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('3','6') )  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: goods_count D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 97 行.
+NOTIC: [8] Undefined variable: goods_count D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 97 行.
+
+[ 2017-05-02T15:53:04+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.015600s ]
+NOTIC: [8] Undefined variable: goods_count D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 97 行.
+NOTIC: [8] Undefined variable: goods_count D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 97 行.
+
+[ 2017-05-02T15:53:12+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 4 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 4 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('355','327') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('3','6') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('3','6') )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: goods_count D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 97 行.
+NOTIC: [8] Undefined variable: goods_count D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 97 行.
+
+[ 2017-05-02T15:53:15+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 5 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 5 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('311') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.001000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('2') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('2') )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: goods_count D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 97 行.
+
+[ 2017-05-02T15:54:22+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: goods_count D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 97 行.
+NOTIC: [8] Undefined variable: goods_count D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 97 行.
+
+[ 2017-05-02T17:06:29+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.001000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM ln_select goods_count from ln_favorite_detail _w_h_e_r_e favorite_id=(select collection_id from ln_shopping_cart _w_h_e_r_e id=(select cart_id _f_r_o_m ln_shopping_cart_detail _w_h_e_r_e id=1 _a_n_d goods_id=1))_a_n_d goods_id=13; [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'goods_count from ln_favorite_detail _w_h_e_r_e favorite_id=(select collection_id' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM ln_select goods_count from ln_favorite_detail _w_h_e_r_e favorite_id=(select collection_id from ln_shopping_cart _w_h_e_r_e id=(select cart_id _f_r_o_m ln_shopping_cart_detail _w_h_e_r_e id=1 _a_n_d goods_id=1))_a_n_d goods_id=13;
+
+[ 2017-05-02T17:06:45+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM ln_select goods_count from ln_favorite_detail _w_h_e_r_e favorite_id=(select collection_id from ln_shopping_cart _w_h_e_r_e id=(select cart_id _f_r_o_m ln_shopping_cart_detail _w_h_e_r_e id=1 _a_n_d goods_id=1))_a_n_d goods_id=13; [ RunTime:0.015600s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'goods_count from ln_favorite_detail _w_h_e_r_e favorite_id=(select collection_id' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM ln_select goods_count from ln_favorite_detail _w_h_e_r_e favorite_id=(select collection_id from ln_shopping_cart _w_h_e_r_e id=(select cart_id _f_r_o_m ln_shopping_cart_detail _w_h_e_r_e id=1 _a_n_d goods_id=1))_a_n_d goods_id=13;
+
+[ 2017-05-02T17:07:23+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=1 AND goods_id=1))AND goods_id=13; [ RunTime:0.000000s ]
+
+[ 2017-05-02T17:10:21+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-02T17:10:54+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.002000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.001000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=2))AND goods_id=13 [ RunTime:0.002000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=1))AND goods_id=1 [ RunTime:0.001000s ]
+
+[ 2017-05-02T17:12:13+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=2))AND goods_id=13 [ RunTime:0.001000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=1))AND goods_id=1 [ RunTime:0.002000s ]
+
+[ 2017-05-02T17:12:29+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.015600s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=2))AND goods_id=13 [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=1))AND goods_id=1 [ RunTime:0.000000s ]
+
+[ 2017-05-02T17:12:37+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 2 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 2 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.001000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.002000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=4))AND goods_id=13 [ RunTime:0.001000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=3))AND goods_id=1 [ RunTime:0.002000s ]
+
+[ 2017-05-02T17:12:40+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 3 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 3 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('355','327') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.002000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('3','6') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('3','6') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.002000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=6))AND goods_id=3 [ RunTime:0.002000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=5))AND goods_id=6 [ RunTime:0.002000s ]
+
+[ 2017-05-02T17:12:44+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 4 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 4 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('355','327') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('3','6') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('3','6') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=8))AND goods_id=3 [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=7))AND goods_id=6 [ RunTime:0.000000s ]
+
+[ 2017-05-02T17:12:47+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 5 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 5 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('311') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('2') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=9))AND goods_id=2 [ RunTime:0.015600s ]
+
+[ 2017-05-02T17:14:51+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 6 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 6 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('307','355') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('1','3') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('1','3') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=11))AND goods_id=1 [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=10))AND goods_id=3 [ RunTime:0.015600s ]
+
+[ 2017-05-02T17:14:54+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 7 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 7 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('307','355') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('1','3') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('1','3') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=13))AND goods_id=1 [ RunTime:0.015600s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=12))AND goods_id=3 [ RunTime:0.000000s ]
+
+[ 2017-05-02T17:15:00+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 8 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 8 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('347') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.001000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('10') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('10') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.002000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=14))AND goods_id=10 [ RunTime:0.001000s ]
+
+[ 2017-05-02T17:15:03+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 9 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 9 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('347','311') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('10','2') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('10','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=16))AND goods_id=10 [ RunTime:0.015600s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=15))AND goods_id=2 [ RunTime:0.000000s ]
+
+[ 2017-05-02T17:15:07+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 10 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 10 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('311') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('2') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=17))AND goods_id=2 [ RunTime:0.015600s ]
+
+[ 2017-05-02T17:16:02+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 11 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 11 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('359') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('14') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('14') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=18))AND goods_id=14 [ RunTime:0.000000s ]
+
+[ 2017-05-02T17:16:05+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 12 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 12 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('311') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.002000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('2') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('2') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.001000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=19))AND goods_id=2 [ RunTime:0.001000s ]
+
+[ 2017-05-02T17:16:08+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 13 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 13 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('363','380') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('61','65') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('61','65') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.015600s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=21))AND goods_id=61 [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=20))AND goods_id=65 [ RunTime:0.000000s ]
+
+[ 2017-05-02T17:16:13+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 14 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 14 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.015600s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=22))AND goods_id=13 [ RunTime:0.000000s ]
+
+[ 2017-05-02T17:16:17+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 15 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 15 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('359') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.002000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('14') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('14') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.002000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=23))AND goods_id=14 [ RunTime:0.001000s ]
+
+[ 2017-05-02T17:16:20+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 16 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 16 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('363','380','395','387','383','375') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.002000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('61','65','69','67','66','64') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('61','65','69','67','66','64') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.002000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=29))AND goods_id=61 [ RunTime:0.001000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=28))AND goods_id=65 [ RunTime:0.002000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=27))AND goods_id=69 [ RunTime:0.001000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=26))AND goods_id=67 [ RunTime:0.002000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=25))AND goods_id=66 [ RunTime:0.002000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=24))AND goods_id=64 [ RunTime:0.001000s ]
+
+[ 2017-05-02T17:16:29+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 17 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 17 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('415') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.002000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('74') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('74') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.001000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=30))AND goods_id=74 [ RunTime:0.001000s ]
+
+[ 2017-05-02T17:44:23+08:00 ] ::1 /index.php/Goods/GoodsCartApi/searchshoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`collection_sn`,`add_time` FROM `ln_shopping_cart` WHERE ( `member_id` = '2' ) AND ( `status` = 0 ) ORDER BY id asc  [ RunTime:0.000000s ]
+
+[ 2017-05-02T17:48:00+08:00 ] ::1 /index.php/Goods/GoodsCartApi/searchshoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-02T17:54:05+08:00 ] ::1 /index.php/Goods/GoodsCartApi/searchshoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.001000s ]
+SQL: SELECT `customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`price_total` FROM `ln_favorite` WHERE ( `customer_name` LIKE '%号楼%' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-05-02T17:54:12+08:00 ] ::1 /index.php/Goods/GoodsCartApi/searchshoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`price_total` FROM `ln_favorite` WHERE ( `customer_name` LIKE '%号%' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-05-02T17:54:19+08:00 ] ::1 /index.php/Goods/GoodsCartApi/searchshoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.002000s ]
+SQL: SELECT `customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`price_total` FROM `ln_favorite` WHERE ( `customer_name` LIKE '%哈%' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-05-02T17:54:37+08:00 ] ::1 /index.php/Goods/GoodsCartApi/searchshoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`price_total` FROM `ln_favorite` WHERE ( `customer_name` LIKE '%块%' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-05-02T17:55:10+08:00 ] ::1 /index.php/Goods/GoodsCartApi/searchshoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`price_total` FROM `ln_favorite` WHERE ( `customer_name` LIKE '%你%' ) LIMIT 1   [ RunTime:0.010000s ]
+
+[ 2017-05-02T17:55:34+08:00 ] ::1 /index.php/Goods/GoodsCartApi/searchshoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`price_total` FROM `ln_favorite` WHERE ( `customer_name` LIKE '%你%' )  [ RunTime:0.010000s ]
+
+[ 2017-05-02T17:59:53+08:00 ] ::1 /index.php/Goods/GoodsCartApi/searchshoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`price_total` FROM `ln_favorite` WHERE ( `customer_name` LIKE '%你%' )  [ RunTime:0.010000s ]
+
+[ 2017-05-02T18:06:03+08:00 ] ::1 /index.php/Goods/GoodsCartApi/searchshoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`price_total` FROM `ln_favorite` WHERE ( `customer_name` LIKE '%你%' ) AND ( `member_id` = 2 ) AND ( `status` = 0 )  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-02T18:48:34+08:00 ] ::1 /index.php/Goods/GoodsCartApi/searchshoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.010000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`price_total` FROM `ln_favorite` WHERE ( `customer_name` LIKE '%你%' ) AND ( `member_id` = 2 ) AND ( `status` = 0 )  [ RunTime:0.000000s ]
+

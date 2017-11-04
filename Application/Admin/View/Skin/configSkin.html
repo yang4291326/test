@@ -1,0 +1,92 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <!-- S=头部设置 -->
+    <div class="tw-layout">
+        <!-- S=皮肤管理 -->
+        <div class="tw-list-hd">皮肤管理</div>
+        <!-- E=文章管理 -->
+        <!-- S=导航设置 -->
+        <div class="tw-list-top">
+            <!-- S=添加删除 -->
+            <div class="tw-tool-bar">
+            </div>
+            <!-- E=添加删除 -->
+            <!-- S=高级搜索 -->
+            <form action="__ACTION__" method="post" id='frmSearch'>
+                <div class="tw-search-bar">
+                    <div class="search-form fr cf">
+                        <div class="sleft">
+                            <input type="text" name="keywords" class="search-input" value="{:I('name')}" placeholder="请输入皮肤名称">
+                            <a type="submit" class="sch-btn" onclick="$('#frmSearch').submit();"><i class="btn-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- E=高级搜索 -->
+        </div>
+        <!-- E=导航设置 -->
+    </div>
+    <!-- E=头部设置 -->
+    <!-- S=详情显示 -->
+    <div class="tw-list-wrap">
+        <!-- S=表单 -->
+        <form class="ids">
+            <table class="tw-table tw-table-list tw-table-fixed">
+                <thead>
+                <tr>
+                    <th class="row-selected"><input class="checkbox check-all" type="checkbox"></th>
+                    <th width="50">ID</th>
+                    <th width="15%">皮肤名称</th>
+                    <th width="5%">皮肤图标</th>
+                    <th class="show-time">添加时间</th>
+                    <th width="50">排序</th>
+                    <th width="150">操作</th>
+                </tr>
+                </thead>
+                <!-- S=详细信息 -->
+                <tbody>
+                <notempty name="data">
+                    <volist name="data" id="vo">
+                        <tr>
+                            <td><input class="ids row-selected" type="checkbox" name="chkbId" value="{$vo.id}"></td>
+                            <td>{$vo.id}</td>
+                            <td class="text-left">{$vo.name}</td>
+                            <td><img src="{$vo.photo_path}" width="50" height="50"></td>
+                            <td>{$vo.add_time|time_format}</td>
+                            <td>{$vo.sort}</td>
+                            <td>
+                                <if condition="$defaultSkin neq $vo['id']">
+                                    <a class="tw-tool-btn-setting" onclick="ajaxChangeDefault({$vo.id})" href="javascript:;"><i class="tw-icon-check-square-o"></i> 设为默认 </a>
+                                <else />
+                                    默认皮肤
+                                </if>
+                            </td>
+                        </tr>
+                    </volist>
+                <else/>
+                    <td colspan="7" class="text-center"> aOh! 暂时还没有内容! </td>
+                </notempty>
+                </tbody>
+                <!-- E=详细信息 -->
+            </table>
+        </form>
+        <!-- E=表单 -->
+        <div class="page">{$page['page']}</div>
+    </div>
+    <!-- E=详情显示 -->
+</block>
+
+<block name="script">
+    <script type="text/javascript">        
+        // 设置为默认启动页
+        function ajaxChangeDefault(id){
+            url = "<?php echo U('Admin/Skin/ajaxChangeSkin', '', ''); ?>?id="+ id;
+            $.get(url, function(data){
+                if(data.status = 1){
+                    window.location.reload(); //刷新当前页面
+                } 
+            });
+        }
+    </script>
+</block>

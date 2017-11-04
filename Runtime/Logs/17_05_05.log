@@ -1,0 +1,2630 @@
+[ 2017-05-05T09:13:29+08:00 ] ::1 /index.php/Goods/FavoriteDetailApi/getFavoriteDetailVRList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '983052931041478474' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`colour`,`like_level`,`add_time`,`goods_count` FROM `ln_favorite_detail` WHERE ( `favorite_id` = 56 ) AND ( `status` = 0 ) ORDER BY add_time desc, id desc  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` = '91' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SELECT `goods_img` FROM `ln_shop_goods` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute_value` [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '19' ) AND ( `attribute_id` = 1 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '19' ) AND ( `attribute_id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '19' ) AND ( `attribute_id` = 4 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_model` [ RunTime:0.002000s ]
+SQL: select count(*) from ln_shop_goods_model where id in (select resource.model_id from ln_shop_goods_model_resource as resource
+            where photo_resource_path is not null and photo_resource_path != ''
+            and group_no is not null and group_no != '' and
+            map_path is not null and map_path != '' and
+            material_ball_name is not null and material_ball_name != '' ) and goods_id = 19 [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` = '76' )  [ RunTime:0.001000s ]
+SQL: SELECT `goods_img` FROM `ln_shop_goods` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '16' ) AND ( `attribute_id` = 1 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '16' ) AND ( `attribute_id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '16' ) AND ( `attribute_id` = 4 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: select count(*) from ln_shop_goods_model where id in (select resource.model_id from ln_shop_goods_model_resource as resource
+            where photo_resource_path is not null and photo_resource_path != ''
+            and group_no is not null and group_no != '' and
+            map_path is not null and map_path != '' and
+            material_ball_name is not null and material_ball_name != '' ) and goods_id = 16 [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` = '359' )  [ RunTime:0.001000s ]
+SQL: SELECT `goods_img` FROM `ln_shop_goods` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '14' ) AND ( `attribute_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '14' ) AND ( `attribute_id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '14' ) AND ( `attribute_id` = 4 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: select count(*) from ln_shop_goods_model where id in (select resource.model_id from ln_shop_goods_model_resource as resource
+            where photo_resource_path is not null and photo_resource_path != ''
+            and group_no is not null and group_no != '' and
+            map_path is not null and map_path != '' and
+            material_ball_name is not null and material_ball_name != '' ) and goods_id = 14 [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` = '61' )  [ RunTime:0.001000s ]
+SQL: SELECT `goods_img` FROM `ln_shop_goods` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '13' ) AND ( `attribute_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '13' ) AND ( `attribute_id` = 3 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '13' ) AND ( `attribute_id` = 4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: select count(*) from ln_shop_goods_model where id in (select resource.model_id from ln_shop_goods_model_resource as resource
+            where photo_resource_path is not null and photo_resource_path != ''
+            and group_no is not null and group_no != '' and
+            map_path is not null and map_path != '' and
+            material_ball_name is not null and material_ball_name != '' ) and goods_id = 13 [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` = '327' )  [ RunTime:0.001000s ]
+SQL: SELECT `goods_img` FROM `ln_shop_goods` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '6' ) AND ( `attribute_id` = 1 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '6' ) AND ( `attribute_id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '6' ) AND ( `attribute_id` = 4 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: select count(*) from ln_shop_goods_model where id in (select resource.model_id from ln_shop_goods_model_resource as resource
+            where photo_resource_path is not null and photo_resource_path != ''
+            and group_no is not null and group_no != '' and
+            map_path is not null and map_path != '' and
+            material_ball_name is not null and material_ball_name != '' ) and goods_id = 6 [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` = '186' )  [ RunTime:0.002000s ]
+SQL: SELECT `goods_img` FROM `ln_shop_goods` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '38' ) AND ( `attribute_id` = 1 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '38' ) AND ( `attribute_id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '38' ) AND ( `attribute_id` = 4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: select count(*) from ln_shop_goods_model where id in (select resource.model_id from ln_shop_goods_model_resource as resource
+            where photo_resource_path is not null and photo_resource_path != ''
+            and group_no is not null and group_no != '' and
+            map_path is not null and map_path != '' and
+            material_ball_name is not null and material_ball_name != '' ) and goods_id = 38 [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` = '106' )  [ RunTime:0.001000s ]
+SQL: SELECT `goods_img` FROM `ln_shop_goods` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '22' ) AND ( `attribute_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '22' ) AND ( `attribute_id` = 3 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '22' ) AND ( `attribute_id` = 4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: select count(*) from ln_shop_goods_model where id in (select resource.model_id from ln_shop_goods_model_resource as resource
+            where photo_resource_path is not null and photo_resource_path != ''
+            and group_no is not null and group_no != '' and
+            map_path is not null and map_path != '' and
+            material_ball_name is not null and material_ball_name != '' ) and goods_id = 22 [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` = '307' )  [ RunTime:0.001000s ]
+SQL: SELECT `goods_img` FROM `ln_shop_goods` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '1' ) AND ( `attribute_id` = 1 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '1' ) AND ( `attribute_id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '1' ) AND ( `attribute_id` = 4 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: select count(*) from ln_shop_goods_model where id in (select resource.model_id from ln_shop_goods_model_resource as resource
+            where photo_resource_path is not null and photo_resource_path != ''
+            and group_no is not null and group_no != '' and
+            map_path is not null and map_path != '' and
+            material_ball_name is not null and material_ball_name != '' ) and goods_id = 1 [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` = '311' )  [ RunTime:0.002000s ]
+SQL: SELECT `goods_img` FROM `ln_shop_goods` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '2' ) AND ( `attribute_id` = 1 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '2' ) AND ( `attribute_id` = 3 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '2' ) AND ( `attribute_id` = 4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: select count(*) from ln_shop_goods_model where id in (select resource.model_id from ln_shop_goods_model_resource as resource
+            where photo_resource_path is not null and photo_resource_path != ''
+            and group_no is not null and group_no != '' and
+            map_path is not null and map_path != '' and
+            material_ball_name is not null and material_ball_name != '' ) and goods_id = 2 [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` = '347' )  [ RunTime:0.001000s ]
+SQL: SELECT `goods_img` FROM `ln_shop_goods` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '10' ) AND ( `attribute_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '10' ) AND ( `attribute_id` = 3 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '10' ) AND ( `attribute_id` = 4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: select count(*) from ln_shop_goods_model where id in (select resource.model_id from ln_shop_goods_model_resource as resource
+            where photo_resource_path is not null and photo_resource_path != ''
+            and group_no is not null and group_no != '' and
+            map_path is not null and map_path != '' and
+            material_ball_name is not null and material_ball_name != '' ) and goods_id = 10 [ RunTime:0.002000s ]
+
+[ 2017-05-05T13:55:50+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '106256142425871544' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-05-05T13:56:31+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 0 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 0 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+
+[ 2017-05-05T13:56:50+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.015600s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=2))AND goods_id=13 [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=1))AND goods_id=1 [ RunTime:0.000000s ]
+
+[ 2017-05-05T13:59:59+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: attr_list D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 88 行.
+
+[ 2017-05-05T14:00:45+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+
+[ 2017-05-05T14:02:16+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+
+[ 2017-05-05T14:03:30+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 4 D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=2))AND goods_id=13 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 4 D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 102 行.
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=1))AND goods_id=1 [ RunTime:0.015600s ]
+
+[ 2017-05-05T14:03:48+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.001000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.001000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=2))AND goods_id=13 [ RunTime:0.002000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=1))AND goods_id=1 [ RunTime:0.001000s ]
+
+[ 2017-05-05T14:03:50+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.001000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=2))AND goods_id=13 [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=1))AND goods_id=1 [ RunTime:0.000000s ]
+
+[ 2017-05-05T14:03:51+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.015600s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=2))AND goods_id=13 [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=1))AND goods_id=1 [ RunTime:0.000000s ]
+
+[ 2017-05-05T14:03:51+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=2))AND goods_id=13 [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=1))AND goods_id=1 [ RunTime:0.000000s ]
+
+[ 2017-05-05T14:04:17+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.015600s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 4 D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.000000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=2))AND goods_id=13 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 4 D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 102 行.
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=1))AND goods_id=1 [ RunTime:0.000000s ]
+
+[ 2017-05-05T14:05:00+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.002000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: shopGoodsModel D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 102 行.
+
+[ 2017-05-05T14:07:20+08:00 ] ::1 /index.php/Goods/GoodsCartApi/shoppingCartDetailList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart_detail` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `id`,`goods_id`,`style`,`size`,`material`,`color`,`like_level`,`add_time` FROM `ln_shopping_cart_detail` WHERE ( `cart_id` = 1 ) AND ( `status` = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_color` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_id`,`color`,`photo_path`,`default_color_pic` FROM `ln_shop_goods_color` WHERE ( `id` IN ('61','307') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.002000s ]
+SQL: SELECT attr.id as attr_id,attr.attr_name,value.attr_value,value.goods_id FROM ln_shop_goods_attribute attr left JOIN ln_shop_goods_attribute_value value ON attr.id = value.attribute_id  WHERE ( value.goods_id IN ('13','1') ) AND ( attr.id IN ('1','2') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`goods_img` FROM `ln_shop_goods` WHERE ( `id` IN ('13','1') )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute_value` [ RunTime:0.002000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '13' ) AND ( `attribute_id` = 4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite_detail` [ RunTime:0.002000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=2))AND goods_id=13 [ RunTime:0.001000s ]
+SQL: SELECT `attr_value` FROM `ln_shop_goods_attribute_value` WHERE ( `goods_id` = '1' ) AND ( `attribute_id` = 4 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: select goods_count from ln_favorite_detail WHERE favorite_id=(select collection_id from ln_shopping_cart WHERE id=(select cart_id FROM ln_shopping_cart_detail WHERE id=1))AND goods_id=1 [ RunTime:0.001000s ]
+
+[ 2017-05-05T14:49:23+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 166 行.
+
+[ 2017-05-05T14:49:26+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.001000s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 166 行.
+
+[ 2017-05-05T14:49:31+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 166 行.
+
+[ 2017-05-05T14:49:48+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.002000s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 166 行.
+
+[ 2017-05-05T14:50:20+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.002000s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 167 行.
+
+[ 2017-05-05T14:50:36+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 167 行.
+
+[ 2017-05-05T14:50:38+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.002000s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 167 行.
+
+[ 2017-05-05T14:52:08+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ln_favorite` ORDER BY id desc LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Array to string conversion D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 167 行.
+
+[ 2017-05-05T14:52:25+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ln_favorite` ORDER BY id desc LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Array to string conversion D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 167 行.
+
+[ 2017-05-05T14:52:48+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ln_favorite` ORDER BY id desc LIMIT 1   [ RunTime:0.002000s ]
+
+[ 2017-05-05T14:53:30+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.002000s ]
+SQL: SELECT `id` FROM `ln_favorite` ORDER BY id desc LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Array to string conversion D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 167 行.
+
+[ 2017-05-05T14:53:39+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.002000s ]
+SQL: SELECT `id` FROM `ln_favorite` ORDER BY id desc LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Array to string conversion D:\WWW\WWW\furnitureshop\Application\Goods\Controller\GoodsCartApiController.class.php 第 167 行.
+
+[ 2017-05-05T14:53:58+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `ln_favorite` ORDER BY id desc LIMIT 1   [ RunTime:0.002000s ]
+
+[ 2017-05-05T15:11:50+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.002000s ]
+SQL: SELECT `id` FROM `ln_favorite` ORDER BY id desc LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-05-05T15:15:31+08:00 ] ::1 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T15:15:31+08:00 ] ::1 /index.php/Admin/Public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T15:15:31+08:00 ] ::1 /index.php/Admin/Public/verify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T15:15:43+08:00 ] ::1 /index.php/Admin/Public/doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `user_name` = 'Danno' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`user_name`,`password`,`type` FROM `ln_member` WHERE ( `status` = 0 ) AND ( user_name="Danno" ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: disabled D:\WWW\WWW\furnitureshop\Application\Common\Model\MemberModel.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ln_member_attribute_value` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_member_attribute_value` WHERE ( `member_id` = 2 ) AND ( `attribute_id` = 26 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: UPDATE `ln_member_attribute_value` SET `attr_value`=1493968542,`attribute_id`=26 WHERE ( `member_id` = 2 ) AND ( `attribute_id` = 26 ) [ RunTime:0.026000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_member_attribute_value` WHERE ( `member_id` = 2 ) AND ( `attribute_id` = 25 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: UPDATE `ln_member_attribute_value` SET `attr_value`='0.0.0.0',`attribute_id`=25 WHERE ( `member_id` = 2 ) AND ( `attribute_id` = 25 ) [ RunTime:0.023000s ]
+SQL: SHOW COLUMNS FROM `ln_admin_log` [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func_array() expects parameter 1 to be a valid callback, function 'number' not found or invalid function name D:\WWW\WWW\furnitureshop\ThinkPHP\Library\Think\Model.class.php 第 1102 行.
+SQL: INSERT INTO `ln_admin_log` (`log_type`,`log_info`,`log_url`,`log_status`,`member_id`,`log_time`) VALUES (3,'用户登录后台。',0,0,2,1493968543) [ RunTime:0.062000s ]
+
+[ 2017-05-05T15:15:43+08:00 ] ::1 /index.php/Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `menu_ids` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_menu` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ln_menu` WHERE ( `id` IN ('16','422','428','402','403','441','443','444','405','445','446','406','447','448','449','407','453','454','408','455','456','409','450','451','452','418','457','458','410','411','459','460','461','507','508','420','513','514','462','463','464','510','414','465','425','466','467','426','512','468','68','226','492','493','494','502','504','511') ) AND ( `display` = 1 ) ORDER BY sort asc  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T15:15:43+08:00 ] ::1 /index.php/Admin/Index/welcome
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.004000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T15:15:46+08:00 ] ::1 /index.php/Admin/GoodsAttribute/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shop_goods_attribute` WHERE ( `attr_mode` = 0 ) AND ( `cate_id` = 0 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `id`,`attr_name`,`member_id`,`attr_type`,`attr_value`,`attr_sort`,`attr_status`,`cate_id` FROM `ln_shop_goods_attribute` WHERE ( `attr_mode` = 0 ) AND ( `cate_id` = 0 ) ORDER BY attr_sort asc, id asc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.002000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/GoodsAttribute/index' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\dd19ae3dfd5489184d60fce5263e40ca.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: attr_status  D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\dd19ae3dfd5489184d60fce5263e40ca.php 第 59 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: attr_status  D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\dd19ae3dfd5489184d60fce5263e40ca.php 第 59 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: attr_status  D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\dd19ae3dfd5489184d60fce5263e40ca.php 第 59 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: attr_status  D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\dd19ae3dfd5489184d60fce5263e40ca.php 第 59 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: attr_status  D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\dd19ae3dfd5489184d60fce5263e40ca.php 第 59 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: attr_status  D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\dd19ae3dfd5489184d60fce5263e40ca.php 第 59 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: attr_status  D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\dd19ae3dfd5489184d60fce5263e40ca.php 第 59 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: attr_status  D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\dd19ae3dfd5489184d60fce5263e40ca.php 第 59 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: attr_status  D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\dd19ae3dfd5489184d60fce5263e40ca.php 第 59 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T15:15:48+08:00 ] ::1 /index.php/Admin/GoodsConfirm/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(cart.id) AS tp_count FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT cart.id,`collection_sn`,cart.cart_photo,cart.remark,cart.add_time,member.user_name FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.001000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/GoodsConfirm/index' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\7f368f7b31d05664d875fc804a7072cc.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T15:15:57+08:00 ] ::1 /index.php/Admin/Public/logout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T15:15:57+08:00 ] ::1 /index.php/Admin/Public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T15:15:57+08:00 ] ::1 /index.php/Admin/Public/verify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T15:16:01+08:00 ] ::1 /index.php/Admin/Public/verify?0.5124935912850855
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T15:16:04+08:00 ] ::1 /index.php/Admin/Public/doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `user_name` = 'admin' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`user_name`,`password`,`type` FROM `ln_member` WHERE ( `status` = 0 ) AND ( user_name="admin" ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: disabled D:\WWW\WWW\furnitureshop\Application\Common\Model\MemberModel.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ln_member_attribute_value` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_member_attribute_value` WHERE ( `member_id` = 1 ) AND ( `attribute_id` = 26 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `ln_member_attribute_value` SET `attr_value`=1493968564,`attribute_id`=26 WHERE ( `member_id` = 1 ) AND ( `attribute_id` = 26 ) [ RunTime:0.028000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_member_attribute_value` WHERE ( `member_id` = 1 ) AND ( `attribute_id` = 25 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `ln_member_attribute_value` SET `attr_value`='0.0.0.0',`attribute_id`=25 WHERE ( `member_id` = 1 ) AND ( `attribute_id` = 25 ) [ RunTime:0.024000s ]
+SQL: SHOW COLUMNS FROM `ln_admin_log` [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func_array() expects parameter 1 to be a valid callback, function 'number' not found or invalid function name D:\WWW\WWW\furnitureshop\ThinkPHP\Library\Think\Model.class.php 第 1102 行.
+SQL: INSERT INTO `ln_admin_log` (`log_type`,`log_info`,`log_url`,`log_status`,`member_id`,`log_time`) VALUES (3,'用户登录后台。',0,0,1,1493968564) [ RunTime:0.028000s ]
+
+[ 2017-05-05T15:16:04+08:00 ] ::1 /index.php/Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_menu` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ln_menu` WHERE ( `display` = 1 ) ORDER BY sort asc  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T15:16:04+08:00 ] ::1 /index.php/Admin/Index/welcome
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.003000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T15:16:10+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.002000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T15:16:12+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 0 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T15:29:42+08:00 ] ::1 /index.php/Goods/GoodsCartApi/saveShoppingCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member_machine_code` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_member_machine_code` WHERE ( `token` = '018441533343076894' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.002000s ]
+SQL: SELECT `id` FROM `ln_shopping_cart` ORDER BY id desc LIMIT 1   [ RunTime:0.002000s ]
+
+[ 2017-05-05T17:25:05+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.015600s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:25:06+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 0 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:25:16+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T17:25:18+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:26:28+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.015600s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:26:29+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 0 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:26:31+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.015600s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2017-05-05T17:26:31+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.001000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:26:54+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.015600s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:26:55+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 0 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:28:43+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.015600s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:28:43+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.001000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:28:44+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:31:25+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.002000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T17:31:26+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T17:32:17+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:32:19+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:32:22+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.016600s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.001000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.002000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T17:32:23+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:32:45+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.015600s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:32:46+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.001000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.001000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 0 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T17:32:50+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.015600s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:32:51+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.015600s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:34:08+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:34:09+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 0 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:34:24+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:34:25+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.015600s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 0 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:35:41+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.015600s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:35:42+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.015600s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:35:43+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.001000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.002000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T17:36:07+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:36:14+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:36:54+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:41:11+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:43:41+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T17:43:42+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:44:39+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.015600s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:44:40+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 0 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:44:54+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.002000s ]
+
+[ 2017-05-05T17:46:04+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:46:35+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.015600s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:46:36+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.002000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 0 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T17:46:40+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.015600s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:46:41+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:46:43+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.015600s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T17:47:07+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T17:47:17+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.015600s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:47:18+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:47:36+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:47:37+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:47:54+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.015600s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2017-05-05T17:47:55+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.015600s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:48:02+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.015600s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:48:04+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:48:34+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.015600s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:48:35+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:49:41+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:49:43+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 0 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-05T17:50:04+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:51:14+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:53:25+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:53:59+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:54:18+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:54:53+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:55:51+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:56:23+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:56:31+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:56:57+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T17:57:25+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.001000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.002000s ]
+
+[ 2017-05-05T17:58:34+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:00:34+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:00:44+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:00:50+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:01:48+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:01:53+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:03:56+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+NOTIC: [2] trim() expects at least 1 parameter, 0 given D:\WWW\WWW\furnitureshop\Application\Admin\Controller\UpgradeController.class.php 第 29 行.
+
+[ 2017-05-05T18:04:02+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.016600s ]
+NOTIC: [2] trim() expects at least 1 parameter, 0 given D:\WWW\WWW\furnitureshop\Application\Admin\Controller\UpgradeController.class.php 第 29 行.
+
+[ 2017-05-05T18:04:52+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.015600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:04:53+08:00 ] ::1 /index.php/Admin/Upgrade/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 2 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:04:56+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:04:56+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 0 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:05:09+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:07:25+08:00 ] ::1 /index.php/Admin/Upgrade/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_upgrade` WHERE ( `update_id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`type`,`mode`,`add_time`,`add_id`,`update_time`,`update_id`,`file_path`,`remark` FROM `ln_upgrade` WHERE ( `update_id` = '1' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Upgrade/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\37ad8ce6557ca9b321f8b30aa5d79bfb.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:07:27+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`user_name` FROM `ln_member` WHERE ( type = 0 and status = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`version`,`mode`,`file_path`,`remark`,`type`,`add_time`,`add_id`,`update_time`,`update_id` FROM `ln_upgrade` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: SELECT `member_id` FROM `ln_upgrade_detail` WHERE ( `upgrade_id` = 0 )  [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\a443826acc7a73e98ada2df08756847e.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:07:37+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.015600s ]
+SQL: INSERT INTO `ln_upgrade` (`name`,`version`,`type`,`mode`,`file_path`,`remark`,`add_time`,`add_id`,`update_time`,`update_id`) VALUES ('bug','1.9',0,0,'','',1493978857,'1',1493978857,'1') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: DELETE FROM `ln_upgrade_detail` WHERE ( upgrade_id =3 ) [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:08:29+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: INSERT INTO `ln_upgrade` (`name`,`version`,`type`,`mode`,`file_path`,`remark`,`add_time`,`add_id`,`update_time`,`update_id`) VALUES ('bug','1.9',0,0,'','',1493978908,'1',1493978908,'1') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.046800s ]
+SQL: DELETE FROM `ln_upgrade_detail` WHERE ( upgrade_id =4 ) [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:08:41+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+SQL: INSERT INTO `ln_upgrade` (`name`,`version`,`type`,`mode`,`file_path`,`remark`,`add_time`,`add_id`,`update_time`,`update_id`) VALUES ('bug','1.9',0,0,'','',1493978921,'1',1493978921,'1') [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.000000s ]
+SQL: DELETE FROM `ln_upgrade_detail` WHERE ( upgrade_id =5 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\WWW\WWW\furnitureshop\ThinkPHP\Library\Think\Model.class.php 第 1125 行.
+SQL: INSERT INTO `ln_upgrade_detail` (`member_id`,`upgrade_time`,`upgrade_id`) VALUES (2,1493978921,5) [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:11:13+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.002000s ]
+SQL: INSERT INTO `ln_upgrade` (`name`,`version`,`type`,`mode`,`file_path`,`remark`,`add_time`,`add_id`,`update_time`,`update_id`) VALUES ('bug','1.9',0,0,'','',1493979073,'1',1493979073,'1') [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade_detail` [ RunTime:0.002000s ]
+SQL: DELETE FROM `ln_upgrade_detail` WHERE ( upgrade_id =6 ) [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: status D:\WWW\WWW\furnitureshop\ThinkPHP\Library\Think\Model.class.php 第 1125 行.
+SQL: INSERT INTO `ln_upgrade_detail` (`member_id`,`upgrade_time`,`upgrade_id`) VALUES (2,1493979073,6) [ RunTime:0.002000s ]
+
+[ 2017-05-05T18:12:06+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.000000s ]
+
+[ 2017-05-05T18:16:10+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.002000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.002000s ]
+
+[ 2017-05-05T18:17:59+08:00 ] ::1 /index.php/Admin/Upgrade/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.001000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '1' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_upgrade` [ RunTime:0.007000s ]
+

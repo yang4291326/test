@@ -1,0 +1,38 @@
+
+
+.#{$baseClass}dropdown{
+	@include ib;
+	position: relative;
+
+}
+.#{$baseClass}active{
+	.#{$baseClass}dropdown-content{
+		display: block;
+	}
+}
+.#{$baseClass}dropdown-content{
+	position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1020;
+    border-radius: 5px;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 10px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    li{
+    	font-size: 12px;
+    	padding: 5px 0;
+    	border-bottom: 1px solid #ddd;
+    }
+}
+
+
+
+
+
+
+

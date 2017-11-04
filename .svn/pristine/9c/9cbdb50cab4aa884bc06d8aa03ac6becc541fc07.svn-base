@@ -1,0 +1,180 @@
+<?php
+namespace Admin\Controller;
+
+/**
+ * Created by liuniukeji.com
+ * 商品分类控制器
+ * @author goryua <1661745274@qq.com>
+*/
+
+class GoodsCategoryController extends AdminCommonController {
+
+    /**
+     * 商品分类列表
+     */
+    public function index() {
+        $goodsTypeModel = D('ShopGoodsType');
+        
+        //获取分类列表
+        $goods_cate_list = $goodsTypeModel->getCateList('', 'type.id,type.name,type.sort,type.parent_id,type.status,type.level as cate_level,type.add_time,member.user_name');
+        $goods_cate_tree = D('Common/Tree')->toFormatTree($goods_cate_list);
+        //p($goods_cate_list);exit;
+        $this->assign('goods_cate_list', $goods_cate_tree);
+        //序号
+        $order = 0;
+        //自定义提示语
+        $prompt_tips = $this->_getPromptLanguage();
+        $this->assign('prompt_tips', $prompt_tips);
+        $this->assign('order',$order);
+     	$this->display();
+    }
+    
+    /**
+     * 添加或编辑商品分类
+     */
+    public function edit() {
+    	$id = I('id', 0, 'intval');
+        $goodsTypeModel = D('ShopGoodsType');
+    	if (IS_POST) {
+            $pid = I('post.parent_id', 0, 'intval');
+            if ($pid) {
+                $level = $goodsTypeModel->where('id = '.$pid.'')->getField('level');
+                $level+=1;
+            } else {
+                $level = 1;
+            }
+            if ($level > 4) {
+                $this->ajaxReturn(V(0, '层级最多只能添加到4级'));
+            }
+            
+            if ($id == 0) { //添加时验证权限
+                //获取该商户该等级下分类允许添加个数
+                $save_access = $this->_getDataAccess('goods_type_num_'.$level.'');
+                //获取该商户该等级下已经添加的个数
+                $level_count = $this->hasAddCount($level);
+                if ($level_count >= $save_access) {
+                    $this->ajaxReturn(V(0, ''.$level.'级分类最多只能添加'.$save_access.'个，您已达到上限！'));
+                }
+            }
+
+            switch ($level) { //根据不同分类级别，赋予不同验证时间
+                case 2:
+                    $_validate = 4;
+                    break;
+                case 3:
+                    $_validate = 5;
+                    break;
+                case 4:
+                    $_validate = 6;
+                    break;
+                default:
+                    $_validate = 3;
+                    break;
+            }
+            $data = $goodsTypeModel->create(I('post.'), $_validate);
+            if ($data !== false) {
+                $goodsTypeModel->level = $level;
+                if ($id > 0) {
+                    $goodsTypeModel->where('id='. $id)->save();
+                    $log_type = array('type' => 1, 'info' => '编辑');
+                } else {
+                    $id = $goodsTypeModel->add();
+                    $log_type = array('type' => 0, 'info' => '添加');
+                }
+
+                $this->_addAdminLog($log_type['type'], ''.$log_type['info'].'分类id为'.$id.'的记录成功', '', 0);
+                $this->ajaxReturn(V(1, '保存成功'));
+   
+            } else {
+                $this->_addAdminLog($log_type['type'], ''.$log_type['info'].'分类id为'.$id.'的记录失败', '', 1);
+                $this->ajaxReturn(V(0, $goodsTypeModel->getError()));
+            }
+     	} else {
+            $info = $goodsTypeModel->find($id);
+            $goodsCategory = $goodsTypeModel->getCateList('', 'type.id,type.name,type.sort,type.parent_id,type.level as cate_level');
+            $goodsCategory = D('Common/Tree')->toFormatTree($goodsCategory);
+            $this->assign('goodsCategory', $goodsCategory);
+            $this->assign('info', $info);
+            
+            $this->display();
+     	}
+    }
+
+    public function selectGoods() {
+
+        $goods_name = I('get.goods_name', '', 'trim');
+        $cate_id = I('get.cate_id', 0, 'intval');
+        if ($goods_name) {
+            $where['value.attr_value'] = array('like', '%'.$goods_name.'%');
+        }
+        if ($cate_id) {
+            $where['goods.goods_category_id'] = array('eq', $cate_id);
+        }
+        $where['value.attribute_id'] = array('eq', 1);
+        $where['goods.status'] = array('eq', 0);
+        $where['goods.member_id'] = array('eq', UID);
+        $goods_list = D('ShopGoods')->getGoodsList($where, 'goods.id, goods.add_time, value.attr_value');
+        
+        $this->assign('goods_name', $goods_name);
+        $this->assign('cate_id', $cate_id);
+        //设置分页变量
+        $this->assign('goods_list', $goods_list['list']);
+        $this->assign('page', $goods_list['page']);
+
+        //商品分类
+        $goodsCategory = D('ShopGoodsType')->getCateList();
+        $goodsCategory = D('Common/Tree')->toFormatTree($goodsCategory);
+        $goodsCategory = array_merge(array(0=>array('id'=>0, 'title_show'=>'选择商品分类')), $goodsCategory);
+        $this->assign('goodsCategory', $goodsCategory);
+
+
+        $this->display('Banner/goods');
+    }
+    
+    /**
+     * 商户在该等级下已添加分类个数
+     */
+    protected function hasAddCount($level = 0) {
+        $where['member_id'] = array('eq', UID);
+        $where['level'] = array('eq', $level);
+        $where['status'] = array('eq', 0);
+        $count = D('ShopGoodsType')->where($where)->count('id');
+        return $count;
+    }
+
+    protected function checkShopCategory() {
+        //判断商户一级分类是否存在，不存在插入
+        $where['member_id'] = array('eq', UID);
+        $where['level'] = array('eq', 1);
+        $shop_category_info = D('ShopGoodsType')->getCateInfo('id', $where);
+        if (empty($shop_category_info)) {
+            $data['member_id'] = UID;
+            $data['name'] = D('MemberAttributeValue')->getMemberAttributeValueByMemberIdAndMemeberProperty(UID, 15);
+            $data['level'] = 1;
+            M('shop_goods_type')->add($data);
+        }
+    }
+
+    /**
+     * 商品分类放入回收站
+     */
+    public function recycle() {
+        
+        $this->_recycle('ShopGoodsType');  //调用父类的方法
+    }
+
+    /**
+     * 删除图片
+     */
+    public function delFile() {
+        $this->_delFile();  //调用父类的方法
+    }
+
+    /**
+     * 上传图片
+     */
+    public function uploadImg() {
+        $this->_uploadImg();  //调用父类的方法
+    }
+}
+?>

@@ -1,0 +1,24 @@
+<?php
+namespace Map\Controller;
+
+/**
+ * Created by liuniukeji.com
+ * 用户地图接口
+ * @author yuanyulin <7556870234@qq.com>
+*/
+class MapApiController extends \Common\Controller\CommonApiController {
+    
+    // 获取用户的地图信息
+    public function map(){
+        $where['member_id']  = array('EQ', UID); // 用户的id
+        $data = M('AllianceMerchantMap')->field('id,name, photo_path, sort')->where($where)->select();
+        foreach ($data as $key => $value) {
+            $data[$key]['shop_data'] = M('AllianceMerchantDetail')->field('position_x, position_y, name, photo_path, address, phone, recommend, others')->where('map_id='. $value['id'])->select();
+        }
+        if ($data) {
+            $this->apiReturn(1, '可查看的地图信息', $data);            
+        } else {
+            $this->apiReturn(0, '没有可以查看的地图信息');            
+        }
+    }
+}

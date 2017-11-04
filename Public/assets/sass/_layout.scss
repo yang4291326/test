@@ -1,0 +1,215 @@
+/*
+*@module: layout
+*@Author: guoleiting 2016-08-10
+*@Update: 
+*/
+
+
+.tw-flow-bar{
+	position: relative;
+	font-size: 12px;
+	// padding: 10px;
+	background: #f8f8f8;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+	.fa{
+		margin-right: 3px;
+	}
+	[class*='tw-icon-']{
+		margin-right: 3px;
+	}
+	a{
+		text-decoration: none;
+	}
+}
+.tw-flow-bar-other,
+.tw-flow-bar-opt,
+.tw-flow-bar-group,
+.tw-flow-crumb{
+	@include ib;
+	margin-right: 10px;
+}
+.tw-flow-bar-other{
+	position: absolute;
+	top: 10px;
+	right: 0;
+	text-align: right;
+}
+.tw-flow-crumb{
+	margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0;
+    border-right: 1px solid #d8d8d8;
+    padding-right: 10px;
+    height: 24px;
+    padding-left: 10px;
+    line-height: 24px;
+}
+
+.tw-flow-crumb-cur{
+	font-weight: bolder;
+    @include ib;
+    vertical-align: 0px;
+    height: 24px;
+    line-height: 24px;
+    background: #e64552;
+    color: #fff;
+    padding:0 10px;
+}
+.tw-flow-bar-opt{
+	margin: 10px 0;
+}
+
+
+
+.tw-tool-bar{
+
+	padding: 10px;
+	background: #f8f8f8;
+	border-bottom: 1px solid #eee;
+	.fa{
+		margin-right: 3px;
+	}
+	.tw-form-item{
+		display: inline-block;
+	}
+}
+
+.tw-search-bar{
+	font-size: 12px;
+	padding: 0px 10px;
+	margin-bottom: 8px;
+	text-align: right;
+	.tw-form-text{
+		padding: 2px 4px;
+	}
+	.tw-form-date{
+		width: 120px;
+	}
+	select{
+		max-width: 200px;
+	}
+	.tw-input-datepick .tw-icon-calendar{
+		top: 6px;
+		right: 6px;
+	}
+}
+
+
+.tw-tool-bar-bot{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	background: #f8f8f8;
+	border-top: 1px solid #eee;
+}
+
+
+// 列表页wrap
+.tw-list-wrap{
+	padding: 0 10px;
+	overflow-y: auto;
+}
+.tw-tab-panel{
+	.tw-list-wrap{
+		padding: 0 0px;
+	}
+}
+.tw-edit-wrap{
+	padding: 0px 10px;
+	padding-bottom: 50px;
+	overflow-y: auto;
+}
+
+
+// form 表单页面
+
+.tw-table-form-wrap{
+	fieldset{
+		width: 100%;
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+
+}
+
+
+
+.tw-list-hd{
+	padding: 10px 0;
+	font-size: 16px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	color: $primary;
+	border-bottom: 1px solid $primary;
+
+	.tw-tool-btn-back{
+		float: right;
+	}
+}
+
+// 工作流列表页头部
+.tw-list-top{
+	font-size: 12px;
+	padding-top: 8px;
+	margin-bottom: 10px;
+	background: #f8f8f8;
+	border-bottom: 1px solid #eee;
+	.tw-form-label{
+		font-size: 12px;
+		line-height: 24px;
+	}
+}
+.tw-list-top-search-tool{
+	@include clearfix;
+	padding-top: 0;
+	.tw-tool-bar{
+		float: left;
+		border-bottom: 1px;
+	}
+	.tw-search-bar{
+		float: right;
+		margin-top: 10px;
+	}
+}
+
+
+.tw-list-subhd{
+	margin-top: 10px;
+    span{
+        @include ib;
+        padding: 0 20px;
+        height: 30px;
+        font-size: 12px;
+        line-height: 30px;
+        border-radius: 3px 3px 0 0;
+        background: #f9f9f9;
+        border: 1px solid #d0d0d0;
+        border-bottom: 0;
+    }
+}
+
+
+
+.tw-loading{
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	top: 50%;
+	margin-top: -150px;
+	width: 300px;
+	height: 300px;
+	background: url(../img/loading.gif) no-repeat center center;
+}
+
+
+
+
+
+
+

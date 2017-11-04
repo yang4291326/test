@@ -1,0 +1,29 @@
+<extend name="Public/base"/>
+<block name="style">
+    <link href="__PUBLIC__/assets/css/cropper.min.css" rel="stylesheet">
+    <style>
+        .img-container {
+            text-align: center;
+        }
+    </style>
+</block>
+<block name="body">
+    <!-- S=头部设置 -->
+    <div class="tw-layout">    
+        <div class="btns" style="z-index: 9999; text-align:center;margin:10px 0">
+            <button type="button" id="btnCropOK" class="btn btn-success">剪切图片</button>
+            <button type="button" id="btnCropCancle" class="btn btn-danger">取消剪切</button>
+        </div>    
+        <div class="img-container"></div>
+    </div>
+    <!-- E=详情显示 -->	
+</block>
+
+<block name="script">
+    <script type="text/javascript" charset="utf-8" src="__COMMON__/js/imgupload.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/assets/js/cropper.min.js"></script>
+    <script>
+        img_success("{$src}", "{$item}");
+        initCrop('{$save_path}');
+    </script>
+</block>

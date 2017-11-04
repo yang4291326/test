@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{$meta_title}</title>
+    <link rel="stylesheet" type="text/css" href="__CSS__/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="__CSS__/common.css" media="all">
+    <link rel="stylesheet" type="text/css" href="__CSS__/module.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="__CSS__/default_color.css" media="all">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/toastr/toastr.css" media="all">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/dropdownlist/dropdownlist.css" media="all">
+    <!--[if lt IE 9]-->
+    <script type="text/javascript" src="__JS__/jquery-1.10.2.min.js"></script>
+    <!--[endif]-->
+    <script type="text/javascript" src="__JS__/jquery-2.0.3.min.js"></script>
+    <block name="style"></block>
+</head>
+<body>
+    
+    <!-- 内容区 -->
+    <div id="content">
+        <block name="body"> </block>
+    </div>
+    <!-- /内容区 -->
+    <!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="__JS__/jquery.mousewheel.js"></script>
+    <!--<![endif]-->
+    <script type="text/javascript" src="__PUBLIC__/toastr/toastr.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/assets/js/wf-list.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/assets/plugins/layer-v2.0/layer/layer.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/assets/plugins/laydate-v1.1/laydate/laydate.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/assets/js/common.js"></script>
+<!--    <script type="text/javascript" src="__PUBLIC__/dropdownlist/dropdownlist.js"></script>-->
+    <script type="text/javascript" src="__JS__/common.js"></script>
+    <script>
+        // 定义全局变量
+        RECYCLE_URL = "{:U('recycle')}"; // 默认逻辑删除操作执行的地址
+        RESTORE_URL = "{:U('restore')}"; // 默认逻辑删除恢复执行的地址
+        DELETE_URL = "{:U('del')}"; // 默认删除操作执行的地址
+        UPLOAD_IMG_URL = "{:U('uploadImg')}"; // 默认上传图片地址
+        UPLOAD_FIELD_URL = "{:U('uploadField')}"; // 默认上传图片地址
+        DELETE_FILE_URL = "{:U('delFile')}"; // 默认删除图片执行的地址
+        CHANGE_STAUTS_URL = "{:U('changeDisabled')}"; // 修改数据的启用状态
+        CROPPER_IMG_URL = "{:U('/Admin/Ajax/cropper')}";//裁剪图片地址
+    </script>
+    <block name="script"></block>
+</body>
+</html>

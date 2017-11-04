@@ -1,0 +1,45 @@
+<extend name="Public/base"/>
+<block name="body">
+    <div class="tw-layout">
+	    <div class="tw-list-hd">
+             {:isset($info['id'])?'编辑':'新增'}前台日志模块
+        </div>
+		
+	    <div class="tw-list-wrap tw-edit-wrap">
+            <form action="__SELF__" method="post" class="form-horizontal ajaxForm" enctype="multipart/form-data">
+                <div class="form-item">
+                    <label class="item-label">前台日志模块名称<span class="check-tips"><b>*</b>（输入前台日志模块名称）</span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="name" value="{$info.name}">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">上级前台日志模块<span class="check-tips"><b>*</b>（上级分类）</span></label>
+                    <div class="controls">
+                        <select name="parent_id">
+                            <option value="0">顶级前台日志模块</option>
+                            <volist name="homeLogModularTree" id="vo">
+                                    <option value="{$vo.id}"
+                                <if condition="$vo.id eq $info['parent_id'] "> 
+                                    selected="selected"
+                                </if>
+                                >{$vo.title_show}</option>
+                            </volist>
+                        </select>
+                    </div>
+                </div>    
+                <div class="form-item">
+                    <label class="item-label">排序<span class="check-tips"><b>*</b></span></label>
+                    <div class="controls">
+                         <input type="text" class="text input-large" name="sort" value="{$info.sort}">
+                    </div>
+                </div>
+                <div class="tw-tool-bar-bot">
+                    <input type="hidden" name="id" value="{$info.id}"/>
+                    <button type="submit" class="tw-act-btn-confirm">提交</button>
+                    <button type="button" onclick="goback()" class="tw-act-btn-cancel">返回</button>
+                </div>
+            </form>
+	    </div>
+    </div>
+</block>

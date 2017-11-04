@@ -1,0 +1,60 @@
+<?php
+namespace Goods\Controller;
+
+/**
+ * Created by liuniukeji.com
+ * 收藏夹接口
+ * @author yuanyulin <7556870234@qq.com>
+*/
+class FavoriteApiController extends \Common\Controller\CommonApiController {
+    
+    // 获取收藏夹列表接口
+    public function getFavoriteList(){
+        $name = I('name', '', 'trim');
+        $where=array(); 
+        if ($name) {
+            $this->homeLogApi(UID,33,'喜好收藏页面搜索 --'.$name,0,time(),'','');
+            $where['name'] = array('like', '%'.$name.'%');
+        }
+        $favoriteList = D('Goods/Favorite')->getFavoriteByPage($where);
+        $this->apiReturn(1, '收藏夹列表', $favoriteList);
+    }
+    
+    // 增加收藏夹接口
+    public function addFavorite(){
+        if(IS_POST){
+            $favoriteModel = D('Favorite');
+            if($favoriteModel->create() !== false ){
+            //p($favoriteModel->remark);die();
+                if ( empty($favoriteModel->remark)) { // 该处用于处理没有传入内容概述
+                    $favoriteModel->remark = '';
+                }
+
+                $id = $favoriteModel->add();
+                $info = M('Favorite')->where('id='. $id)->find();
+                $this->apiReturn(1, '保存成功！', $info);
+            } else {
+                $this->apiReturn(0, $favoriteModel->getError());
+            }
+        }
+    }  
+    
+    // 删除收藏夹列表
+    public function delFavorite(){
+
+        $id = I('post.id', 0, 'intval');
+        $where['id'] = array('EQ', $id);
+        $result = M('Favorite')->where($where)->setField('status', 1);
+        if ($result) {
+            $this->apiReturn(1, '删除成功！');            
+        } else {
+            $this->apiReturn(0, '删除失败！');            
+        }
+    }
+    //返回客户随机编码
+    public function customer_Code(){
+        $code=microtime();
+        $customer_code=time().substr($code,2,2);
+        $this->apiReturn(1,'客户随机编码',strval($customer_code));
+    }
+}

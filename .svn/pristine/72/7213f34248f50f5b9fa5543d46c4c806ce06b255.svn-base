@@ -1,0 +1,119 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <!-- S=头部设置 -->
+    <div class="tw-layout">        
+        <!-- S=文章管理 -->
+        <div class="tw-list-hd"> 后台日志管理</div>
+        <notempty name="prompt_tips">
+            <div class="tw_list_tips">
+                <div class="tips-name">提示语：</div>
+                <div class="tips-content">{$prompt_tips}</div>
+            </div>
+        </notempty>
+        <!-- E=文章管理 -->        
+        <!-- S=导航设置 -->
+        <div class="tw-list-top">
+            <!-- S=添加删除 -->
+            <div class="tw-tool-bar">
+                <a class="tw-tool-btn-del" onclick="javascript:recycle('chkbId', '确认删除?! 删除后此后台日志将不在此地显示!',true)">
+                    <i class="tw-icon-minus-circle"></i> 批量删除
+                </a>
+            </div>
+            <!-- E=添加删除 -->
+            <!-- S=高级搜索 -->                        
+            <form action="__ACTION__" method="get" id='frmSearch'>
+                <div class="tw-search-bar">
+                    <div class="search-form fr cf">
+                        <div class="sleft">
+                            <select name="log_type" id="log_type">
+                                <option value="">请选择日志类型</option>
+                                <option value="0">新增</option>
+                                <option value="1">修改</option>
+                                <!--杨yongjie  修改-->
+                                <!--<option value="2">删除</option>-->
+                                <!--杨yongjie  修改-->
+                                <option value="3">登录</option>
+                                <option value="4">上传</option>
+                            </select>
+                        </div>
+                        <script>
+                            $('#log_type').val("{:I('log_type')}");
+                        </script>
+                        <div class="sleft">
+                            <select name="log_status" id="log_status">
+                                <option value="">请选择操作状态</option>
+                                <option value="0">成功</option>
+                                <option value="1">失败</option>
+                            </select>
+                        </div>
+                        <script>
+                            $('#log_status').val("{:I('log_status')}");
+                        </script>
+                        <div class="sleft">
+                            <input type="text" name="log_url" class="search-input" value="{:I('log_url')}" placeholder="请输入操作模块">
+                            <a type="submit" class="sch-btn" onclick="$('#frmSearch').submit();"><i class="btn-search"></i></a>
+                        </div>
+                    </div>            
+                </div>
+	    </form>          
+            <!-- E=高级搜索 -->
+        </div>
+        <!-- E=导航设置 -->
+    </div>
+    <!-- E=头部设置 -->
+    <!-- S=详情显示 -->	
+    <div class="tw-list-wrap">
+        <!-- S=表单 -->
+        <form class="ids">
+            <table class="tw-table tw-table-list tw-table-fixed">
+                <thead>
+                    <tr>
+                        <th class="row-selected">
+                            <input class="checkbox check-all" type="checkbox">
+                        </th>
+                        <th width="60">操作模块</th>
+                        <th width="60">日志类型</th>
+                        <th class="20%">日志内容</th>
+                        <th width="60">日志状态</th>
+                        <th width="60">操作人</th>
+                        <th width="120">操作时间</th>
+                        <th width="100">操作</th>
+                    </tr>
+                </thead>
+                <!-- S=详细信息 -->	
+                <tbody>
+                    <notempty name="list">
+                        <volist name="list" id="vo">
+                            <tr>
+                                <td><input class="ids row-selected" type="checkbox" name="chkbId" value="{$vo['id']}"></td>
+                                <td>{$vo.title}</td>
+                                <td>{:show_log_type($vo['log_type'])}</td>
+                                <td>{$vo.log_info}</td>
+                                <td>{:show_log_status($vo['log_status'])}</td>
+                                <td>{$vo.member_name}</td>
+                                <td>{$vo.log_time|time_format}</td>
+                                <td>
+                                    <a class="tw-tool-btn-del" onclick="javascript:recycle({$vo['id']}, '确认删除?! 删除后此日志将不在此地显示!',true)"><i class="tw-icon-minus-circle"></i> 删除
+                                </td>                                
+                            </tr>
+                        </volist>
+                        <else/>
+                            <td colspan="8" class="text-center"> aOh! 暂时还没有内容! </td>
+                    </notempty>
+                </tbody>
+                <!-- E=详细信息 -->
+            </table>
+        </form>
+        <!-- E=表单 -->
+        <div class="page">{$page}</div>
+         </div>
+    </div>
+    <!-- E=详情显示 -->	
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+
+    </script>
+</block>

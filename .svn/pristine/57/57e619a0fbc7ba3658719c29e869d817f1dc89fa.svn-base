@@ -1,0 +1,116 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="tw-layout">
+    	<div class="tw-list-hd">
+            {:isset($info['id'])?'编辑':'新增'}公告推送
+        </div>
+		
+	    <div class="tw-list-wrap tw-edit-wrap">
+            <form action="__SELF__" method="post" class="form-horizontal ajaxForm">
+                <div class="form-item">
+                    <label class="item-label">公告推送名称<span class="check-tips"><b>*</b>（用于显示公告推送的名称）</span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="title" value="{$info.title}" placeholder="公告名称">
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label class="item-label">形象图片<span class="check-tips">（形象图片,请上传200px*50px的图片）</span></label>
+                    <div class="controls">
+                        <div>
+                            <img src="{$info.img}" style="width:200px;" id="img_"/>
+                        <div>
+                        <input type="hidden" value="{$info.img}" name="img" id="img"/>
+                        <input class="btn btn-default btn-xs" type="button" value="上传" id="btnUpload" />
+                        <input class="btn btn-danger btn-xs" type="button" value="删除" onclick="delFile($('#img').val(), '')" id="btn_delete_" />
+                        <if condition="$info.img eq ''">
+                            <script>
+                                $("#img_, #btn_delete_").hide();
+                            </script>
+                        </if>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label class="item-label">描述<span class="check-tips"><b>*</b></span></label>
+                    <div class="controls">
+                        <textarea name="description" rows="5" cols="57" placeholder="描述（最多100文字）">{$info.description|default=''}</textarea> 
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">公告推送内容<span class="check-tips"><b>*</b>（用于显示公告推送展示的内容）</span></label>
+
+                    <div class="form-item">
+                        <div class="tw-tab-panel" data-tab-idx="8mFNtKjnCr" style="display: block;">
+                            <div class="tw-panel-cnt">
+                                <div class="tw-tabs">
+                                    <ul class="tw-tabs-nav ui-sortable" style="width:702px;" id="my_tabs">
+                                        <li class="tw-nav-item" data-tab-idx="new-article" data-open_type="2">
+                                            <a href="javascript: void(0)">公告推送内容</a>
+                                        </li>
+                                        <li class="tw-nav-item" data-tab-idx="url" data-open_type="1">
+                                            <a href="javascript: void(0)">公告外部链接</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tw-tabs-bd" style="width:700px;">
+                                        <div class="tw-tab-panel" data-tab-idx="new-article" style="display: block;">
+                                            <div class="tw-panel-cnt">
+                                                <div class="content_desc">
+                                                    <div class="form-item">
+                                                        <label class="item-label">公告自定义内容</label>
+                                                        <div class="controls">
+                                                            <script id="content_desc" name="content" type="text/plain">{$info['content']|htmlspecialchars_decode}</script>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tw-tab-panel" data-tab-idx="url" style="display: none;">
+                                            <div class="tw-panel-cnt">
+                                                <div class="controls openurl">
+                                                    外部链接URL ：<input type="text" class="text input-large" name="url" value="{$info.url}" placeholder="必须以http://开头">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tw-tool-bar-bot">
+                    <input type="hidden" value="{$info['id']}" name="id">
+                    <input type="hidden" value="{$info['open_type']|default=2}" name="open_type" id="open_type">
+                    <button type="submit" class="tw-act-btn-confirm">提交并推送</button>
+                    <button type="button" onclick="goback()" class="tw-act-btn-cancel">返回</button>
+                </div>
+            </form>
+	    </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ajaxupload.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__COMMON__/js/imgupload.js"></script>
+    <script>
+        var ue = UE.getEditor('content_desc', {
+            autoHeightEnabled: false,
+            initialFrameWidth: '675',
+            initialFrameHeight: 350
+        });
+
+        $(function(){
+            ajaxUpload('#btnUpload', '#img', 'Push', '');
+
+            var open_type = $('input[name=open_type]').val();
+            $('#my_tabs li[data-open_type='+ open_type +']').click();
+
+            $('#my_tabs li').on('click', function(){
+                $("#open_type").val($(this).attr('data-open_type'));
+            });
+        })
+    </script>
+</block>

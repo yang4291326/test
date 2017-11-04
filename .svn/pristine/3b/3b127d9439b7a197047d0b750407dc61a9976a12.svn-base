@@ -1,0 +1,76 @@
+/*
+*@module: Common core setting
+*@Author: guoleiting 2016-08-10
+*@Update: 
+*/
+
+@charset "UTF-8";
+//-----------------------------------------------------	
+// setting scss
+//-----------------------------------------------------	
+$baseClass:           tw- !default; //CSS的基本前缀
+
+// font相关
+//-----------------------------------------------------	
+$baseFontSize:          14px !default;
+$baseLineHeight:        1.5 !default;
+$baseFontFamily:        "Microsoft Yahei", Helvetica, Tahoma, sans-serif !default;
+// $fontCn:                "SimSun"; //宋体
+// $fontYaHei:             "Microsoft Yahei"; //微软雅黑
+// $fontHeiTi:             "SimHei"; //黑体
+
+
+$brand-primary:			#284f97 !default;
+$primary:				#284f97 !default;
+
+$hoverColor:            #f60 !default;
+
+$grayDarker:            #333 !default;
+$grayDark:              #666 !default;
+$gray:                  #999 !default;
+
+
+$red:                   #e64552 !default;
+$orange:                #ef9724 !default;
+$yellow:                #ffc40d !default;
+$green:                 #77c046 !default;
+$blue:                  #0a92dd !default;
+$purple:                #864ac7 !default;
+$orangered:             #d62c78 !default;
+$white:             	#fff !default;
+
+
+// link
+//-----------------------------------------------------	
+// 如果只有一个值则滑过的值为这个值的darken 5%，如果
+// 有两个值则第二个值为滑过的值
+$linkColor:             $grayDarker $primary !default;
+
+
+// scaffolding
+//-----------------------------------------------------	
+$bodyBgColor:           #fff !default;
+$textColor:             $grayDarker !default;
+
+
+// placeholder
+//-----------------------------------------------------	
+// 变量分别为：是否输出表单的占位符placeholder样式，文本色
+$placeholder:           true $gray !default;
+
+
+// 交互配色
+// 警告，错误，成功，提示
+//-----------------------------------------------------	
+// 每个变量都有三个颜色值，分别为：文本色，背景色，边框色
+$warningColor:               #514721 #FFF6BF #FFD324 !default;
+$errorColor:                 #8A1F11 #FBE3E4 #FBC2C4 !default;
+$successColor:               #264409 #E6EFC2 #C6D880 !default;
+$infoColor:                  #205791 #D5EDF8 #92CAE4 !default;
+
+
+
+
+
+
+

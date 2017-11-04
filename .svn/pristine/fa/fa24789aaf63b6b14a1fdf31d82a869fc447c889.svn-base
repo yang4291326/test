@@ -1,0 +1,232 @@
+html,body {
+    min-width: 1200px;
+}
+/*------------------------------------------ */
+.main-container{
+    margin: 0 auto;
+    text-align: left;
+    width: 1200px;
+}
+.main-header{
+    color: #fff;
+    width: 100%;
+    height: 80px;
+    background:url(/Public/assets/img/header_bg.png) repeat-x bottom center;
+}
+.main-header .logo{
+    height: 80px;
+    width: 180px;
+    overflow: hidden;
+    background: url(/Public/logo.png) no-repeat center center;
+}
+
+/* 底部 */
+.main-footer {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #07bfbd;
+    background: #dbeff0;
+    bottom:0;
+    width:100%;
+    min-width: 1200px;
+}
+
+/* 退出按钮 */
+.logout{
+	margin: 20px 25px 0px 0;
+	display: block;
+	width: 45px;
+	height: 45px;
+	background: url(../images/logout.png) no-repeat center center;
+}
+.logout:hover{
+	background: url(../images/logout_hover.png) no-repeat center center;
+}
+
+/* 导航列表 */
+.nav-container{
+	margin: 0px;
+}
+#main_nav {
+	margin: 25px 05px auto 0px;
+}
+#main_nav li {
+	width: 110px;
+	float: left;
+}
+#main_nav li a{
+	display: block;
+	width: 98px;
+	height: 32px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 32px;
+}
+#main_nav li a:hover{
+	color: #07bfbd;
+	border-radius: 16px;
+    box-shadow: 0 4px 0px 0px #01abaa;
+    border: 0px;
+    background-color: #fff;
+}
+
+.main-nav-selected{
+	color: #07bfbd;
+	border-radius: 16px;
+    box-shadow: 0 4px 0px 0px #01abaa;
+    border: 0px;
+    background-color: #fff;
+}
+.main-nav-selected-color{
+	color: #07bfbd;
+}
+/* 子导航列表 */
+#sub-nav{
+	position: fixed;
+	margin-left: 20px;
+}
+
+#sub-nav .sub-nav-top{
+	height: 77px;
+	width: 150px;
+	background: url(../images/sub_nav_top_bg.jpg) no-repeat center center;
+}
+
+#sub-nav ul{
+	width: 150px;
+	background: url(../images/sub_nav_mid_bg.jpg) repeat-y;
+}
+
+#sub-nav li a{
+	display: block;
+	width: 150px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+#sub-nav li a:hover, .sub-nav-current{
+	color: #07bfbd;
+	background: url(../images/sub_nav_hover_bg.png) no-repeat center center;
+}
+
+#sub-nav .sub-nav-bottom{
+	height: 77px;
+	width: 150px;
+	background: url(../images/sub_nav_bottom_bg.jpg) no-repeat center center;
+}
+
+/* 数据区域 */
+.main-body{
+	width: 100%;
+	margin: 5px auto 0 auto;
+}
+/* 数据 */
+#data{
+	border: 1px solid #e5ebeb;
+	border-radius: 8px;
+	width: 963px;
+	min-height: 500px;
+	height: 100px;
+	background: #fff;
+	margin: 0px 20px 20px 0px;
+	padding-bottom: 20px;
+}
+
+
+/*前台列表css，分页css*/
+.content-list{
+    padding: 0px 45px 45px 45px;
+}
+.content-list ul li{
+	padding: 35px 10px 15px 10px;
+    height: 10px;
+    border-bottom: 1px dashed #dde6e5;
+}
+.content-list .content-list-title{
+	width: 600px;
+	height: 20px;
+	overflow: hidden;
+}
+.content-list .content-list-time{
+	color: #ccc;
+}
+.page .num{
+	padding: 2px 8px;
+	margin-left: 4px;
+	color: #08c1bc;
+	border: 1px solid #0b908f;
+	border-radius: 5px;
+	background: #f1f5f4;
+}
+.page .current{
+	padding: 2px 8px;
+	margin-left: 4px;
+	color: #fff;
+	border: 1px solid #0b908f;
+	border-radius: 5px;
+	background: #07afaf;
+}
+.page .next,.prev{
+	margin-left: 2px;
+	color: #08c1bc;
+	font-weight: 900;
+}
+/*通用tab页样式*/
+.title-tabs {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background: #07BFBD;
+	border-radius: 8px 8px 0 0;
+}
+.title-tab {
+	float: left;
+	text-align: center;
+	cursor:pointer;
+}
+.title-tab a {
+	color: #FFFFFF;
+}
+.title-tab-current{
+	background: #F9FFFF;
+}
+.title-tab-current a {
+	color: #404040;
+}
+.title-tab-first.title-tab-current {
+	border-radius: 8px 0 0 0;
+}
+.title-tab-last.title-tab-current {
+	border-radius: 0 8px 0 0;
+}
+
+/** 搜索框公用样式 **/
+.search-bar{
+	padding: 6px;
+	background: #f4faf8;
+	border-radius: 8px 8px 0 0;
+	height: 50px;
+}
+.search-bar form{
+	display: block;
+	margin: auto;
+	margin: 5px 0 0 80px;
+}
+.keywords{
+	height: 35px;
+	width: 740px;
+	border: 2px #07bfbd solid;
+	border-right: 0px;
+	border-radius: 5px 0 0 5px;
+	background: #f9ffff;
+	padding-left: 10px;
+}
+.btn-search{
+	background: url(../images/btn_search.jpg) no-repeat;
+	height: 39px;
+	width: 46px;
+	border: 0px;
+}

@@ -1,0 +1,172 @@
+
+/** 
+ * 描述：重置页面元素并基础样式
+ * 作用范围： 全局
+ */
+
+html,body {
+    font: 14px/1.5 "microsoft yahei", Helvetica, Tahoma, Arial, sans-serif;
+    color:#404040;
+    margin: 0px;
+    padding: 0px;
+    background: #f1f5f4;
+}
+body,p,pre,blockquote,
+h1,h2,h3,h4,h5,h6,
+dl,dt,dd,ul,ol,li,
+form,select,input,textarea,button,
+table,caption,tr,th,td {
+    margin:0;
+    padding:0;
+}
+ol,ul {
+    list-style:none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    max-width: 100%;
+    border:0 none;
+}
+a {
+    color: #585858;
+    text-decoration:none;
+}
+input,button,textarea,select,option {
+    font-family:inherit;
+    font-size:100%; 
+    outline: 0;
+}
+textarea {
+    overflow: auto;
+    resize: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* 布局样式 */
+.cf{
+    *zoom: 1;
+    clear: both;
+    display: table;
+}
+.cf:before, .cf:after {
+    display: table;
+    content: "";
+}
+.cf:after{
+    clear: both;
+}
+
+.fl{
+    float: left!important;
+}
+.fr{
+    float: right!important;
+}
+.hide{
+    display: none;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+.hidden {
+    display: none;
+}
+.block {
+    display: block!important;
+}
+.fixed{
+    position: fixed!important;
+}
+
+/* 排版样式 */
+.text-center{
+    text-align: center!important;
+}
+
+.text-right{
+    text-align: right!important;
+}
+
+.text-left{
+    text-align: left!important;
+}
+
+/** 前台公用样式 **/
+/* 常规按钮 */
+.btn {
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+    padding: 0 30px;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #07bfbd;
+    border: 1px solid #07bfbd;
+    border-radius: 18px;
+    *outline: 0 none;
+}
+.btn:hover {
+    color: #07bfbd;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #07bfbd;
+
+}
+.submit-btn,
+.btn-return {
+    padding: 10px 50px;
+    color: #fff;
+    font-weight: bold;
+    border-color: transparent;
+}
+.submit-btn {
+    background-color: #CC3900;
+}
+.submit-btn:hover {
+    color: #fff;
+    background-color: #ff2610;
+}
+.btn[disabled],
+.btn.disabled,
+.btn[disabled]:hover,
+.btn.disabled:hover {
+    background-color: #8d8d8d;
+}
+.save-btn {
+    padding: 10px 30px;
+    background-color: #3737BC;
+}
+.btn-mini {
+    padding: 4px 10px;
+}
+.btn-xlarge {
+    padding: 10px 30px;
+}
+
+/* 按钮组 */
+.btn-toolbar .btn {
+    float: left;
+    margin-left: -1px;
+    border-radius: 0;
+}
+.btn-toolbar .btn:first-child {
+    border-radius: 3px 0 0 3px;
+}
+.btn-toolbar .btn:last-of-type {
+    border-radius: 0 3px 3px 0;
+}

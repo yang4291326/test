@@ -1,0 +1,29 @@
+        table{
+            border-collapse:collapse;
+            width: 95%;
+            margin: auto;
+        }
+        td,th{
+            height:40px;
+        }
+        table.show th{
+            text-align:center;
+        }
+        table td{
+            text-align:left;
+        }
+        table.show td{
+            text-align:center;
+        }
+        .caption{
+            font-size:30px;
+            padding-bottom:20px;
+            text-align:center;
+        }
+        #right{
+            text-align:right;
+        }
+        .center{
+            margin:10px;
+            text-align:center;
+        }

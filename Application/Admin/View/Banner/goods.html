@@ -1,0 +1,81 @@
+<extend name="Public/base"/>
+<block name="style">
+    <style>
+        .article-list{
+            width: 95%;
+        }
+        .search-btn{
+            background-color: #3593DC;
+            height:29px;
+            width: 60px;
+            text-align: center;
+            line-height: 29px;
+            color: #fff;
+            border: none;
+        }
+    </style>
+</block>
+<block name="body">
+    <!-- S=头部设置 -->
+    <div class="tw-layout">        
+        <!-- S=文章管理 -->
+        <div class="tw-list-hd">手机轮播图管理</div> 
+        <!-- E=文章管理 -->        
+        <!-- S=导航设置 -->
+        <div class="tw-list-top">
+            <!-- S=添加删除 -->
+            <div class="tw-tool-bar">
+            </div>
+            <form action="{:U('Admin/GoodsCategory/selectGoods')}" method="get" id='frmSearch'>
+                <div class="tw-search-bar">
+                    <div class="search-form fr cf">
+                        <div class="sleft" style="margin-right:0">
+                            <select name="cate_id">
+                                <volist name="goodsCategory" id="gcate">
+                                    <option value="{$gcate.id}" <if condition="$gcate.id eq $cate_id">selected</if>>{$gcate.title_show}</option>
+                                </volist>
+                            </select>
+                        </div>
+                        <div class="sleft" style="margin-right:0">
+                            <input type="text" name="goods_name" class="search-input" value="{$goods_name}" placeholder="搜索关键字">
+                        </div>
+                        <button class="search-btn" type="submit" onclick="$('#frmSearch').submit();">搜索</button>
+                    </div>
+                </div>
+            </form>
+            <!-- E=添加删除 -->
+        </div>
+        <!-- E=导航设置 -->
+    </div>
+    <!-- E=头部设置 -->
+    <!-- S=详情显示 -->	
+    <div class="tw-list-wrap">
+        <div class="article-list">
+            <ul>
+                <if condition="$goods_list eq ''">
+                    <li> aOh! 暂时还没有内容! </li>
+                </if>
+                <foreach name="goods_list" item="v">
+                    <li onclick="lastSelectGoods({$v['id']}, this)"><input name="goods_id" type="radio" value="{$v.id}"><span> {$v.attr_value}</span> <div class="article-time">{$v.add_time|time_format}</div> </li>
+                </foreach>
+            </ul>
+        </div>
+        <div class="page">
+            {$page}
+        </div>
+    </div>
+    <!-- E=详情显示 -->	
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        function lastSelectGoods(id, obj){
+            $(obj).find('input[name="goods_id"]').attr("checked",true);
+            var article_name = $('input[name="goods_id"]:checked').next("span").text();
+            parent.$('#goods_name').attr('value',article_name);
+            parent.$('#goods_id').val(id);
+            var index = parent.layer.getFrameIndex(window.name);
+            parent.layer.close(index);
+        }
+    </script>
+</block>

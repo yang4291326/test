@@ -1,0 +1,226 @@
+/*
+*@module: table
+*@Author: guoleiting 2016-08-10
+*@Update: 
+*/
+
+
+$zebraLte8:                      false !default; //斑马线效果是否支持ie8，如果支持请在tr里面添加class odd
+$tableBgColor:                   transparent !default; // overall background-color
+$tableThBgColor:                 #efefef !default; // overall Th background-color
+$tableThTextColor:               $grayDarker !default; // overall th-color
+$tableBgColorEven:               #f9f9f9 !default; // for striping zebra
+$tableBgColorHover:              #e9f5ff !default; // for hover
+$tableBorderColor:               #d0d0d0 !default; // table and cell border
+$tableCellPadding:               8px !default;//单元格的padding
+
+@mixin table-border($borderColor:$tableBorderColor){
+	th,
+	td {
+		border: 1px solid $borderColor;
+	}
+}
+
+
+
+@mixin table-striped($even: $tableBgColorEven){
+	tbody {
+		> tr:nth-child(even) > td{
+			background-color: $even;
+		} 
+	}
+	@if $zebraLte8 {
+		tr.even td{
+			background-color: $even;
+		}
+	}
+}
+
+@mixin tr-hover($hover: $tableBgColorHover){
+  	tbody {
+    	tr:hover > td{
+      		background-color: $hover;
+    	}
+  	}
+}
+
+@mixin table-thead($thBgColor:$tableThBgColor,$thTextColor:$tableThTextColor){
+  	th{
+   		background-color: $thBgColor;
+    	color:$thTextColor;
+    	font-weight: normal;
+  	}
+}
+@mixin table-base{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    // table-layout: fixed;
+    th,td{
+        padding: $tableCellPadding;
+        vertical-align: middle;
+    }
+    thead th{
+        text-align: left;
+    }
+}
+
+.#{$baseClass}table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+    // table-layout: fixed;
+	th,td{
+		padding: $tableCellPadding;
+	}
+  	thead th{
+    	text-align: left;
+  	}
+}
+
+.#{$baseClass}table-border{
+	@include table-thead;
+    @include table-border;
+}
+
+.#{$baseClass}table- {
+	@include table-striped;
+}
+
+.#{$baseClass}table-hover{
+	@include tr-hover;
+}
+.#{$baseClass}table-fixed{
+    table-layout: fixed;
+}
+
+
+// 列表页
+.#{$baseClass}table-list{
+    @include table-base;
+	@include table-thead;
+    @include table-border;
+    @include table-striped;
+    @include tr-hover;
+    // border: 1px solid #e7e7e7;
+    thead{
+    	th{
+    		height: 36px;
+    		line-height: 1.5;
+    		font-size: 14px;
+    		padding: 0 8px;
+            font-weight: bolder;
+    		text-align: center;
+    		// border-width: 1px;
+      //       border-style: solid;
+      //       border-color: #d0d0d0;
+    		background: #e8eff9;
+    		color: #333;
+            
+    	}
+    }
+    tbody{
+    	th,td{
+    		// text-align: center;
+            font-size: 12px;
+    		// border: 1px solid #e7e7e7;
+    	}
+    	.hover{
+    		td{
+    			background: #edf7ff;
+    		}
+    	}
+    	.evenrow{
+    		td{
+    			background: #f9f9f9;
+    		}
+    	}
+    	.selected{
+    		td{
+    			background: #e0ecfc!important;
+    		}
+    	}
+    }
+    td{
+        // div,span{
+        //     @include text-hide;
+        //     display: block;
+        // }
+    }
+}
+
+.tw-table-form{
+    @include table-base;
+    margin-bottom: 20px;
+    @include table-border;
+    font-size: 12px;
+    thead th{
+        text-align: center;
+        font-size: 14px;
+        font-weight: bolder;
+        color: $primary;
+    }
+    tbody th{
+        font-weight: normal;
+        text-align: right;
+        background: #f9f9f9;
+        em{
+            color: red;
+            margin-right: 3px;
+        }
+    }
+    tbody td,
+    tbody th{
+        padding: 5px 8px;
+    }
+}
+
+.tw-table-form-mod{
+
+}
+.tw-table-form-edit{
+    padding-bottom: 70px;
+}
+.tw-table-form-hd{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+    color: $primary;
+    margin: 10px 0;
+}
+.tw-table-form-subhd{
+    span{
+        @include ib;
+        padding: 0 20px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 3px 3px 0 0;
+        background: #f9f9f9;
+        border: 1px solid #d0d0d0;
+        border-bottom: 0;
+    }
+}
+.tw-table-form-bd{
+
+}
+
+
+.wf-status-success,
+.wf-status-warning,
+.wf-status-danger{
+    @include ib;
+    @include fa-icon();
+    vertical-align: 1px;
+    color: #7bcd57;
+    &:before { content: $fa-var-bell; }
+}
+.wf-status-warning{
+    color: #fcc705;
+}
+.wf-status-danger{
+    color: #f72626;
+}
+
+
+
+

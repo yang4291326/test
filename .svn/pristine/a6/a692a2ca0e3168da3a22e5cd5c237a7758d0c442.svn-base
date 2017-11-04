@@ -1,0 +1,115 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<div class="tw-list-hd">
+			菜单排序
+	</div>
+	<div class="tw-list-wrap tw-edit-wrap sort">
+		<div class="sort_center">
+               
+			<div class="sort_option">
+				<select value="" size="8">
+					<volist name="list" id="vo">
+						<option class="ids" title="{$vo.title}" value="{$vo.id}">{$vo.title}</option>
+					</volist>
+				</select>
+			</div>
+			<div class="sort_btn">
+				<a class="tw-tool-btn-copy top" href="javascript:void(0)">
+					<i class="tw-icon-copy"></i> 第 一
+					</a>
+					<br>
+					<br>
+					<a class="tw-tool-btn-copy up" href="javascript:void(0)">
+					<i class="tw-icon-copy"></i> 上 移
+					</a>
+					<br>
+					<br>
+					<a class="tw-tool-btn-copy down" href="javascript:void(0)">
+					<i class="tw-icon-copy"></i> 下 移
+					</a>
+					<br>
+					<br>
+					<a class="tw-tool-btn-copy bottom" href="javascript:void(0)">
+					<i class="tw-icon-copy"></i> 最 后
+					</a>
+			</div>
+		</div>
+		<div class="tw-tool-bar-bot">
+			<input type="hidden" name="ids">
+               <button class="tw-act-btn-confirm">确 定</button>
+               <button type="button" onclick="goback();" class="tw-act-btn-cancel">返回</button>
+		</div>
+	</div>
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+		$(function(){
+			sort();
+			$(".top").click(function(){
+				rest();
+				$("option:selected").prependTo("select");
+				sort();
+			})
+			$(".bottom").click(function(){
+				rest();
+				$("option:selected").appendTo("select");
+				sort();
+			})
+			$(".up").click(function(){
+				rest();
+				$("option:selected").after($("option:selected").prev());
+				sort();
+			})
+			$(".down").click(function(){
+				rest();
+				$("option:selected").before($("option:selected").next());
+				sort();
+			})
+			$(".search").click(function(){
+				var v = $("input").val();
+				$("option:contains("+v+")").attr('selected','selected');
+			})
+			function sort(){
+				$('option').text(function(){return ($(this).index()+1)+'.'+$(this).text()});
+			}
+
+			//重置所有option文字。
+			function rest(){
+				$('option').text(function(){
+					return $(this).text().split('.')[1]
+				});
+			}
+
+			//获取排序并提交
+			$('.tw-act-btn-confirm').click(function(){
+				var arr = new Array();
+				$('.ids').each(function(){
+					arr.push($(this).val());
+				});
+				$('input[name=ids]').val(arr.join(','));
+				$.post(
+					"{:U('sort')}",
+					{
+					'ids' :  arr.join(',')
+					},
+					function(data){
+						if(data.status == '1'){
+			                window.location.reload();
+			                toastr.success(data.info);
+			            }else{
+			                toastr.error(data.info);
+			            }
+					},
+					'json'
+				);
+			});
+
+			//点击取消按钮
+			$('.sort_cancel').click(function(){
+				window.location.href = $(this).attr('url');
+			});
+		})
+	</script>
+</block>

@@ -1,0 +1,112 @@
+<extend name="Public/base"/>
+<block name="style">
+	<link rel="stylesheet" type="text/css" href="__CSS__/multiple-select.css" media="all">
+</block>
+<block name="body">
+    <div class="tw-layout">
+    	<div class="tw-list-hd">
+            {:isset($info['id'])?'编辑':'新增'}升级信息
+        </div>
+	    <div class="tw-list-wrap tw-edit-wrap">
+            <form action="__SELF__" method="post" class="form-horizontal ajaxForm">
+                <div class="form-item">
+                    <label class="item-label">升级名称<span class="check-tips"><b>*</b>（输入升级名称）</span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="name" value="{$info.name}">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">升级版本<span class="check-tips"><b>*</b>（输入升级版本）</span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="version" value="{$info.version}">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">升级方式<span class="check-tips"><b>*</b>（选择升级方式）</span></label>
+                    <div class="controls">
+                        <input type="radio" value="0" name="mode" id="isPage"  > 下载页
+                        <input type="radio" value="1" name="mode" id="isClick" checked="checked"> 点击提示
+                        <if condition="$info['mode'] eq 0">
+                            <script>
+                                $('#isPage').attr('checked', 'checked');
+                            </script>
+                        </if>
+                    </div>
+                </div>
+				<div>
+                    <label class="item-label">升级用户<span class="check-tips"><b>*</b>（选择升级用户）</span></label>
+					<select id="user_name" name="user_name" multiple="multiple">
+						<volist name="userName" id="vo">
+							<option value="{$vo.id}">
+								{$vo.user_name}
+							</option>
+						</volist>
+					</select>
+					<input type="hidden" name="memberRole" id="memberRole">
+				</div>
+				<div class="form-item">
+                    <label class="item-label">上传升级包<span class="check-tips">（用于上传升级包 ）</span></label>
+                    <div class="controls">
+                        <div id="img1_">
+                            {$info.file_path}
+                        </div>
+                        <input type="hidden" value="{$info.file_path}" name="file_path" id="enclosure" />
+                        <input class="btn btn-default btn-xs" type="button" value="上传" id="btnUpload1"/>
+                        <input class="btn btn-danger btn-xs" type="button" value="删除" onclick="delFileField($('#enclosure').val(), '')" id="btn_delete1_" />
+                        <if condition="$info.file_path eq ''">
+                            <script>
+                                $("#img1_, #btn_delete1_").hide();
+                            </script>
+                        </if>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="item-label">升级详情<span class="check-tips">（输入升级详情）</span></label>
+                    <div class="controls">
+                        <textarea name="remark" rows="5" cols="57">{$info.remark}</textarea><br/>
+                    </div>
+                </div>
+                 <div class="tw-tool-bar-bot">
+                    <button type="submit" class="tw-act-btn-confirm">提交</button>
+                    <button type="button" onclick="goback()" class="tw-act-btn-cancel">返回</button>
+                </div>
+                    <input type="hidden" name="id" value="{$info.id|default=''}"/>
+                </form>
+	    </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ajaxupload.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__JS__/admin.js"></script>
+	<script type="text/javascript" src="__JS__/multiple-select.js"></script>
+    <script>
+        $(function(){
+            ajaxUploadField('#btnUpload1', $("#enclosure"), 'Upgrade', '');
+            //设置升级用户选中
+            $("#user_name").multipleSelect("setSelects", {$member_ids});
+            var ids = $("#user_name").multipleSelect("getSelects");
+            $('#memberRole').val(ids);
+        });
+		$('#user_name').multipleSelect({
+			placeholder: "请选择升级用户",
+			width: '600px',
+			onCheckAll: function() {
+				var ids = $("#user_name").multipleSelect("getSelects");
+				$('#memberRole').val(ids);
+			},
+			onUncheckAll: function() {
+				var ids = $("#user_name").multipleSelect("getSelects");
+				$('#memberRole').val(ids);
+			},
+			onOptgroupClick: function(view) {
+				var ids = $("#user_name").multipleSelect("getSelects");
+				$('#memberRole').val(ids);
+			},
+			onClick: function(view) {
+				var ids = $("#user_name").multipleSelect("getSelects");
+				$('#memberRole').val(ids);
+			}
+		});
+    </script>
+</block>

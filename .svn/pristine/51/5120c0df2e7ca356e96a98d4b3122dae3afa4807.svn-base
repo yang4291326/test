@@ -1,0 +1,87 @@
+<extend name="Public/base" />
+<block name="body">
+
+<div class="tw-layout">
+		<div class="tw-list-hd">
+			权限管理
+		</div>
+		<div class="tw-list-top">
+			<div class="tw-tool-bar">
+				<a class="tw-tool-btn-add" href="{:U('createGroup')}">
+                    <i class="tw-icon-plus-circle"></i> 添加
+                </a>
+			</div>
+		</div>
+		<div class="tw-list-wrap">
+            <table class="tw-table tw-table-list tw-table-fixed">
+                <colgroup>
+                	<col width="50">
+                    <col width="10%">
+                    <col>
+                    <col width="50">
+                    <col width="400">
+                </colgroup>
+                <thead>
+                     <tr>
+                     	<th class="">ID</th>
+						<th class="">用户组</th>
+						<th class="">描述</th>
+						<th class="">状态</th>
+						<th class="">操作</th>
+						</tr>
+                </thead>
+                <tbody>
+                   <notempty name="_list">
+					<volist name="_list" id="vo">
+					<tr>
+						<td class="text-center"> {$vo.id} </td>
+						<td class="text-left"> {$vo.title} </td>
+						<td class="text-left">{:mb_strimwidth($vo['description'],0,60,"...","utf-8")}</td>
+						<td>{$vo.status_text}</td>
+						<td>
+						<a class="tw-tool-btn-setting" href="{:U('AuthManager/access?group_name='.$vo['title'].'&group_id='.$vo['id'])}">
+			                <i class="tw-icon-cogs"></i> 授权
+			            </a>
+						<a class="tw-tool-btn-edit" href="{:U('AuthManager/editgroup?id='.$vo['id'])}" >
+			                <i class="tw-icon-pencil"></i> 修改
+			            </a>
+						
+						<eq name="vo.status" value="0">
+						<a class="tw-tool-btn-stop" onclick="updateStatus('{:U('AuthManager/changeStatus?method=forbidGroup&id='.$vo['id'])}')">
+			                <i class="tw-icon-crosshairs"></i> 禁用
+			            </a>
+							<else/>
+							<a class="tw-tool-btn-check" onclick="updateStatus('{:U('AuthManager/changeStatus?method=resumeGroup&id='.$vo['id'])}')">
+			                <i class="tw-icon-check-square-o"></i> 启用
+			            </a>
+							</eq>
+			                <a class="tw-tool-btn-del"
+                                   onclick="javascript:recycle({$vo['id']}, '确认删除?!此步骤无法恢复!')">
+                                    <i class="tw-icon-minus-circle"></i> 删除
+                                </a>
+			                </td>
+					</tr>
+					</volist>
+					<else/>
+					<td colspan="5" class="text-center"> aOh! 暂时还没有内容! </td>
+					</notempty>
+				</tbody>
+			</table>
+		</div>
+		<div class="page">
+		        {$_page}
+		    </div>
+	</div>
+	<script>
+		function updateStatus(url){
+	         $.get(url, function(data){
+	            if(data.status == '1'){
+	                window.location.reload();
+	                toastr.success(data.info);
+	            }else{
+	                toastr.error(data.info); 
+	            }
+	        });
+		}
+	</script>
+</block>

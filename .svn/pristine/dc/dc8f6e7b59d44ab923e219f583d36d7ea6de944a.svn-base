@@ -1,0 +1,119 @@
+
+
+// 工作流节点流程按钮
+// 历程 暂存 *节点* 打印 编辑 公示 盖章 发送 子流程 
+.#{$baseClass}flow-btn-course,
+.#{$baseClass}flow-btn-save,
+.#{$baseClass}flow-btn-node,
+.#{$baseClass}flow-btn-print,
+.#{$baseClass}flow-btn-edit,
+.#{$baseClass}flow-btn-public,
+.#{$baseClass}flow-btn-seal,
+.#{$baseClass}flow-btn-send,
+.#{$baseClass}flow-btn-child,
+.#{$baseClass}flow-btn-over{
+	@extend %btn-basic;
+	@include btn-size(10px, 24px, 22px, 12px);
+	@include btn-border($primary);
+	margin-right: 5px;
+}
+.#{$baseClass}flow-btn-save{
+	@include btn-border($green);
+}
+
+.#{$baseClass}flow-btn-course{
+	@include btn-border($orange);
+}
+.#{$baseClass}flow-btn-over{
+	@include btn-border($red);
+}
+
+
+// 工作流增删改查自定义按钮
+// 添加 修改 删除 查看 预览 发布 复制 
+.#{$baseClass}tool-btn-add,
+.#{$baseClass}tool-btn-edit,
+.#{$baseClass}tool-btn-check,
+.#{$baseClass}tool-btn-del,
+.#{$baseClass}tool-btn-view,
+.#{$baseClass}tool-btn-preview,
+.#{$baseClass}tool-btn-release,
+.#{$baseClass}tool-btn-copy,
+.#{$baseClass}tool-btn-setting,
+.#{$baseClass}tool-btn-back,
+.#{$baseClass}flow-btn-reply
+{
+	@extend %btn-basic;
+	@include btn-size(10px, 24px, 24px, 12px);
+	@include btn-color($primary, #fff);
+	margin-right: 5px;
+}
+.#{$baseClass}tool-btn-edit{
+	@include btn-color($orange, #fff);
+}
+.#{$baseClass}tool-btn-check{
+	@include btn-color($green, #fff);
+}
+.#{$baseClass}tool-btn-del{
+	@include btn-color($red, #fff);
+}
+.#{$baseClass}tool-btn-view{
+	@include btn-color($green, #fff);
+}
+.#{$baseClass}tool-btn-preview{
+	@include btn-color($blue, #fff);
+}
+.#{$baseClass}tool-btn-release{
+	@include btn-color($purple, #fff);
+}
+.#{$baseClass}tool-btn-copy{
+	@include btn-color($orangered, #fff);
+}
+.#{$baseClass}tool-btn-setting{
+	@include btn-color($blue, #fff);
+}
+
+// 搜索条搜索按钮
+.#{$baseClass}search-bar-btn,
+.#{$baseClass}btn-attr-contact{
+	@extend %btn-basic;
+	@include btn-size(10px, 24px, 24px, 12px);
+	@include btn-color($primary, #fff);
+}
+.#{$baseClass}search-clear-btn{
+	@extend %btn-basic;
+	@include btn-size(10px, 24px, 24px, 12px);
+	@include btn-color($orange, #fff);
+}
+
+
+.#{$baseClass}tool-btn-back,
+.#{$baseClass}flow-btn-reply{
+	@include btn-color($orange, #fff);
+}
+
+
+
+
+// 表单底部确认取消按钮
+.#{$baseClass}act-btn-default,
+.#{$baseClass}act-btn-del,
+.#{$baseClass}act-btn-confirm,
+.#{$baseClass}act-btn-cancel{
+	@extend %btn-basic;
+	@include btn-size(20px, 30px, 30px, 14px);
+	@include btn-color;
+	margin-right: 5px;
+}
+.#{$baseClass}act-btn-default,
+.#{$baseClass}act-btn-confirm{
+	@include btn-color($primary, #fff);
+}
+
+.#{$baseClass}act-btn-del{
+	@include btn-color($red, #fff);
+}
+
+
+
+

@@ -1,0 +1,72 @@
+
+
+
+
+.#{$baseClass}pagination{
+	font-size: 12px;
+	padding: 8px 10px;
+	background: #f8f8f8;
+	border-top: 1px solid #eee;
+}
+.#{$baseClass}page-info{
+	@include ib;
+	line-height: 28px;
+}
+.#{$baseClass}page-list{
+	@include ib;
+	float: right;
+	li{
+		@include ib;
+		a{
+			position: relative;
+		    display: block;
+		    padding: 5px 10px;
+		    text-decoration: none;
+		    line-height: 1.2;
+		    background-color: #fff;
+		    border: 1px solid #ddd;
+		    margin-right: 5px;
+		    &:hover{
+		    	background-color: #eee;
+		    }
+	    }
+	    &.#{$baseClass}active{
+	    	a{
+	    		color: #fff;
+			    background-color: #284f97;
+			    border-color: #284f97;
+	    	}	
+	    }
+	    &.#{$baseClass}disabled{
+	    	a{
+	    		color: #999;
+			    background-color: #fff;
+			    border-color: #ddd;
+			    cursor: not-allowed;
+			    pointer-events: none;
+	    	}
+	    	
+	    }
+	}
+}
+.#{$baseClass}page-go{
+	.#{$baseClass}form-text{
+		width: 30px;
+		padding: 2px 4px;
+	}
+}
+
+.#{$baseClass}page-go-btn{
+	@extend %btn-basic;
+	@include btn-size(10px, 24px, 22px, 12px);
+	@include btn-color($primary, #fff);
+}
+
+
+
+
+
+
+
+
+

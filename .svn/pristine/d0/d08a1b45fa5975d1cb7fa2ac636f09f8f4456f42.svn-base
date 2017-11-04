@@ -1,0 +1,145 @@
+/*
+*@module: tabs
+*@Author: guoleiting 2016-08-10
+*@Update: 
+*/
+
+
+.#{$baseClass}tabs{
+
+	.#{$baseClass}tabs-nav{
+		position:relative;
+		padding: 0;
+		margin: 0;
+		font-size: 0;
+		border-bottom: 1px solid #ddd;
+	}
+	.#{$baseClass}nav-item{
+		position: relative;
+   		z-index: 1;
+   		display: inline-block;
+    	margin-bottom: -1px;
+    	list-style-type: none;
+    	margin-right: 10px;
+    	font-size: 14px;
+    	>a{
+    		
+		    // line-height: 1.5;
+		    // padding: .4em 1em;
+		    position: relative;
+    		display: block;
+    		height: 34px;
+    		line-height: 34px;
+    		padding: 0 13px;
+    		background: #e5e5e5;
+    		border-radius: 3px 3px 0 0;
+    	}
+    	.#{$baseClass}tab-del{
+    		display: none;
+			position: absolute;
+			top: 0;
+			right: 1px;
+			color: #888;
+			cursor: pointer;
+			z-index: 100;
+    	}
+    	.#{$baseClass}tab-insert{
+    		display: none;
+			position: absolute;
+			top: -5px;
+			right: -10px;
+			color: #888;
+			cursor: pointer;
+			z-index: 100;
+			color: $primary;
+    	}
+    	&.#{$baseClass}active{
+    		a{
+				color: #fff;
+				background-color: #284f97;
+				cursor: default;
+    		}
+    	}
+    	&:hover{
+    		.#{$baseClass}tab-del,
+    		.#{$baseClass}tab-insert{
+    			display: block;
+    		}
+    	}
+
+	}
+	.#{$baseClass}tabs-sortable-placeholder{
+			@include ib;
+			width: 100px;
+			height: 32px;
+			margin-right: 5px;
+			border: 1px dashed #cecece;
+		    visibility: visible;
+		    background: #e7eaec
+		}
+	.#{$baseClass}tab-add{
+		position: absolute;
+		right: 0;
+		top: 0;
+		color: #666;
+		font-size: 14px;
+		border: 1px solid #fff;
+		padding: 5px;
+		cursor: pointer;
+	}
+
+
+	.#{$baseClass}tabs-bd{
+		position: relative;
+		overflow: hidden;
+		border: 1px solid #ddd;
+		border-top: none;
+		z-index: 100;
+	}
+	.#{$baseClass}tab-panel{
+		display: none;
+		z-index: 99;
+		overflow-y: auto;
+		// padding: 10px 10px 15px;
+		// visibility: hidden;
+		.#{$baseClass}panel-cnt{
+			margin: 10px 10px 15px;
+		}
+		&.#{$baseClass}active{
+			display: block;
+			position: relative;
+			z-index: 100;
+			visibility: visible;
+		}
+		.#{$baseClass}tab-edit{
+			position: absolute;
+			top: 0;
+			right: 10px;
+			color: #888;
+			cursor: pointer;
+			z-index: 100;
+    	}
+	}
+}
+
+// .#{$baseClass}tabs-setting{
+// 	.#{$baseClass}tab-add{
+// 		display: block;
+// 	}
+// 	.#{$baseClass}nav-item:hover{
+// 		.#{$baseClass}tab-del{
+// 			display: block;	
+// 		}
+// 	}
+// 	.#{$baseClass}tab-panel{
+// 		.#{$baseClass}tab-edit{
+// 			display: block;
+// 		}
+// 	}
+	
+
+// }
+
+
+
+

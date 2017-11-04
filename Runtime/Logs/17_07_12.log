@@ -1,0 +1,1417 @@
+[ 2017-07-12T09:53:26+08:00 ] ::1 /index.php/Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T09:53:26+08:00 ] ::1 /index.php/Admin/Public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T09:53:27+08:00 ] ::1 /index.php/Admin/Public/verify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-12T09:53:27+08:00 ] ::1 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-12T09:53:34+08:00 ] ::1 /index.php/Admin/Public/doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-12T09:53:34+08:00 ] ::1 /index.php/Admin/Public/verify?0.7333036759802718
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-12T09:53:38+08:00 ] ::1 /index.php/Admin/Public/verify?0.17373260010590263
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-12T09:53:42+08:00 ] ::1 /index.php/Admin/Public/doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.057000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `user_name` = 'Danno' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.015000s ]
+SQL: SELECT `id`,`user_name`,`password`,`type` FROM `ln_member` WHERE ( `status` = 0 ) AND ( user_name="Danno" ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: disabled D:\WWW\WWW\furnitureshop\Application\Common\Model\MemberModel.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ln_member_attribute_value` [ RunTime:0.036000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_member_attribute_value` WHERE ( `member_id` = 2 ) AND ( `attribute_id` = 26 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ln_member_attribute_value` SET `attr_value`=1499824422,`attribute_id`=26 WHERE ( `member_id` = 2 ) AND ( `attribute_id` = 26 ) [ RunTime:0.080000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_member_attribute_value` WHERE ( `member_id` = 2 ) AND ( `attribute_id` = 25 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `ln_member_attribute_value` SET `attr_value`='0.0.0.0',`attribute_id`=25 WHERE ( `member_id` = 2 ) AND ( `attribute_id` = 25 ) [ RunTime:0.032000s ]
+SQL: SHOW COLUMNS FROM `ln_admin_log` [ RunTime:0.068000s ]
+NOTIC: [2] call_user_func_array() expects parameter 1 to be a valid callback, function 'number' not found or invalid function name D:\WWW\WWW\furnitureshop\ThinkPHP\Library\Think\Model.class.php 第 1102 行.
+SQL: INSERT INTO `ln_admin_log` (`log_type`,`log_info`,`log_url`,`log_status`,`member_id`,`log_time`) VALUES (3,'用户登录后台。',0,0,2,1499824422) [ RunTime:0.046000s ]
+
+[ 2017-07-12T09:53:42+08:00 ] ::1 /index.php/Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.006000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.005000s ]
+SQL: SELECT `menu_ids` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_menu` [ RunTime:0.037000s ]
+SQL: SELECT * FROM `ln_menu` WHERE ( `id` IN ('16','422','517','428','17','429','431','432','433','416','434','435','436','437','438','398','439','440','402','403','441','443','444','405','445','446','406','447','448','449','407','453','454','408','455','456','409','450','451','452','418','457','458','410','411','518','521','459','460','461','507','508','420','513','514','462','463','464','510','414','465','425','466','467','511','426','512','468','412','413','469','415','470','421','471','472','68','424','473','474','69','475','70','476','477','478','479','75','480','481','482','483','484','423','501','485','486','427','487','488','225','489','490','491','226','492','493','494','231','495','496','497','498','499','519','520','502','503','504','505','515','516') ) AND ( `display` = 1 ) ORDER BY sort asc  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T09:53:42+08:00 ] ::1 /index.php/Admin/Index/welcome
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.004000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T10:04:38+08:00 ] ::1 /index.php/Admin/Skin/setVricon
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.005000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.005000s ]
+SQL: SELECT `menu_ids` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_menu` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_menu` WHERE ( `id` IN ('16','422','517','428','17','429','431','432','433','416','434','435','436','437','438','398','439','440','402','403','441','443','444','405','445','446','406','447','448','449','407','453','454','408','455','456','409','450','451','452','418','457','458','410','411','518','521','459','460','461','507','508','420','513','514','462','463','464','510','414','465','425','466','467','511','426','512','468','412','413','469','415','470','421','471','472','68','424','473','474','69','475','70','476','477','478','479','75','480','481','482','483','484','423','501','485','486','427','487','488','225','489','490','491','226','492','493','494','231','495','496','497','498','499','519','520','502','503','504','505','515','516') ) AND ( `display` = 1 ) AND ( `url` = 'Admin/Skin/setvricon' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_type` [ RunTime:0.034000s ]
+SQL: SELECT `name`,`pic_path`,`pic_hover_path`,`id` FROM `ln_shop_goods_type` WHERE ( `member_id` = 2 ) AND ( `level` = 2 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\df1b79b9327fa294f9dca5b1fd2d6c12.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T10:04:41+08:00 ] ::1 /index.php/Admin/Skin/configSkin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.005000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.005000s ]
+SQL: SELECT `menu_ids` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_menu` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_menu` WHERE ( `id` IN ('16','422','517','428','17','429','431','432','433','416','434','435','436','437','438','398','439','440','402','403','441','443','444','405','445','446','406','447','448','449','407','453','454','408','455','456','409','450','451','452','418','457','458','410','411','518','521','459','460','461','507','508','420','513','514','462','463','464','510','414','465','425','466','467','511','426','512','468','412','413','469','415','470','421','471','472','68','424','473','474','69','475','70','476','477','478','479','75','480','481','482','483','484','423','501','485','486','427','487','488','225','489','490','491','226','492','493','494','231','495','496','497','498','499','519','520','502','503','504','505','515','516') ) AND ( `display` = 1 ) AND ( `url` = 'Admin/Skin/configskin' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_skin` [ RunTime:0.022000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\SkinModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_skin` WHERE ( `member_ids` like '%,2,%' or `member_ids` like '2,%' or `member_ids` ='2' or `member_ids` like '%,2' ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ln_skin` WHERE ( `member_ids` like '%,2,%' or `member_ids` like '2,%' or `member_ids` ='2' or `member_ids` like '%,2' ) AND ( `status` = 0 ) ORDER BY sort desc, id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SELECT `skin_id` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\24616a8375fbc43abed4eb3659440486.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-12T10:04:41+08:00 ] ::1 /index.php/Admin/Skin/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.004000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_skin` [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\SkinModel.class.php 第 36 行.
+NOTIC: [8] Undefined variable: map D:\WWW\WWW\furnitureshop\Application\Admin\Model\SkinModel.class.php 第 45 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_skin` WHERE ( `status` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\WWW\WWW\furnitureshop\Application\Admin\Model\SkinModel.class.php 第 48 行.
+SQL: SELECT * FROM `ln_skin` WHERE ( `status` = 0 ) ORDER BY sort desc, id desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\8b578504ce8f878b73a19aea5d823afd.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T10:04:46+08:00 ] ::1 /index.php/Admin/Map/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.009000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_alliance_merchant_map` [ RunTime:0.052000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\AllianceMerchantMapModel.class.php 第 32 行.
+SQL: SELECT COUNT(*) AS tp_count FROM ln_alliance_merchant_map alliancemerchantmap WHERE ( `member_id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT alliancemerchantmap.id,alliancemerchantmap.name,alliancemerchantmap.add_time,alliancemerchantmap.sort,member.user_name FROM ln_alliance_merchant_map alliancemerchantmap LEFT JOIN ln_member as member on alliancemerchantmap.member_id = member.id  WHERE ( `member_id` = '2' ) ORDER BY sort desc, id desc LIMIT 0,10   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\20b2b027abdff0ac9ab38bcfe787c1cb.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-12T10:04:49+08:00 ] ::1 /index.php/Admin/HomeLogModular/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.016000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_home_log_modular` [ RunTime:0.048000s ]
+SQL: SELECT `id`,`name`,`parent_id`,`data_table`,`sort`,`status` FROM `ln_home_log_modular` WHERE ( `status` = 0 ) ORDER BY sort, id  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.037000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/HomeLogModular/index' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\588e848d2c6c5982ef22669407dce3a9.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T10:04:52+08:00 ] ::1 /index.php/Admin/HomeLog/homeLog
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.005000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.006000s ]
+SQL: SELECT `menu_ids` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_menu` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_menu` WHERE ( `id` IN ('16','422','517','428','17','429','431','432','433','416','434','435','436','437','438','398','439','440','402','403','441','443','444','405','445','446','406','447','448','449','407','453','454','408','455','456','409','450','451','452','418','457','458','410','411','518','521','459','460','461','507','508','420','513','514','462','463','464','510','414','465','425','466','467','511','426','512','468','412','413','469','415','470','421','471','472','68','424','473','474','69','475','70','476','477','478','479','75','480','481','482','483','484','423','501','485','486','427','487','488','225','489','490','491','226','492','493','494','231','495','496','497','498','499','519','520','502','503','504','505','515','516') ) AND ( `display` = 1 ) AND ( `url` = 'Admin/HomeLog/homelog' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_home_log` [ RunTime:0.037000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ln_home_log homelog left JOIN ln_member member on member.id=homelog.member_id  WHERE ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.008000s ]
+SQL: SELECT homelog.*,member.user_name member_name FROM ln_home_log homelog left JOIN ln_member member on member.id=homelog.member_id  WHERE ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_home_log_modular` [ RunTime:0.010000s ]
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+NOTIC: [8] Undefined variable: id D:\WWW\WWW\furnitureshop\Application\Admin\Controller\HomeLogController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`parent_id` FROM `ln_home_log_modular` WHERE ( `status` = 0 ) ORDER BY sort  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.009000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/HomeLog/homelog' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.035000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-12T10:05:38+08:00 ] ::1 /index.php/Admin/HomeLog/homelog/p/11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `menu_ids` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_menu` [ RunTime:0.015600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_menu` WHERE ( `id` IN ('16','422','517','428','17','429','431','432','433','416','434','435','436','437','438','398','439','440','402','403','441','443','444','405','445','446','406','447','448','449','407','453','454','408','455','456','409','450','451','452','418','457','458','410','411','518','521','459','460','461','507','508','420','513','514','462','463','464','510','414','465','425','466','467','511','426','512','468','412','413','469','415','470','421','471','472','68','424','473','474','69','475','70','476','477','478','479','75','480','481','482','483','484','423','501','485','486','427','487','488','225','489','490','491','226','492','493','494','231','495','496','497','498','499','519','520','502','503','504','505','515','516') ) AND ( `display` = 1 ) AND ( `url` = 'Admin/HomeLog/homelog' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_home_log` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ln_home_log homelog left JOIN ln_member member on member.id=homelog.member_id  WHERE ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT homelog.*,member.user_name member_name FROM ln_home_log homelog left JOIN ln_member member on member.id=homelog.member_id  WHERE ( `member_id` = '2' ) ORDER BY id desc LIMIT 100,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_home_log_modular` [ RunTime:0.015600s ]
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+SQL: SELECT `name` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `data_table` FROM `ln_home_log_modular` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: homeLogModularDataTableName D:\WWW\WWW\furnitureshop\Application\Admin\Model\HomeLogModularModel.class.php 第 92 行.
+NOTIC: [8] Undefined variable: id D:\WWW\WWW\furnitureshop\Application\Admin\Controller\HomeLogController.class.php 第 40 行.
+SQL: SELECT `id`,`name`,`parent_id` FROM `ln_home_log_modular` WHERE ( `status` = 0 ) ORDER BY sort  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\WWW\WWW\furnitureshop\Application\Admin\Controller\AdminCommonController.class.php 第 465 行.
+NOTIC: [8] Undefined variable: addAttribute D:\WWW\WWW\furnitureshop\Application\Admin\Controller\AdminCommonController.class.php 第 469 行.
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/HomeLog/homelog' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+NOTIC: [8] Undefined variable: info D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\53f685fda9745ddbe8db9e8963648523.php 第 53 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:07:20+08:00 ] ::1 /index.php/Admin/GoodsConfirm/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.040000s ]
+SQL: SELECT COUNT(cart.id) AS tp_count FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT cart.id,`collection_sn`,cart.cart_photo,cart.remark,cart.add_time,member.user_name FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.010000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/GoodsConfirm/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\7f368f7b31d05664d875fc804a7072cc.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:07:20+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.100000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.010000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.010000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.010000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Favorite/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:07:31+08:00 ] ::1 /index.php/Admin/GoodsConfirm/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(cart.id) AS tp_count FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT cart.id,`collection_sn`,cart.cart_photo,cart.remark,cart.add_time,member.user_name FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.010000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/GoodsConfirm/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\7f368f7b31d05664d875fc804a7072cc.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:07:35+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.010000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Favorite/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:22:48+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.010000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.010000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.010000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.010000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.010000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Favorite/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 38 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.010000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:22:49+08:00 ] ::1 /index.php/Admin/GoodsConfirm/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.010000s ]
+SQL: SELECT COUNT(cart.id) AS tp_count FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT cart.id,`collection_sn`,cart.cart_photo,cart.remark,cart.add_time,member.user_name FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.010000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/GoodsConfirm/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\7f368f7b31d05664d875fc804a7072cc.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:22:50+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.010000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Favorite/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 38 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:24:44+08:00 ] ::1 /index.php/Admin/GoodsConfirm/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.010000s ]
+SQL: SELECT COUNT(cart.id) AS tp_count FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT cart.id,`collection_sn`,cart.cart_photo,cart.remark,cart.add_time,member.user_name FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/GoodsConfirm/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\7f368f7b31d05664d875fc804a7072cc.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:30:24+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.010000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.010000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Favorite/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 38 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:32:03+08:00 ] ::1 /index.php/Admin/Favorite/index/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.010000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 10,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.010000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\WWW\WWW\furnitureshop\Application\Admin\Controller\AdminCommonController.class.php 第 465 行.
+NOTIC: [8] Undefined variable: addAttribute D:\WWW\WWW\furnitureshop\Application\Admin\Controller\AdminCommonController.class.php 第 469 行.
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.010000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Favorite/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:32:06+08:00 ] ::1 /index.php/Admin/Favorite/index/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.010000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.010000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.010000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\WWW\WWW\furnitureshop\Application\Admin\Controller\AdminCommonController.class.php 第 465 行.
+NOTIC: [8] Undefined variable: addAttribute D:\WWW\WWW\furnitureshop\Application\Admin\Controller\AdminCommonController.class.php 第 469 行.
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.010000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Favorite/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:32:21+08:00 ] ::1 /index.php/Admin/Favorite/edit/id/138
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.006000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.010000s ]
+SQL: SELECT `menu_ids` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_menu` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_menu` WHERE ( `id` IN ('16','422','517','428','17','429','431','432','433','416','434','435','436','437','438','398','439','440','402','403','441','443','444','405','445','446','406','447','448','449','407','453','454','408','455','456','409','450','451','452','418','457','458','410','411','518','521','459','460','461','507','508','420','513','514','462','463','464','510','414','465','425','466','467','511','426','512','468','412','413','469','415','470','421','471','472','68','424','473','474','69','475','70','476','477','478','479','75','480','481','482','483','484','423','501','485','486','427','487','488','225','489','490','491','226','492','493','494','231','495','496','497','498','499','519','520','502','503','504','505','515','516') ) AND ( `display` = 1 ) AND ( `url` = 'Admin/Favorite/edit' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ln_favorite` WHERE ( id=138 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\8a919815897cffe63a586a7dd48e8a6b.php 第 5 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:32:24+08:00 ] ::1 /index.php/Admin/Favorite/edit/id/138
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.010000s ]
+SQL: SELECT `menu_ids` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_menu` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_menu` WHERE ( `id` IN ('16','422','517','428','17','429','431','432','433','416','434','435','436','437','438','398','439','440','402','403','441','443','444','405','445','446','406','447','448','449','407','453','454','408','455','456','409','450','451','452','418','457','458','410','411','518','521','459','460','461','507','508','420','513','514','462','463','464','510','414','465','425','466','467','511','426','512','468','412','413','469','415','470','421','471','472','68','424','473','474','69','475','70','476','477','478','479','75','480','481','482','483','484','423','501','485','486','427','487','488','225','489','490','491','226','492','493','494','231','495','496','497','498','499','519','520','502','503','504','505','515','516') ) AND ( `display` = 1 ) AND ( `url` = 'Admin/Favorite/edit' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Controller\FavoriteController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.010000s ]
+SQL: UPDATE `ln_favorite` SET `customer_name`='你',`customer_phone`='123456789012',`customer_address`='你',`customer_deposit`='2',`customer_code`='149421447847',`add_time`=1499851944 WHERE ( `id` = 138 ) [ RunTime:0.112000s ]
+
+[ 2017-07-12T17:32:24+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.010000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.010000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/Favorite/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\4b9df56693afabcebbcaa804f4b1c354.php 第 38 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:38:28+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:38:44+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.010000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:38:55+08:00 ] ::1 /index.php/Admin/GoodsAttribute/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shop_goods_attribute` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ln_shop_goods_attribute` WHERE ( `attr_mode` = 0 ) AND ( `cate_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`attr_name`,`member_id`,`attr_type`,`attr_value`,`attr_sort`,`attr_status`,`cate_id` FROM `ln_shop_goods_attribute` WHERE ( `attr_mode` = 0 ) AND ( `cate_id` = 0 ) ORDER BY attr_sort asc, id asc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.000000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/GoodsAttribute/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\dd19ae3dfd5489184d60fce5263e40ca.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:38:56+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:38:57+08:00 ] ::1 /index.php/Admin/GoodsConfirm/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(cart.id) AS tp_count FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT cart.id,`collection_sn`,cart.cart_photo,cart.remark,cart.add_time,member.user_name FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.010000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/GoodsConfirm/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\7f368f7b31d05664d875fc804a7072cc.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:38:57+08:00 ] ::1 /index.php/Admin/GoodsConfirm/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(cart.id) AS tp_count FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT cart.id,`collection_sn`,cart.cart_photo,cart.remark,cart.add_time,member.user_name FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.010000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/GoodsConfirm/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\7f368f7b31d05664d875fc804a7072cc.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:38:58+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:39:37+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:39:38+08:00 ] ::1 /index.php/Admin/GoodsConfirm/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(cart.id) AS tp_count FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT cart.id,`collection_sn`,cart.cart_photo,cart.remark,cart.add_time,member.user_name FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.010000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/GoodsConfirm/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\7f368f7b31d05664d875fc804a7072cc.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2017-07-12T17:39:39+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.010000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:41:44+08:00 ] ::1 /index.php/Admin/GoodsConfirm/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_shopping_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(cart.id) AS tp_count FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT cart.id,`collection_sn`,cart.cart_photo,cart.remark,cart.add_time,member.user_name FROM ln_shopping_cart cart left JOIN ln_member member ON cart.member_id = member.id  WHERE ( cart.member_id = '2' ) AND ( cart.status = 0 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_prompt_language` [ RunTime:0.010000s ]
+SQL: SELECT promptlanguage.content FROM ln_prompt_language promptlanguage INNER JOIN ln_menu as menu ON promptlanguage.menu_id = menu.id  WHERE ( menu.url = 'Admin/GoodsConfirm/index' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title D:\WWW\WWW\furnitureshop\Runtime\Cache\Admin\7f368f7b31d05664d875fc804a7072cc.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+NOTIC: [8] Undefined index: p D:\WWW\WWW\furnitureshop\Application\Admin\Common\function.php 第 248 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2017-07-12T17:41:45+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.010000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:50:19+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.010000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.000000s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.010000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-12T17:51:17+08:00 ] ::1 /index.php/Admin/Favorite/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.000000s ]
+SQL: SELECT `disabled` FROM `ln_member` WHERE ( `id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ln_favorite` [ RunTime:0.015600s ]
+SQL: SELECT `type` FROM `ln_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant trim - assumed 'trim' D:\WWW\WWW\furnitureshop\Application\Admin\Model\FavoriteModel.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name`,`remark`,`customer_name`,`customer_phone`,`customer_address`,`customer_deposit`,`customer_code`,`add_time`,`member_id`,`status`,`price_total` FROM `ln_favorite` WHERE ( `status` = 0 ) AND ( `member_id` = '2' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\WWW\WWW\furnitureshop\Application\Admin\Model\MemberModel.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `ln_member` [ RunTime:0.015600s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `user_name` FROM `ln_member` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+

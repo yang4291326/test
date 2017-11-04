@@ -1,0 +1,91 @@
+/*页面内部的表格样式*/
+.content-table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+}
+.content-table thead th {
+    height: 30px;
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 2 0px;
+    font-weight: bolder;
+    background: #F8F8F8;
+    color: #333;;
+}
+.content-table tbody th {
+    padding: 2px 0;
+    text-align: center;
+}
+.content-table th, .content-table td {
+    border: 1px solid #d0d0d0;
+}
+.content-table td {
+    padding: 2px;
+    text-align: center;
+}
+.content-table td input {   
+	font: 14px/1.5 "microsoft yahei", Helvetica, Tahoma, Arial, sans-serif;
+    height: 18px;
+}
+/*多数据修改增加的标题栏*/
+.information{
+	color:#000000;
+	background-color:#E8E8E8;
+	padding:10px;
+	width:100%;
+}
+.offset{
+	padding-left:20px;
+}
+/*用于显示时间css*/
+.show-time{
+    width: 80px;
+    max-width: 200px;
+}
+/*用于选择文章弹出的文章列表css*/
+.category-list{
+    width: 20%;
+    float: left;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.category-list ul li{
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.category-list ul li:hover{
+    background: #ccc;
+}
+.category-list a{
+    color: black;
+}
+.category-list a:hover{
+    color: #fff;
+}
+.cate-first{
+    background: #ccc;
+}
+.article-list{
+    width: 75%;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+}
+.article-list ul li{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+.article-list ul li .article-time{
+    float: right;
+    font-size: 12px;
+}
+.article-list ul li:hover{
+    background: #ccc;
+}

@@ -1,0 +1,79 @@
+
+
+
+
+.tw-upfile-list{
+	font-size: 12px;
+	margin-bottom: 8px;
+	// border-bottom: 1px solid #e8e8e8;
+}
+
+
+.tw-upfile-item{
+	margin: 7px 0;
+	.tw-upfile-name{
+		@include ib;
+		@include text-hide;
+		width: 150px;
+		vertical-align: middle;
+
+		margin-right: 5px;
+		[class*='tw-icon-file']{
+			margin-right: 5px;
+			font-size: 14px;
+		}
+	}
+	.tw-icon-file-word-o{color: #1c5696;}
+	.tw-icon-file-pdf-o{color: #d21326;}
+	.tw-icon-file-excel-o{color:#de452a;}
+	.tw-icon-file-powerpoint-o{color: #dd4127;}
+	.tw-icon-file-image-o{}
+	.tw-icon-file-zip-o{color: #fcc017;}
+	.tw-icon-file-o{}
+	
+	.tw-upfile-size{
+		vertical-align: middle;
+		margin-right: 5px;
+		color: $gray;
+	}
+	.tw-upfile-tool{
+		@include ib;
+	}
+}
+
+
+// 附件列表中查看编辑历史下载删除按钮
+.tw-upload-btn-view,
+.tw-upload-btn-edit,
+.tw-upload-btn-history,
+.tw-upload-btn-download,
+.tw-upload-btn-delete{
+	@extend %btn-basic;
+	@include btn-size(10px, 24px, 24px, 12px);
+	@include btn-color;
+	margin-right: 5px;
+}
+
+.tw-upload-btn-delete{
+	@include btn-color($red, #fff);
+}
+
+// 上传按钮和高拍仪按钮
+.tw-upload-btn-upload,
+.tw-upload-btn-camera{
+	@extend %btn-basic;
+	@include btn-size(10px, 24px, 24px, 12px);
+	@include btn-color($primary, #fff);
+	margin-right: 5px;
+}
+.tw-upload-btn-camera{
+	@include btn-color($orange, #fff);
+}
+
+.tw-upfile-act{
+	
+}
+
+
+
+

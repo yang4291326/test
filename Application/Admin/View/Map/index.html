@@ -1,0 +1,87 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <!-- S=头部设置 -->
+    <div class="tw-layout">
+        <!-- S=文章管理 -->
+        <div class="tw-list-hd">地图管理</div>
+        <!-- E=文章管理 -->
+        <!-- S=导航设置 -->
+        <div class="tw-list-top">
+            <!-- S=添加删除 -->
+            <div class="tw-tool-bar">
+                <a class="tw-tool-btn-add" href="{:U('edit')}">
+                    <i class="tw-icon-plus-circle"></i> 添加
+                </a>
+                <a class="tw-tool-btn-del" onclick="javascript:recycle('chkbId', '确认删除?! 删除后此地图将被删除!', true)">
+                    <i class="tw-icon-minus-circle"></i> 批量删除
+                </a>
+            </div>
+            <!-- E=添加删除 -->
+            <!-- S=高级搜索 -->
+            <form action="__ACTION__" method="post" id='frmSearch'>
+                <div class="tw-search-bar">
+                    <div class="search-form fr cf">
+                        <div class="sleft">
+                            <input type="text" name="keywords" class="search-input" value="{:I('name')}" placeholder="请输入商家名称">
+                            <a type="submit" class="sch-btn" onclick="$('#frmSearch').submit();"><i class="btn-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- E=高级搜索 -->
+        </div>
+        <!-- E=导航设置 -->
+    </div>
+    <!-- E=头部设置 -->
+    <!-- S=详情显示 -->
+    <div class="tw-list-wrap">
+        <!-- S=表单 -->
+        <form class="ids">
+            <table class="tw-table tw-table-list tw-table-fixed">
+                <thead>
+                <tr>
+                    <th class="row-selected"><input class="checkbox check-all" type="checkbox"></th>
+                    <th width="50">ID</th>
+                    <th width="15%">地图名称</th>
+                    <th width="15%">商家名称</th>
+                    <th class="show-time">添加时间</th>
+                    <th width="50">排序</th>
+                    <th width="150">操作</th>
+                </tr>
+                </thead>
+                <!-- S=详细信息 -->
+                <tbody>
+                <notempty name="data">
+                    <volist name="data" id="vo">
+                        <tr>
+                            <td><input class="ids row-selected" type="checkbox" name="chkbId" value="{$vo.id}"></td>
+                            <td>{$vo.id}</td>
+                            <td class="text-left">{$vo.name}</td>
+                            <td class="text-left">{$vo.user_name}</td>
+                            <td>{$vo.add_time|time_format}</td>
+                            <td>{$vo.sort}</td>
+                            <td>
+                                <a class="tw-tool-btn-edit" href="{:U('edit?id='.$vo['id'])}"><i class="tw-icon-pencil"></i> 修改 </a>
+                                <a class="tw-tool-btn-del" onclick="javascript:recycle({$vo['id']}, '确认删除?!  删除后此地图将被删除!',true)"><i class="tw-icon-minus-circle"></i> 删除</a>
+                            </td>
+                        </tr>
+                    </volist>
+                <else/>
+                    <td colspan="7" class="text-center"> aOh! 暂时还没有内容! </td>
+                </notempty>
+                </tbody>
+                <!-- E=详细信息 -->
+            </table>
+        </form>
+        <!-- E=表单 -->
+        <div class="page">{$page['page']}</div>
+    </div>
+    <!-- E=详情显示 -->
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+
+    </script>
+</block>

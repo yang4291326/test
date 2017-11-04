@@ -1,0 +1,39 @@
+<notempty name="attr_list">
+<colgroup>
+    <col width="10%">
+    <col width="90%">
+</colgroup>
+<tbody>
+<tr>
+    <th colspan="2" class="information"><div class="fl offset">扩展属性</div></th>
+</tr>
+<volist name="attr_list" id="list" key="k">
+	<if condition="$list.attr_type eq 0 || $list.attr_type eq 1">
+		<tr>
+		    <th><em></em> {$list.attr_name}:</th>
+		    <td>
+		    	<input type="text" name="goods_attr_value[{$list.id}]" class="text input-large at{$list.id}" placeholder="请输入{$list.attr_name}" value="{$info.attr_name}"/>
+		    </td>
+		</tr>
+	<elseif condition="$list.attr_type eq 2" />
+		<tr>
+		    <th><em></em> {$list.attr_name}:</th>
+		    <td>
+		    	<volist name="list[attr_value]" id="v">
+		    		<label class="radio"><input type="radio" name="goods_attr_value[{$list.id}][]" value="{$v}"/>{$v}</label>
+		        </volist>
+		    </td>
+		</tr>
+	<else />
+		<tr>
+		    <th><em></em> {$list.attr_name}:</th>
+		    <td>
+		    	<volist name="list[attr_value]" id="v">
+		    		<label class="checkbox"><input type="checkbox" name="goods_attr_value[{$list.id}][]" value="{$v}"/>{$v}</label>
+		        </volist>
+		    </td>
+		</tr>
+    </if>
+</volist>
+</tbody>
+</notempty>

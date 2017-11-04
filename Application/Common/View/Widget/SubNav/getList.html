@@ -1,0 +1,18 @@
+<ul id='sub_nav'>
+	<foreach name="subNav" item="v">
+	    <li><a class="current-{$v.id}" href="{:U($v['url'], array('current_id'=>$v['id'], 'main_nav_id'=>$parent_id))}" ><span>{$v.title}</span></a></li>
+	</foreach>
+</ul>
+
+<script>
+	$(function(){
+		var current_id = '{$current_id}';
+		if (current_id <= 0) {
+			// 默认点击菜单的第一个
+            $('#sub_nav').find('a').eq(0).addClass('sub-nav-current');
+		} else {
+			$('.current-' + current_id).addClass('sub-nav-current');
+		}
+		
+	})
+</script>

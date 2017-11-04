@@ -1,0 +1,37 @@
+.more-dropdown-menu {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid ;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px #aaa;
+    display: none;
+    font-size: 14px;
+    right: 30%;
+    min-width: 80px;
+    padding: 5px;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    z-index: 1000;
+}
+
+.more-text-color {
+    color: #333;
+}
+.more-text-color:hover{
+    color: #333;
+}
+.more-dropdown-menu li:hover{
+    background-color: #ECECF6;
+    color:#333;
+}
+.tw-list-wrap{
+    overflow: visible;
+}
+
+.more-dropdown-menu .divider {
+    background-color: #e5e5e5;
+    height: 1px;
+    margin: 5px 0;
+    overflow: hidden;
+}

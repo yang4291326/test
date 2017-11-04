@@ -1,0 +1,75 @@
+<extend name="Public/base"/>
+
+<block name="body">
+
+	<div class="tw-layout">
+		<div class="tw-list-hd">
+			{:isset($info['id'])?'编辑':'新增'}后台菜单
+		</div>
+		
+		<div class="tw-list-wrap tw-edit-wrap">
+			<form action="{:U()}" method="post" class="form-horizontal ajaxForm">
+		        <div class="form-item">
+		            <label class="item-label">标题<span class="check-tips">（用于后台显示的配置标题）</span></label>
+		            <div class="controls">
+		                <input type="text" class="text input-large" name="title" value="{$info.title|default=''}">
+		            </div>
+		        </div>
+		        <div class="form-item">
+		            <label class="item-label">排序<span class="check-tips">（用于分组显示的顺序）</span></label>
+		            <div class="controls">
+		                <input type="text" class="text input-small" name="sort" value="{$info.sort|default=0}">
+		            </div>
+		        </div>
+		        <div class="form-item">
+		            <label class="item-label">链接<span class="check-tips">（U函数解析的URL或者外链）</span></label>
+		            <div class="controls">
+		                <input type="text" class="text input-large" name="url" value="{$info.url|default=''}">
+		            </div>
+		        </div>
+		        <div class="form-item">
+		            <label class="item-label">上级菜单<span class="check-tips">（所属的上级菜单）</span></label>
+		            <div class="controls">
+		                <select name="pid" id="pid">
+		                    <volist name="Menus" id="menu">
+		                        <option value="{$menu.id}">{$menu.title_show}</option>
+		                    </volist>
+		                </select>
+		            </div>
+		        </div>
+		        <div class="form-item">
+		            <label class="item-label">分组<span class="check-tips">（用于左侧分组二级菜单）</span></label>
+		            <div class="controls">
+		                <input type="text" class="text input-large" name="group" value="{$info.group|default=''}">
+		            </div>
+		        </div>
+		        <div class="form-item">
+		            <label class="item-label">是否展示<span class="check-tips"></span></label>
+		            <div class="controls">
+		                <label class="radio"><input type="radio" name="display" value="1" <if condition="$info.display eq 1"> checked </if>>是</label>
+		                <label class="radio"><input type="radio" name="display" value="0" <if condition="$info.display eq 0"> checked </if>>否</label>
+		            </div>
+		        </div>
+		        <div class="form-item">
+		            <label class="item-label">说明<span class="check-tips">（菜单详细说明）</span></label>
+		            <div class="controls">
+		                <input type="text" class="text input-large" name="tip" value="{$info.tip|default=''}">
+		            </div>
+		        </div>
+	            <div class="tw-tool-bar-bot">
+	            	<input type="hidden" name="id" value="{$info.id|default=''}">
+	                <button type="submit" class="tw-act-btn-confirm">提交</button>
+	                <button type="button" onclick="goback();" class="tw-act-btn-cancel">返回</button>
+	            </div>
+		    </form>
+		</div>
+	</div>
+
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        $("#pid").val('{$info.pid|default = 0}');
+        //Think.setValue("display", {$info.display|default = 1});
+    </script>
+</block>
